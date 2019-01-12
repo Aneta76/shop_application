@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="565c6643-719f-424a-afc1-50ceefaa850d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/OrderElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/OrderElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/OrderElement.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -80,23 +79,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Order.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="340">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#434#435#0" expanded="true" />
+                <element signature="e#470#471#0" expanded="true" />
+                <element signature="e#539#540#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
+                <element signature="e#637#638#0" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
+                <element signature="e#741#742#0" expanded="true" />
+                <element signature="e#793#794#0" expanded="true" />
+                <element signature="e#822#823#0" expanded="true" />
+                <element signature="e#849#850#0" expanded="true" />
+                <element signature="e#887#888#0" expanded="true" />
+                <element signature="e#919#920#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderElement.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OrderElement.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/OrderElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="221">
+              <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
               <folding>
                 <element signature="e#319#320#0" expanded="true" />
                 <element signature="e#347#348#0" expanded="true" />
@@ -163,8 +174,8 @@
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Warehouse.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/WarehouseItem.java" />
         <option value="$PROJECT_DIR$/server/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/OrderElement.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Order.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/OrderElement.java" />
       </list>
     </option>
   </component>
@@ -357,7 +368,7 @@
       <workItem from="1547151397848" duration="36000" />
       <workItem from="1547153528533" duration="82000" />
       <workItem from="1547232199420" duration="4067000" />
-      <workItem from="1547295756570" duration="3673000" />
+      <workItem from="1547295756570" duration="4906000" />
     </task>
     <task id="LOCAL-00001" summary="added basic entities to test database">
       <created>1547150755890</created>
@@ -387,11 +398,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547299445377</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added OrderElement entity">
+      <created>1547299460715</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1547299460715</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added setters and getters to Order entity">
+      <created>1547299563702</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1547299563702</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16392000" />
+    <option name="totallyTimeSpent" value="17625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -448,7 +473,9 @@
     <MESSAGE value="added basic entities" />
     <MESSAGE value="changed db name" />
     <MESSAGE value="added Order entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Order entity" />
+    <MESSAGE value="added OrderElement entity" />
+    <MESSAGE value="added setters and getters to Order entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="added setters and getters to Order entity" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Product.java">
@@ -775,10 +802,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/OrderElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        <state relative-caret-position="221">
+          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
           <folding>
             <element signature="e#319#320#0" expanded="true" />
             <element signature="e#347#348#0" expanded="true" />
@@ -792,16 +841,6 @@
             <element signature="e#636#637#0" expanded="true" />
             <element signature="e#682#683#0" expanded="true" />
             <element signature="e#722#723#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

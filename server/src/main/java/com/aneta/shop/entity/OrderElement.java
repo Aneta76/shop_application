@@ -7,6 +7,7 @@ import javax.persistence.*;
 public class OrderElement extends AbstractEntity {
 
     @ManyToOne
+    @JoinColumn(name = "id_order")
     private Order order;
 
     @OneToMany

@@ -19,6 +19,27 @@ public class Order extends AbstractEntity {
     private User user;
 
 
+    public Set<OrderElement> getOrderElements() {
+        return orderElements;
+    }
 
+    public void setOrderElements(Set<OrderElement> orderElements) {
+        this.orderElements = orderElements;
+    }
 
+    public LocalDateTime getOrderPlaceTime() {
+        return orderPlaceTime;
+    }
+
+    public void setOrderPlaceTime(LocalDateTime orderPlaceTime) {
+        this.orderPlaceTime = orderPlaceTime;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 }

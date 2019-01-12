@@ -1,8 +1,6 @@
 package com.aneta.shop.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "User")
@@ -35,15 +33,15 @@ public class User extends AbstractEntity {
     @Column
     private String password;
 
-    @Column
+    @Enumerated(EnumType.STRING)
     private Role role;
 
     public Role getRole() {
         return role;
     }
 
-    public void setRole(String role) {
-        this.role = Role.valueOf(role);
+    public void setRole(Role role) {
+        this.role = role;
     }
 
     public String getFirstName() {

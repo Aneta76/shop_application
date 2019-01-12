@@ -35,6 +35,17 @@ public class User extends AbstractEntity {
     @Column
     private String password;
 
+    @Column
+    private Role role;
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = Role.valueOf(role);
+    }
+
     public String getFirstName() {
         return firstName;
     }

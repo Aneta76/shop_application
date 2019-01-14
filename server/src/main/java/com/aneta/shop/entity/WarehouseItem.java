@@ -1,16 +1,13 @@
 package com.aneta.shop.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
-@Table
+@Table(name = "warehouse")
 public class WarehouseItem extends AbstractEntity {
 
-    @Column
+    @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
 

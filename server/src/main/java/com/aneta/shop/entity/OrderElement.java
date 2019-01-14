@@ -10,7 +10,7 @@ public class OrderElement extends AbstractEntity {
     @JoinColumn(name = "id_order")
     private Order order;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "id_product")
     private Product product;
 

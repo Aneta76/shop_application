@@ -7,7 +7,7 @@ import javax.persistence.Table;
 import java.util.Set;
 
 @Entity
-@Table(name = "Product_category")
+@Table(name = "product_category")
 public class ProductCategory extends AbstractEntity {
 
     @Column

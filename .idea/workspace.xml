@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="565c6643-719f-424a-afc1-50ceefaa850d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/ProductCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/WarehouseItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/WarehouseItem.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -87,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Product.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            <state relative-caret-position="425">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -99,20 +95,21 @@
       <file leaf-file-name="AbstractEntity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/AbstractEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="272">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
               <folding>
+                <element signature="e#520#521#0" expanded="true" />
                 <element signature="e#553#554#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/controllers/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+              <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,27 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/ProductServiceImpl.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderElement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/OrderElement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" selection-start-line="13" selection-end-line="15" />
-              <folding>
-                <element signature="e#569#570#0" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="331">
+              <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -174,7 +155,6 @@
         <option value="$PROJECT_DIR$/server/src/main/resources/application.cfg.xml" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/respository/ProductRepository.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/ServerApplication.java" />
-        <option value="$PROJECT_DIR$/server/pom.xml" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/OrderElement.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/User.java" />
@@ -182,8 +162,9 @@
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/WarehouseItem.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/ProductCategory.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Product.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/controllers/ProductController.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/AbstractEntity.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/controllers/ProductController.java" />
+        <option value="$PROJECT_DIR$/server/pom.xml" />
       </list>
     </option>
   </component>
@@ -450,7 +431,7 @@
       <workItem from="1547493921897" duration="3726000" />
       <workItem from="1547498301599" duration="6000" />
       <workItem from="1547577481336" duration="6717000" />
-      <workItem from="1547663732483" duration="1562000" />
+      <workItem from="1547663732483" duration="3511000" />
     </task>
     <task id="LOCAL-00001" summary="added basic entities to test database">
       <created>1547150755890</created>
@@ -557,11 +538,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547497511568</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixed annotations">
+      <created>1547665326647</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1547665326647</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40538000" />
+    <option name="totallyTimeSpent" value="42487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -627,7 +615,8 @@
     <MESSAGE value="added ProductService" />
     <MESSAGE value="added ProductRestController" />
     <MESSAGE value="minos changes in etities" />
-    <option name="LAST_COMMIT_MESSAGE" value="minos changes in etities" />
+    <MESSAGE value="fixed annotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed annotations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -850,20 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/ServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13-sources.jar!/com/mysql/cj/jdbc/exceptions/SQLError.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -940,17 +915,7 @@
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/AbstractEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="e#553#554#0" expanded="true" />
-          </folding>
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -971,12 +936,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/controllers/ProductController.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        <state relative-caret-position="425">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/AbstractEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -988,10 +961,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Product.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/ServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        <state relative-caret-position="119">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/controllers/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

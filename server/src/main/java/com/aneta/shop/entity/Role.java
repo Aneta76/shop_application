@@ -4,7 +4,7 @@ import javax.persistence.Embeddable;
 import javax.persistence.Table;
 
 @Embeddable
-@Table(name = "Role")
+@Table(name = "role")
 public enum Role {
 
     USER,

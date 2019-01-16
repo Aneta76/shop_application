@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 public class WarehouseItem extends AbstractEntity {
 
     @ManyToOne
-    @JoinColumn(name = "product_id")
+    @JoinColumn(name = "id_product")
     private Product product;
 
     @Column

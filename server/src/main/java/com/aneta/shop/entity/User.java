@@ -3,7 +3,7 @@ package com.aneta.shop.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "User")
+@Table(name = "shop_user")
 public class User extends AbstractEntity {
 
     @Column

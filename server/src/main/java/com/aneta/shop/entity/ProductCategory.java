@@ -1,5 +1,7 @@
 package com.aneta.shop.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
@@ -14,6 +16,7 @@ public class ProductCategory extends AbstractEntity {
     private String name;
 
     @OneToMany(mappedBy = "category")
+    @JsonIgnoreProperties("category")
     private Set<Product> products;
 
     public String getName() {

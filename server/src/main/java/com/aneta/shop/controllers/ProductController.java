@@ -27,10 +27,10 @@ public class ProductController {
 
     @GetMapping(path = "/product")
     List<Product> getAllProducts() {
-        Collection all = productService.displayAll();
+        Collection <Product> all = productService.displayAll();
         LinkedList<Product> allProducts = new LinkedList<>();
-        for (Object product : all) {
-            allProducts.add((Product) product);
+        for (Product product : all) {
+            allProducts.add(product);
         }
         return allProducts;
     }

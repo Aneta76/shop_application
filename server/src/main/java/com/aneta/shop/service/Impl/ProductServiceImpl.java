@@ -19,7 +19,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Collection displayAll() {
+    public Collection <Product> displayAll() {
         Iterable<Product> allProducts = productRepository.findAll();
         LinkedList <Product> list = new LinkedList();
         for(Product product : allProducts){

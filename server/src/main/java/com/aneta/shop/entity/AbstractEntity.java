@@ -14,6 +14,10 @@ public abstract class AbstractEntity implements Persistable<Long> {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     @Override
     public Long getId() {
         return id;

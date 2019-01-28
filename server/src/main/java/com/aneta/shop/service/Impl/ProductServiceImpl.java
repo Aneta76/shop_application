@@ -1,53 +1,30 @@
 package com.aneta.shop.service.Impl;
 
+import com.aneta.shop.converter.Converter;
+import com.aneta.shop.converter.ProductConverter;
+import com.aneta.shop.dto.ProductDTO;
 import com.aneta.shop.entity.Product;
 import com.aneta.shop.respository.ProductRepository;
 import com.aneta.shop.service.ProductService;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.Optional;
-
 @Service
-public class ProductServiceImpl implements ProductService {
+public class ProductServiceImpl extends AbstractServiceImpl<Product,ProductDTO> implements ProductService {
 
-    private ProductRepository productRepository;
+    private final ProductRepository productRepository;
+    private final ProductConverter productConverter;
 
-    public ProductServiceImpl(ProductRepository productRepository) {
+    public ProductServiceImpl(ProductRepository productRepository, ProductConverter productConverter) {
         this.productRepository = productRepository;
+        this.productConverter = productConverter;
     }
 
-    @Override
-    public Collection <Product> displayAll() {
-        Iterable<Product> allProducts = productRepository.findAll();
-        LinkedList <Product> list = new LinkedList();
-        for(Product product : allProducts){
-            list.add(product);
-        }
-        return list;
+    protected JpaRepository<Product, Long> getRepository() {
+        return productRepository;
     }
 
-    @Override
-    public Product addProduct(Product product) {
-        productRepository.save(product);
-        return product;
-    }
-
-    @Override
-    public Product getOneProduct(Long id) {
-        Optional<Product> oneProduct = productRepository.findById(id);
-        return oneProduct.get();
-    }
-
-    @Override
-    public Product updateProduct(Product product) {
-        productRepository.save(product);
-        return product;
-    }
-
-    @Override
-    public void deleteProduct(Long id) {
-        productRepository.deleteById(id);
+    protected Converter<Product, ProductDTO> getConverter() {
+        return productConverter;
     }
 }

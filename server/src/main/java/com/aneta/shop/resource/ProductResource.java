@@ -1,4 +1,4 @@
-package com.aneta.shop.Resource;
+package com.aneta.shop.resource;
 
 import com.aneta.shop.dto.ProductDTO;
 import com.aneta.shop.entity.Product;

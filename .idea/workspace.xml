@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="565c6643-719f-424a-afc1-50ceefaa850d" name="Default" comment="added ProductConverter and ProductCategoryConverter">
-      <change afterPath="$PROJECT_DIR$/frontEnd/frontEnd.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="565c6643-719f-424a-afc1-50ceefaa850d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/shared/model/product-category.model.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/shared/model/product.model.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/shared/resolve/product-category.resolve.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/shared/resolve/product.resolve.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/shared/service/product-category.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/IndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/assembler/ProductResourceAssembler.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -209,6 +190,19 @@
             <path>
               <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop_application" type="462c0819:PsiDirectoryNode" />
+              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
+              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -227,7 +221,7 @@
     <property name="SearchEverywhereHistoryKey" value="spr&#9;FILE&#9;file://C:/Users/aneta/Desktop/SpringBootAngularHATEOAS.zip&#10;enumerated&#9;PSI&#9;JAVA://com.sun.jmx.snmp.Enumerated" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontEnd" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="C:\Users\aneta\IdeaProjects\shop_application\frontEnd\node_modules\tslint" />
@@ -357,7 +351,7 @@
       <workItem from="1549391241194" duration="7997000" />
       <workItem from="1549478522793" duration="1430000" />
       <workItem from="1549480015664" duration="1809000" />
-      <workItem from="1549481895142" duration="476000" />
+      <workItem from="1549481895142" duration="735000" />
     </task>
     <task id="LOCAL-00001" summary="added basic entities to test database">
       <created>1547150755890</created>
@@ -695,11 +689,18 @@
       <option name="project" value="LOCAL" />
       <updated>1549310077071</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="frontEnd cleanup">
+      <created>1549482422694</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1549482422694</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117476000" />
+    <option name="totallyTimeSpent" value="117735000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -712,13 +713,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5010661" side_tool="true" weight="0.32897604" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32995737" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="TypeScript" order="14" weight="0.25816995" />
       <window_info id="Designer" order="3" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info id="Structure" order="2" sideWeight="0.5009074" side_tool="true" weight="0.24253732" />
@@ -745,7 +746,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Module Dependencies" order="9" weight="0.32995737" />
-      <window_info anchor="bottom" id="TypeScript" order="14" weight="0.25816995" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32897604" />
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32897604" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
@@ -815,7 +815,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/front-end" />
     </ignored-roots>
-    <MESSAGE value="minor changes in entities" />
     <MESSAGE value="minor changes in ProductRepository" />
     <MESSAGE value="added AbstractService" />
     <MESSAGE value="added ProductService" />
@@ -840,7 +839,8 @@
     <MESSAGE value="added products components,model,service" />
     <MESSAGE value="added resolvers" />
     <MESSAGE value="minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor changes" />
+    <MESSAGE value="frontEnd cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontEnd cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

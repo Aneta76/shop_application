@@ -7,6 +7,9 @@ import { ProductCategoriesComponent } from './admin-panel/product-categories/pro
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 import { MainComponent } from './layout/main/main.component';
 import {AppRouting} from './app-routing.module';
+import {HttpClientModule} from '@angular/common/http';
+import {ProductService} from './shared/service/product.service';
+import {ProductsResolve} from './shared/resolve/product.resolve';
 
 @NgModule({
   declarations: [
@@ -18,9 +21,10 @@ import {AppRouting} from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRouting
+    AppRouting,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ProductService, ProductsResolve],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

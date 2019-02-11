@@ -1,7 +1,7 @@
+///<reference path="layout/main/main.component.ts"/>
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
 import { ProductsComponent } from './admin-panel/products/products.component';
 import { ProductCategoriesComponent } from './admin-panel/product-categories/product-categories.component';
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
@@ -13,11 +13,10 @@ import {ProductsResolve} from './shared/resolve/product.resolve';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    MainComponent,
     ProductsComponent,
     ProductCategoriesComponent,
     AdminPanelComponent,
-    MainComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +24,6 @@ import {ProductsResolve} from './shared/resolve/product.resolve';
     HttpClientModule,
   ],
   providers: [ProductService, ProductsResolve],
-  bootstrap: [AppComponent]
+  bootstrap: [MainComponent]
 })
 export class AppModule { }

@@ -10,7 +10,7 @@ public interface AbstractService<ENTITY extends AbstractEntity, DTO extends Abst
 
     DTO findById(Long id);
 
-    DTO save(DTO entity);
+    DTO save(DTO dto);
 
     void delete(Long id);
 

@@ -5,7 +5,7 @@
     <th>Kategoria</th>
     <th>Akcje</th>
   </tr>
-  <tr *ngFor="let product of products">
+  <tr *ngFor="let product of products; let rowIndex = index">
     <td>
       {{ product.id }}
     </td>

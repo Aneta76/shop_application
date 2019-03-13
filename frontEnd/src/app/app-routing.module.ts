@@ -1,14 +1,12 @@
 import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from '@angular/core';
 import {ProductsComponent} from './admin-panel/products/products.component';
-import {MainComponent} from './layout/main/main.component';
-import {ProductsResolve} from './shared/resolve/product.resolve';
 import {HomeComponent} from './home/home.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MainComponent,
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -16,7 +14,7 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'products/all',
+    path: 'api/products/all',
     component: ProductsComponent,
   },
   // {
@@ -29,7 +27,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 

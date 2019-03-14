@@ -10,6 +10,9 @@ import {ProductService} from './shared/service/product.service';
 import {ProductsResolve} from './shared/resolve/product.resolve';
 import {AppComponent} from './app.component';
 import {HomeComponent} from './home/home.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import {FormsModule} from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import {HomeComponent} from './home/home.component';
     ProductCategoriesComponent,
     AdminPanelComponent,
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRouting,
+    FormsModule
   ],
   providers: [ProductService, ProductsResolve],
   bootstrap: [AppComponent]

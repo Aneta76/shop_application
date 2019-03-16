@@ -1,22 +1,27 @@
 import {Component, OnInit} from '@angular/core';
 import {ProductModel} from '../../shared/model/product.model';
 import {ProductService} from '../../shared/service/product.service';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  styleUrls: ['./../../app.component.css']
 })
 export class ProductsComponent implements OnInit {
 
   products: Array<ProductModel> = [];
 
-  constructor(private productService: ProductService) {
+  constructor(private productService: ProductService,
+              private route: ActivatedRoute) {
   }
 
   ngOnInit() {
-    this.productService.getProducts().subscribe(productService => {
-      this.products = productService;
-    });
+    this.products = this.route.snapshot.data['products'];
   }
 }
+
+// this.productService.getProducts().subscribe(productService => {
+//   this.products = productService;
+// });
+

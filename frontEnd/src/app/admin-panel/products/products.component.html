@@ -3,20 +3,20 @@
   <button class="btn btn-outline-success mx-2 my-sm-0">Add product</button>
 </div>
 <table class="table table-striped">
-  <tr>
+  <tr class="text-center">
     <th scope="col">Id</th>
     <th scope="col">Nazwa</th>
     <th scope="col">Kategoria</th>
-    <th scope="col">Akcje</th>
+    <th class="text-left" scope="col">Akcje</th>
   </tr>
   <tr *ngFor="let product of products">
-    <td>
+    <td class="text-center">
       {{ product.id }}
     </td>
-    <td>
+    <td class="text-center">
       {{ product.name }}
     </td>
-    <td>
+    <td class="text-center">
       {{ product.category.name }}
     </td>
     <td>

@@ -2,6 +2,9 @@ import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from '@angular/core';
 import {ProductsComponent} from './admin-panel/products/products.component';
 import {HomeComponent} from './home/home.component';
+import {LoginComponent} from './login/login.component';
+import {AdminPanelComponent} from './admin-panel/admin-panel.component';
+import {ProductsResolve} from './shared/resolve/product.resolve';
 
 const routes: Routes = [
   {
@@ -14,9 +17,27 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'api/products/all',
-    component: ProductsComponent,
+    path: 'login',
+    component: LoginComponent,
   },
+  {
+    path: 'admin-panel',
+    component: AdminPanelComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: 'products',
+        pathMatch: 'prefix'
+      },
+      {
+        path: 'products',
+        component: ProductsComponent,
+        resolve: {
+          products: ProductsResolve,
+        }
+      }
+    ],
+  }
   // {
   //   path: 'products/all',
   //   component: ProductsComponent,

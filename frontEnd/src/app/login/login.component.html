@@ -5,7 +5,8 @@
   <div>
     <input class="form-control mr-sm-2" [(ngModel)]="password" name="password" placeholder="Password" type="password">
   </div>
-  <button class="btn btn-outline-success my-2 my-sm-0" (click)="logIn()">Sign in</button>
+  <!--routerLink w buttonie 'sign up' na potrzeby developingu-->
+  <button class="btn btn-outline-success my-2 my-sm-0" routerLink="/admin-panel" (click)="logIn()">Sign in</button>
 </form>
 <div>
   <p class="userMessages"> Aren't you registered user yet? Sign up by pressing the button below.</p>

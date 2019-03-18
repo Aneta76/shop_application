@@ -13,6 +13,7 @@ import {HomeComponent} from './home/home.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import {FormsModule} from '@angular/forms';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LoginComponent } from './login/login.component';
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

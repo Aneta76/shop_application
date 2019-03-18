@@ -1,16 +1,16 @@
 <form class="form-inline my-2 my-lg-0">
   <div>
-    <input class="form-control mr-sm-2" [(ngModel)]="email" name="email" placeholder="Email" type="text">
+    <input class="form-control mr-sm-2" [(ngModel)]="userData.email" name="email" placeholder="Email" type="text">
   </div>
   <div>
-    <input class="form-control mr-sm-2" [(ngModel)]="password" name="password" placeholder="Password" type="password">
+    <input class="form-control mr-sm-2" [(ngModel)]="userData.password" name="password" placeholder="Password" type="password">
   </div>
-  <!--routerLink w buttonie 'sign up' na potrzeby developingu-->
+  <!--routerLink w buttonie 'sign in' na potrzeby developingu-->
   <button class="btn btn-outline-success my-2 my-sm-0" routerLink="/admin-panel" (click)="logIn()">Sign in</button>
 </form>
 <div>
   <p class="userMessages"> Aren't you registered user yet? Sign up by pressing the button below.</p>
 </div>
 <div>
-  <button class="btn btn-outline-success my-2 my-sm-0">Sign up</button>
+  <button routerLink="/register" class="btn btn-outline-success my-2 my-sm-0">Sign up</button>
 </div>

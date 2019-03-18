@@ -5,6 +5,7 @@ import {HomeComponent} from './home/home.component';
 import {LoginComponent} from './login/login.component';
 import {AdminPanelComponent} from './admin-panel/admin-panel.component';
 import {ProductsResolve} from './shared/resolve/product.resolve';
+import {RegisterComponent} from './register/register.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+  },
+  {
+    path: 'register',
+    component: RegisterComponent,
   },
   {
     path: 'admin-panel',

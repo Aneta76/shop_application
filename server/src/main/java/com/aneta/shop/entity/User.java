@@ -1,6 +1,7 @@
 package com.aneta.shop.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "shop_user")
@@ -33,15 +34,36 @@ public class User extends AbstractEntity {
     @Column
     private String password;
 
-    @Enumerated(EnumType.STRING)
-    private Role role;
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable(name = "user_role",
+            joinColumns = @JoinColumn(name = "id_user", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "id_role", referencedColumnName = "id"))
+    private List<Role> roles;
 
-    public Role getRole() {
-        return role;
+
+    public User() {
     }
 
-    public void setRole(Role role) {
-        this.role = role;
+    public User(User user) {
+        setId(user.getId());
+        this.firstName = user.getFirstName();
+        this.lastName = user.getLastName();
+        this.addressLine = user.getAddressLine();
+        this.city = user.getCity();
+        this.country = user.getCountry();
+        this.zipCode = user.getZipCode();
+        this.phoneNumber = user.getPhoneNumber();
+        this.email = user.getEmail();
+        this.password = user.getPassword();
+        this.roles = user.getRoles();
+    }
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
     }
 
     public String getFirstName() {

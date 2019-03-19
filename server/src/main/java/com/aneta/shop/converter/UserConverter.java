@@ -4,18 +4,14 @@ import com.aneta.shop.dto.UserDTO;
 import com.aneta.shop.entity.User;
 import org.springframework.stereotype.Component;
 
+import java.util.stream.Collectors;
+
 @Component
 public class UserConverter implements Converter<User, UserDTO> {
 
     @Override
     public User convertToEntity(UserDTO dto) {
-        User user = new User();
-        user.setId(dto.getId());
-        user.setFirstName(dto.getFirstName());
-        user.setLastName(dto.getLastName());
-        user.setEmail(dto.getEmail());
-        user.setRole(dto.getRole());
-        return user;
+        throw new UnsupportedOperationException();
     }
 
     @Override
@@ -25,7 +21,7 @@ public class UserConverter implements Converter<User, UserDTO> {
         userDTO.setFirstName(entity.getFirstName());
         userDTO.setLastName(entity.getLastName());
         userDTO.setEmail(entity.getEmail());
-        userDTO.setRole(entity.getRole());
+        userDTO.setRoles(entity.getRoles().stream().map(role -> role.getRole()).collect(Collectors.toList()));
         return userDTO;
     }
 }

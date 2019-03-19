@@ -1,6 +1,6 @@
 package com.aneta.shop.dto;
 
-import com.aneta.shop.entity.Role;
+import java.util.List;
 
 public class UserDTO extends AbstractDTO {
 
@@ -10,7 +10,7 @@ public class UserDTO extends AbstractDTO {
 
     private String email;
 
-    private Role role;
+    private List<String> roles;
 
     public String getLastName() {
         return lastName;
@@ -36,11 +36,11 @@ public class UserDTO extends AbstractDTO {
         this.email = email;
     }
 
-    public Role getRole() {
-        return role;
+    public List<String> getRoles() {
+        return roles;
     }
 
-    public void setRole(Role role) {
-        this.role = role;
+    public void setRoles(List<String> roles) {
+        this.roles = roles;
     }
 }

@@ -1,4 +1,5 @@
 export class RegisterUserModel {
+  id: number = null;
   firstName: string = null;
   lastName: string = null;
   addressLine: string = null;
@@ -8,4 +9,5 @@ export class RegisterUserModel {
   phoneNumber: string = null;
   email: string = null;
   password: string = null;
+  roles: Array<string> = [];
 }

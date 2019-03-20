@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="565c6643-719f-424a-afc1-50ceefaa850d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/AuthResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/src/app/shared/service/app.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/shared/model/register-user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/shared/model/register-user.model.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,13 +58,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthResource.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AuthResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/AuthResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+            <state relative-caret-position="374">
+              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.service.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/app.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,24 +100,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/AbstractResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/ProductResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WarehouseItemResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/WarehouseItemResource.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -113,11 +107,6 @@
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin-panel.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/admin-panel.component.ts">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -144,7 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontEnd/src/app/layout/main/main.component.css" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/AbstractService.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts" />
@@ -169,7 +157,6 @@
         <option value="$PROJECT_DIR$/frontEnd/src/app/shared/resolve/product.resolve.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.html" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/model/register-user.model.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/register/register.component.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/app.component.css" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/shared/model/login-user-model.model.ts" />
@@ -195,6 +182,8 @@
         <option value="$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/AuthResource.java" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/model/register-user.model.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/service/app.service.ts" />
       </list>
     </option>
   </component>
@@ -328,15 +317,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="shared" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-              <item name="resolve" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
@@ -598,14 +578,7 @@
       <workItem from="1552826199278" duration="4341000" />
       <workItem from="1552933572043" duration="8165000" />
       <workItem from="1553019900213" duration="7162000" />
-      <workItem from="1553107300810" duration="4827000" />
-    </task>
-    <task id="LOCAL-00030" summary="added ProductService implementation">
-      <created>1548705471770</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1548705471770</updated>
+      <workItem from="1553107300810" duration="5963000" />
     </task>
     <task id="LOCAL-00031" summary="added AbstractResource">
       <created>1548789002048</created>
@@ -943,11 +916,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553111253744</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="added AuthController">
+      <created>1553112185297</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1553112185297</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207594000" />
+    <option name="totallyTimeSpent" value="208730000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -985,7 +965,7 @@
       <window_info id="npm" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="14" weight="0.32897604" />
       <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.24509804" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49675325" visible="true" weight="0.21588486" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49675325" visible="true" weight="0.17004265" />
       <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info id="Web" order="7" sideWeight="0.5009074" side_tool="true" weight="0.24253732" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -1102,7 +1082,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/front-end" />
     </ignored-roots>
-    <MESSAGE value="added product resolver" />
     <MESSAGE value="added main.component" />
     <MESSAGE value="fixed imports" />
     <MESSAGE value="fixed imports and paths" />
@@ -1127,7 +1106,8 @@
     <MESSAGE value="added Spring Security essential classes" />
     <MESSAGE value="changed enum type of Role to entity class" />
     <MESSAGE value="added basic WebSecurityConfig" />
-    <option name="LAST_COMMIT_MESSAGE" value="added basic WebSecurityConfig" />
+    <MESSAGE value="added AuthController" />
+    <option name="LAST_COMMIT_MESSAGE" value="added AuthController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1135,13 +1115,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/home/home.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1208,13 +1181,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/model/register-user.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/register/register.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1225,17 +1191,13 @@
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/register/register.component.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/model/login-user-model.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/register/register.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1453,13 +1415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1506,10 +1461,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/AuthResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        <state relative-caret-position="374">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/model/login-user-model.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/model/register-user.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/app.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

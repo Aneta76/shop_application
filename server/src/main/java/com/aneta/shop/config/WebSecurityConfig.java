@@ -49,12 +49,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
-                .loginPage("/api/login").permitAll()
+                .loginPage("/login").permitAll()
                 .successHandler(authenticationSuccessHandler)
                 .failureHandler(authenticationFailureHandler)
                 .and()
                 .logout()
-                .logoutUrl("/api/logout")
+                .logoutUrl("/logout")
                 .logoutSuccessHandler(logoutSuccessHandler)
                 .deleteCookies("JSESSIONID");
 

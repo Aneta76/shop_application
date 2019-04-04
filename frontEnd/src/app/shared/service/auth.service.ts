@@ -11,10 +11,14 @@ import {RegisterUserModel} from '../model/register-user.model';
 })
 export class AuthService {
 
+  success: boolean = false;
+
   constructor(private http: HttpClient,
-              private appService: AppService) { }
+              private appService: AppService) {
+  }
 
   public login(userData: LoginUserModel): Observable<RegisterUserModel> {
+
     const headers = new HttpHeaders({
       Accept: 'application/json',
       'Content-Type': 'application/x-www-form-urlencoded'
@@ -29,6 +33,7 @@ export class AuthService {
 
     return this.http.post('/api/login', body, options).pipe(map((loggedUser: RegisterUserModel) => {
       this.appService.setLoggedUser(loggedUser);
+      this.success = true;
       return loggedUser;
     }));
   }
@@ -36,6 +41,7 @@ export class AuthService {
   public logout() {
     return this.http.post('/api/logout', {}).pipe((data) => {
       this.appService.logout();
+      this.success = false;
       return data;
     });
   }

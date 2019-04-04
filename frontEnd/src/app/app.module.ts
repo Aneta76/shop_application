@@ -10,11 +10,13 @@ import {ProductService} from './shared/service/product.service';
 import {ProductsResolve} from './shared/resolve/product.resolve';
 import {AppComponent} from './app.component';
 import {HomeComponent} from './home/home.component';
-import { NavbarComponent } from './layout/navbar/navbar.component';
+import {NavbarComponent} from './layout/navbar/navbar.component';
 import {FormsModule} from '@angular/forms';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { UserPanelComponent } from './user-panel/user-panel.component';
+import {LoginComponent} from './login/login.component';
+import {RegisterComponent} from './register/register.component';
+import {UserPanelComponent} from './user-panel/user-panel.component';
+import {AuthService} from './shared/service/auth.service';
+import {AppService} from './shared/service/app.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,7 @@ import { UserPanelComponent } from './user-panel/user-panel.component';
     AppRouting,
     FormsModule
   ],
-  providers: [ProductService, ProductsResolve],
+  providers: [ProductService, ProductsResolve, AuthService, AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

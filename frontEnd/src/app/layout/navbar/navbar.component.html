@@ -10,14 +10,15 @@
       <a class="nav-link" routerLink="/register">Sign up</a>
     </li>
   </ul>
+  <div *ngIf="checkOnline()">
+    <div style="float: left ; margin-right: 30px; margin-top: 13px"><h5 class="ml-3">{{loggedUser.firstName}}, you are logged in !</h5>
+    </div>
+    <div style="float: right ; margin-right: 30px">
+      <button class="btn btn-outline-success my-2 my-sm-0" (click)="logoutUser()">Logout</button>
+    </div>
+  </div>
   <form class="form-inline my-2 my-lg-0">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
-  <div *ngIf="checkOnline()">
-    <h5 class="ml-3">{{loggedUser.firstName}}, you are logged in !</h5>
-  </div>
-  <div *ngIf="checkOnline()">
-    <button class="btn btn-outline-success my-2 my-sm-0" (click)="logoutUser()">Logout</button>
-  </div>
 </div>

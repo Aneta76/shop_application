@@ -7,6 +7,7 @@ import {AdminPanelComponent} from './admin-panel/admin-panel.component';
 import {ProductsResolve} from './shared/resolve/product.resolve';
 import {RegisterComponent} from './register/register.component';
 import {UserPanelComponent} from './user-panel/user-panel.component';
+import {ContactComponent} from './contact/contact.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
   },
   {
     path: 'user-panel',

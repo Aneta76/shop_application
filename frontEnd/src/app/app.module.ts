@@ -17,6 +17,7 @@ import {RegisterComponent} from './register/register.component';
 import {UserPanelComponent} from './user-panel/user-panel.component';
 import {AuthService} from './shared/service/auth.service';
 import {AppService} from './shared/service/app.service';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {AppService} from './shared/service/app.service';
     NavbarComponent,
     LoginComponent,
     RegisterComponent,
-    UserPanelComponent
+    UserPanelComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

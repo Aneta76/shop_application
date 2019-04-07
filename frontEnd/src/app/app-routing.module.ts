@@ -8,6 +8,7 @@ import {ProductsResolve} from './shared/resolve/product.resolve';
 import {RegisterComponent} from './register/register.component';
 import {UserPanelComponent} from './user-panel/user-panel.component';
 import {ContactComponent} from './contact/contact.component';
+import {MenuComponent} from './menu/menu.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+  },
+  {
+    path: 'menu',
+    component: MenuComponent,
   },
   {
     path: 'login',

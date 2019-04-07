@@ -1,3 +1,5 @@
-<p>
-  menu works!
-</p>
+<router-outlet></router-outlet>
+  <div *ngFor="let category of productCategories">
+    <a routerLink="/products">{{category.name}}</a>
+  </div>
+

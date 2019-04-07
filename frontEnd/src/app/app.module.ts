@@ -17,8 +17,10 @@ import {RegisterComponent} from './register/register.component';
 import {UserPanelComponent} from './user-panel/user-panel.component';
 import {AuthService} from './shared/service/auth.service';
 import {AppService} from './shared/service/app.service';
-import { ContactComponent } from './contact/contact.component';
-import { MenuComponent } from './menu/menu.component';
+import {ContactComponent} from './contact/contact.component';
+import {MenuComponent} from './menu/menu.component';
+import {ProductCategoryService} from './shared/service/productCategory.service';
+import {CategoriesResolver} from './shared/resolve/category.resolve';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,7 @@ import { MenuComponent } from './menu/menu.component';
     AppRouting,
     FormsModule
   ],
-  providers: [ProductService, ProductsResolve, AuthService, AppService],
+  providers: [ProductService, ProductsResolve, AuthService, AppService, ProductCategoryService, CategoriesResolver],
   bootstrap: [AppComponent]
 })
 export class AppModule {

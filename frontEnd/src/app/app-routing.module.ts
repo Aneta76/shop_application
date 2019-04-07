@@ -3,12 +3,13 @@ import {NgModule} from '@angular/core';
 import {ProductsComponent} from './admin-panel/products/products.component';
 import {HomeComponent} from './home/home.component';
 import {LoginComponent} from './login/login.component';
-import {AdminPanelComponent} from './admin-panel/admin-panel.component';
 import {ProductsResolve} from './shared/resolve/product.resolve';
 import {RegisterComponent} from './register/register.component';
 import {UserPanelComponent} from './user-panel/user-panel.component';
 import {ContactComponent} from './contact/contact.component';
 import {MenuComponent} from './menu/menu.component';
+import {CategoriesResolver} from './shared/resolve/category.resolve';
+import {AdminPanelComponent} from './admin-panel/admin-panel.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,9 @@ const routes: Routes = [
   {
     path: 'menu',
     component: MenuComponent,
+    resolve: {
+      CategoriesResolver,
+    }
   },
   {
     path: 'login',
@@ -35,6 +39,13 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
+  },
+  {
+    path: 'products',
+    component: ProductsComponent,
+    resolve: {
+      ProductsResolve,
+    }
   },
   {
     path: 'user-panel',

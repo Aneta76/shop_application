@@ -10,6 +10,7 @@ import {ContactComponent} from './contact/contact.component';
 import {MenuComponent} from './menu/menu.component';
 import {CategoriesResolver} from './shared/resolve/category.resolve';
 import {AdminPanelComponent} from './admin-panel/admin-panel.component';
+import {ProductCategoriesComponent} from './admin-panel/product-categories/product-categories.component';
 
 const routes: Routes = [
   {
@@ -24,9 +25,20 @@ const routes: Routes = [
   {
     path: 'menu',
     component: MenuComponent,
-    resolve: {
-      CategoriesResolver,
-    }
+    children: [
+      {
+        path: '',
+        redirectTo: 'categories',
+        pathMatch: 'prefix'
+      },
+      {
+        path: 'categories',
+        component: ProductCategoriesComponent,
+        resolve: {
+          productCategories: CategoriesResolver,
+        }
+      }
+    ],
   },
   {
     path: 'login',
@@ -39,13 +51,6 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
-  },
-  {
-    path: 'products',
-    component: ProductsComponent,
-    resolve: {
-      ProductsResolve,
-    }
   },
   {
     path: 'user-panel',

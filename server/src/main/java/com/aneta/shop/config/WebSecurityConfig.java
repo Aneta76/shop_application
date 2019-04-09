@@ -45,7 +45,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .defaultAuthenticationEntryPointFor(basicAuthenticationEntryPoint, new AntPathRequestMatcher("/api/**"))
                     .and()
                 .authorizeRequests()
-                .antMatchers("/api/products/all").permitAll()
+                .antMatchers("/api/products/**").permitAll()
                 .antMatchers("/api/category/all").permitAll()
                 .antMatchers("/api/user-panel").permitAll()
                 .anyRequest().authenticated()

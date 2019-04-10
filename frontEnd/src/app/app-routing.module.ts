@@ -36,6 +36,7 @@ const routes: Routes = [
         component: ProductCategoriesComponent,
         resolve: {
           productCategories: CategoriesResolver,
+          products: ProductsResolve
         }
       }
     ],
@@ -74,13 +75,6 @@ const routes: Routes = [
       }
     ],
   }
-  // {
-  //   path: 'products/all',
-  //   component: ProductsComponent,
-  //   resolve: {
-  //     products: ProductsResolve
-  //   }
-  // }
 ];
 
 @NgModule({

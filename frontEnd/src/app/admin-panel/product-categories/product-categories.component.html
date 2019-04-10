@@ -1,4 +1,12 @@
-<table>
-  <tr *ngFor="let category of productCategories"><td>{{ category.name }}</td></tr>
-</table>
-
+<div>
+  <div style="float:left; margin-right:100px; margin-left:50px">
+    <table>
+      <tr *ngFor="let category of productCategories">
+        <td>{{ category.name }}</td>
+      </tr>
+    </table>
+  </div>
+  <div style="float:left">
+    <app-products></app-products>
+  </div>
+</div>

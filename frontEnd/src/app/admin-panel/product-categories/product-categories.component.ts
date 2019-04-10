@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ProductCategoryModel} from '../../shared/model/product-category.model';
 import {ProductCategoryService} from '../../shared/service/productCategory.service';
 import {ActivatedRoute} from '@angular/router';
+import {ProductModel} from '../../shared/model/product.model';
 
 @Component({
   selector: 'app-product-categories',
@@ -11,6 +12,7 @@ import {ActivatedRoute} from '@angular/router';
 export class ProductCategoriesComponent implements OnInit {
 
   productCategories: Array<ProductCategoryModel> = [];
+  products: Array<ProductModel> = [];
 
   constructor(private productCategoryService: ProductCategoryService,
               private route: ActivatedRoute) {
@@ -18,7 +20,10 @@ export class ProductCategoriesComponent implements OnInit {
 
   ngOnInit() {
     /* tslint:disable:no-string-literal */
-    this.productCategories = this.route.snapshot.data['productCategories'];
+    if (this.route.snapshot.data['productCategories']) {
+      this.productCategories = this.route.snapshot.data['productCategories'];
+    }
+    this.products = this.route.snapshot.data['products'];
     /* tslint:enable:no-string-literal */
   }
 

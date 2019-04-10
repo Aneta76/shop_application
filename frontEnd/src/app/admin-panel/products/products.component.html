@@ -1,27 +1,46 @@
 <!--ng if na role-->
 <!--<div>-->
-  <!--<button class="btn btn-outline-success mx-2 mb-3">Add product</button>-->
+<!--<button class="btn btn-outline-success mx-2 mb-3">Add product</button>-->
 <!--</div>-->
-<table class="table table-striped">
-  <tr class="text-center">
-    <th scope="col">Id</th>
-    <th scope="col">Name</th>
-    <th scope="col">Category</th>
-    <th class="text-left" scope="col">Actions</th>
-  </tr>
-  <tr *ngFor="let product of products">
-    <td class="text-center">
-      {{ product.id }}
-    </td>
-    <td class="text-center">
-      {{ product.name }}
-    </td>
-    <td class="text-center">
-      {{ product.category.name }}
-    </td>
-    <td>
-      <button class="btn btn-outline-success mx-2 my-sm-0">Delete</button>
-      <button class="btn btn-outline-success mx-2 my-sm-0">Edit</button>
-    </td>
-  </tr>
-</table>
+<!--<table class="table table-striped">-->
+<!--<tr class="text-center">-->
+<!--<th scope="col">Id</th>-->
+<!--<th scope="col">Name</th>-->
+<!--<th scope="col">Category</th>-->
+<!--<th class="text-left" scope="col">Actions</th>-->
+<!--</tr>-->
+<!--<tr *ngFor="let product of products">-->
+<!--<td class="text-center">-->
+<!--{{ product.id }}-->
+<!--</td>-->
+<!--<td class="text-center">-->
+<!--{{ product.name }}-->
+<!--</td>-->
+<!--<td class="text-center">-->
+<!--{{ product.category.name }}-->
+<!--</td>-->
+<!--<td>-->
+<!--<button class="btn btn-outline-success mx-2 my-sm-0">Delete</button>-->
+<!--<button class="btn btn-outline-success mx-2 my-sm-0">Edit</button>-->
+<!--</td>-->
+<!--</tr>-->
+<!--</table>-->
+
+<div class="container" *ngFor="let product of products">
+  <div class="product">
+    <div class="img-container">
+      <img
+        src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?dpr=1&auto=compress,format&fit=crop&w=1400&h=&q=80&cs=tinysrgb&crop=">
+    </div>
+    <div class="product-info">
+      <div class="product-content">
+        <h1>{{product.name}}</h1>
+        <p>{{product.description}}</p>
+        <div class="buttons">
+          <a class="button add" href="#">Add to Cart</a>
+          <span class="button" id="price">$59,99</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

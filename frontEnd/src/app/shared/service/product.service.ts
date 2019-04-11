@@ -12,7 +12,7 @@ export class ProductService {
 
   private products: Array<ProductModel> = [];
   private productsStream: Subject<Array<ProductModel>> = new Subject();
-
+  private productsByCategory: Array<ProductModel> = [];
   constructor(private http: HttpClient) {
   }
 
@@ -33,6 +33,13 @@ export class ProductService {
   public getProduct(id: number): Observable<ProductModel> {
     return this.http.get('/api/products/all/' + id).pipe(map((response: ProductModel) => {
       return response;
+    }));
+  }
+
+  public getProductsByCategoryId(id: number): Observable<Array<ProductModel>> {
+    return this.http.get('/api/products/categories/' + id).pipe(map((response: Array<ProductModel>) => {
+      this.productsByCategory = response;
+      return this.productsByCategory;
     }));
   }
 

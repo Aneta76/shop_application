@@ -94,8 +94,3 @@ const routes: Routes = [
 
 export class AppRouting {
 }
-
-export const routingComponents = [ProductsComponent, ProductCategoriesComponent, ProductsByCategoryComponent,
-  HomeComponent, AdminPanelComponent, ContactComponent,
-  LoginComponent, MenuComponent, UserPanelComponent
-];

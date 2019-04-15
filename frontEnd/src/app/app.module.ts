@@ -21,7 +21,7 @@ import {ContactComponent} from './contact/contact.component';
 import {MenuComponent} from './menu/menu.component';
 import {ProductCategoryService} from './shared/service/productCategory.service';
 import {CategoriesResolver} from './shared/resolve/category.resolve';
-import { ProductsByCategoryComponent } from './admin-panel/products-by-category/products-by-category.component';
+import {ProductsByCategoryComponent} from './admin-panel/products-by-category/products-by-category.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,7 @@ import { ProductsByCategoryComponent } from './admin-panel/products-by-category/
     UserPanelComponent,
     ContactComponent,
     MenuComponent,
-    ProductsByCategoryComponent
+    ProductsByCategoryComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +44,8 @@ import { ProductsByCategoryComponent } from './admin-panel/products-by-category/
     AppRouting,
     FormsModule
   ],
-  providers: [ProductService, ProductsResolve, AuthService, AppService, ProductCategoryService, CategoriesResolver, ProductsResolveByCategory],
+  providers: [ProductService, ProductsResolve, AuthService, AppService, ProductCategoryService,
+    CategoriesResolver, ProductsResolveByCategory],
   bootstrap: [AppComponent]
 })
 export class AppModule {

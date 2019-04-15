@@ -1,10 +1,12 @@
-<div>
+<div role="navigation">
   <div style="float:left; margin-right:100px; margin-left:50px">
-    <table>
-      <tr *ngFor="let category of productCategories">
-        <td>{{ category.name }}</td>
-      </tr>
-    </table>
+    <div *ngFor="let category of productCategories">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/menu/categories/{{category.id}}">{{category.name}}</a>
+        </li>
+      </ul>
+    </div>
   </div>
   <div style="float:left">
     <app-products></app-products>

@@ -15,7 +15,8 @@ export class ProductCategoriesComponent implements OnInit {
   products: Array<ProductModel> = [];
 
   constructor(private productCategoryService: ProductCategoryService,
-              private route: ActivatedRoute) {
+              private route: ActivatedRoute
+  ) {
   }
 
   ngOnInit() {
@@ -26,5 +27,4 @@ export class ProductCategoriesComponent implements OnInit {
     this.products = this.route.snapshot.data['products'];
     /* tslint:enable:no-string-literal */
   }
-
 }

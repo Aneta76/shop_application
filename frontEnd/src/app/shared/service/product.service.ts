@@ -37,10 +37,10 @@ export class ProductService {
   }
 
   public getProductsByCategoryId(id: number): Observable<Array<ProductModel>> {
-    return this.http.get('/api/products/categories/' + id).pipe(map((response: Array<ProductModel>) => {
-      this.productsByCategory = response;
-      return this.productsByCategory;
-    }));
+       return this.http.get('/api/products/categories/' + id).pipe(map((response: Array<ProductModel>) => {
+       this.productsByCategory = response;
+       return this.productsByCategory;
+     }));
   }
 
   public getProductsStream(): Observable<Array<ProductModel>> {

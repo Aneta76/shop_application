@@ -28,26 +28,26 @@ const routes: Routes = [
     component: MenuComponent,
     children: [
       {
-        path: '',
-        redirectTo: 'categories',
-        pathMatch: 'prefix'
-      },
-      {
         path: 'categories',
         component: ProductCategoriesComponent,
         resolve: {
           productCategories: CategoriesResolver,
           products: ProductsResolve
-        }
+        },
       },
       {
         path: 'categories/:id',
         component: ProductsByCategoryComponent,
         resolve: {
-          productCategories: CategoriesResolver,
-          productsByCategory: ProductsResolveByCategory
+          productsByCategory: ProductsResolveByCategory,
+          productCategories: CategoriesResolver
         }
       },
+      {
+        path: '**',
+        redirectTo: 'categories',
+        pathMatch: 'prefix'
+      }
     ],
   },
   {
@@ -71,16 +71,16 @@ const routes: Routes = [
     component: AdminPanelComponent,
     children: [
       {
-        path: '',
-        redirectTo: 'products',
-        pathMatch: 'prefix'
-      },
-      {
         path: 'products',
         component: ProductsComponent,
         resolve: {
           products: ProductsResolve,
         }
+      },
+      {
+        path: '**',
+        redirectTo: 'products',
+        pathMatch: 'prefix'
       }
     ],
   }
@@ -94,3 +94,8 @@ const routes: Routes = [
 
 export class AppRouting {
 }
+
+export const routingComponents = [ProductsComponent, ProductCategoriesComponent, ProductsByCategoryComponent,
+  HomeComponent, AdminPanelComponent, ContactComponent,
+  LoginComponent, MenuComponent, UserPanelComponent
+];

@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="565c6643-719f-424a-afc1-50ceefaa850d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-categories/product-categories.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-categories/product-categories.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-categories/product-categories.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-categories/product-categories.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontEnd/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/shared/resolve/product.resolve.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/shared/resolve/product.resolve.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,78 +27,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="products.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product-categories.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-categories/product-categories.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="products-by-category.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product-categories.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-categories/product-categories.component.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="products.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1513">
-              <caret line="89" column="40" lean-forward="true" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="products-by-category.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="391">
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.service.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts">
+      <file leaf-file-name="app-routing.module.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/menu/menu.component.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="products.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+            <state relative-caret-position="459">
+              <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#53#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,6 +68,7 @@
     <findStrings>
       <find>e2e</find>
       <find>font</find>
+      <find>no-s</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,8 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/BasicAuthenticationEntryPoint.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/AutheticationFailureHandler.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/AuthenticationFailureHandler.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/LogoutSuccess.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Role.java" />
@@ -159,23 +109,25 @@
         <option value="$PROJECT_DIR$/frontEnd/src/app/menu/menu.component.ts" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/AbstractService.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/ProductCategoryService.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/ProductResource.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/ProductService.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.css" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/service/productCategory.service.ts" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-categories/product-categories.component.ts" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-categories/product-categories.component.html" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/resolve/product.resolve.ts" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.html" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/menu/menu.component.html" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.html" />
+        <option value="$PROJECT_DIR$/frontEnd/tslint.json" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/service/productCategory.service.ts" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/ProductResource.java" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/custom-reuse-strategy/custom-reuse-strategy.component.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/resolve/product.resolve.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-categories/product-categories.component.html" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-categories/product-categories.component.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts" />
       </list>
     </option>
   </component>
@@ -233,6 +185,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -293,6 +246,23 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="admin-panel" type="462c0819:PsiDirectoryNode" />
               <item name="products-by-category" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
+              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
+              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+              <item name="navbar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
@@ -416,7 +386,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -425,7 +394,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="workspa&#9;FILE&#9;file://C:/Users/aneta/IdeaProjects/shop_application/.idea/workspace.xml&#10;hash&#9;null&#9;null&#10;spr&#9;FILE&#9;file://C:/Users/aneta/Desktop/SpringBootAngularHATEOAS.zip&#10;enumerated&#9;PSI&#9;JAVA://com.sun.jmx.snmp.Enumerated" />
+    <property name="SearchEverywhereHistoryKey" value="tslin&#9;FILE&#9;file://C:/Users/aneta/IdeaProjects/shop_application/frontEnd/tslint.json&#10;workspa&#9;FILE&#9;file://C:/Users/aneta/IdeaProjects/shop_application/.idea/workspace.xml&#10;hash&#9;null&#9;null&#10;spr&#9;FILE&#9;file://C:/Users/aneta/Desktop/SpringBootAngularHATEOAS.zip&#10;enumerated&#9;PSI&#9;JAVA://com.sun.jmx.snmp.Enumerated" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -624,28 +593,10 @@
       <workItem from="1554750249715" duration="4503000" />
       <workItem from="1554830751107" duration="6535000" />
       <workItem from="1554916997055" duration="8530000" />
-      <workItem from="1555003895929" duration="6587000" />
-    </task>
-    <task id="LOCAL-00059" summary="added proxy for backend">
-      <created>1552508761707</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1552508761707</updated>
-    </task>
-    <task id="LOCAL-00060" summary="added navigation bar">
-      <created>1552595463685</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1552595463685</updated>
-    </task>
-    <task id="LOCAL-00061" summary="added login template">
-      <created>1552595500230</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1552595500230</updated>
+      <workItem from="1555003895929" duration="7016000" />
+      <workItem from="1555010993176" duration="282000" />
+      <workItem from="1555242072992" duration="17947000" />
+      <workItem from="1555349029817" duration="6326000" />
     </task>
     <task id="LOCAL-00062" summary="added missing imports">
       <created>1552595593490</created>
@@ -969,11 +920,32 @@
       <option name="project" value="LOCAL" />
       <updated>1555010462948</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="added service method for resolving products by category id">
+      <created>1555010618626</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1555010618626</updated>
+    </task>
+    <task id="LOCAL-00109" summary="added routing to display new component">
+      <created>1555010655616</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1555010655616</updated>
+    </task>
+    <task id="LOCAL-00110" summary="deleted unused template tags and added imports">
+      <created>1555010752868</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1555010752868</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291148000" />
+    <option name="totallyTimeSpent" value="316132000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1007,11 +979,11 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32897604" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.24400872" />
       <window_info id="npm" order="9" sideWeight="0.5036075" side_tool="true" weight="0.195629" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.24400872" />
       <window_info anchor="bottom" id="Spring" order="14" weight="0.32897604" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" visible="true" weight="0.24509804" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4963925" visible="true" weight="0.18923241" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" visible="true" weight="0.24509804" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4963925" visible="true" weight="0.195629" />
       <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info id="Web" order="7" sideWeight="0.5009074" side_tool="true" weight="0.24253732" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -1031,21 +1003,21 @@
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32897604" />
       <window_info id="Designer" order="3" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.24400872" />
       <window_info anchor="bottom" id="Spring" order="14" weight="0.32897604" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="TypeScript" order="15" sideWeight="0.4989339" weight="0.20261438" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.24400872" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Web" order="7" sideWeight="0.5009074" side_tool="true" weight="0.24253732" />
       <window_info id="Favorites" order="6" sideWeight="0.5032467" side_tool="true" weight="0.18710022" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" visible="true" weight="0.24509804" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053304" side_tool="true" weight="0.24509804" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32897604" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32897604" />
       <window_info id="npm" order="9" sideWeight="0.5036075" side_tool="true" weight="0.195629" />
@@ -1056,7 +1028,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4963925" visible="true" weight="0.18710022" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
+      <window_info id="Web" order="7" sideWeight="0.5009074" side_tool="true" weight="0.24253732" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Structure" order="2" sideWeight="0.5009074" side_tool="true" weight="0.24253732" />
@@ -1128,9 +1100,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/front-end" />
     </ignored-roots>
-    <MESSAGE value="changed endpoints for spring security" />
-    <MESSAGE value="added login process" />
-    <MESSAGE value="added endpoints for config" />
     <MESSAGE value="added user-panel component" />
     <MESSAGE value="fixed redirection after logging" />
     <MESSAGE value="added routes" />
@@ -1153,101 +1122,17 @@
     <MESSAGE value="rework of product displaying - alpha version" />
     <MESSAGE value="added method to resolve products by category id" />
     <MESSAGE value="added productsByCategory component" />
-    <option name="LAST_COMMIT_MESSAGE" value="added productsByCategory component" />
+    <MESSAGE value="added service method for resolving products by category id" />
+    <MESSAGE value="added routing to display new component" />
+    <MESSAGE value="deleted unused template tags and added imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted unused template tags and added imports" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/admin-panel.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/user-panel/user-panel.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/WarehouseItemServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/dto/ProductCategoryDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/dto/AbstractDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/respository/ProductRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="61" lean-forward="true" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/ProductCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="34" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/dto/ProductDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.3.RELEASE/spring-data-commons-2.1.3.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/ProductCategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="102" lean-forward="true" selection-start-line="5" selection-start-column="102" selection-end-line="5" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/ProductCategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/converter/ProductCategoryConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1297,13 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/ProductCategoryResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/WarehouseItemResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1318,20 +1196,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
           <caret line="44" column="83" selection-start-line="44" selection-start-column="83" selection-end-line="44" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1342,20 +1210,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2839">
           <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/AbstractResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1373,13 +1227,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/menu/menu.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/menu/menu.component.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1390,80 +1237,184 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="89" column="40" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-categories/product-categories.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/tsconfig.app.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/tslint.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/tslint.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/node_modules/@angular/router/src/router.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="330" column="6" lean-forward="true" selection-start-line="329" selection-start-column="30" selection-end-line="330" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/app.service.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/ProductCategoryResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/node_modules/@angular/router/src/config.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="372" column="4" selection-start-line="372" selection-start-column="4" selection-end-line="372" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/AbstractResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/ProductResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="23" />
+        <state relative-caret-position="323">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/node_modules/@angular/router/src/route_reuse_strategy.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/resolve/category.resolve.ts">
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/custom-reuse-strategy/custom-reuse-strategy.component.ts" />
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/menu/menu.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state>
+          <caret selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/productCategory.service.ts">
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/menu/menu.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app.module.ts">
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/productCategory.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        <state relative-caret-position="34">
+          <caret line="7" selection-start-line="7" selection-end-line="37" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts">
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/resolve/category.resolve.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="47" column="53" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="53" />
+        <state relative-caret-position="323">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        <state relative-caret-position="323">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/menu/menu.component.html">
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-categories/product-categories.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.css">
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="89" column="40" lean-forward="true" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        <state relative-caret-position="497">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#56#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-categories/product-categories.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="204">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -1471,41 +1422,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-categories/product-categories.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/resolve/product.resolve.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="35" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state>
+          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        <state relative-caret-position="361">
+          <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-categories/product-categories.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/resolve/product.resolve.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ProductModel} from '../../shared/model/product.model';
 import {ActivatedRoute} from '@angular/router';
 import {ProductService} from '../../shared/service/product.service';
 
+
 @Component({
   selector: 'app-products-by-category',
   templateUrl: './products-by-category.component.html',
-  styleUrls: ['./../products/products.component.css']
+  styleUrls: ['./../products/products.component.css'],
 })
 export class ProductsByCategoryComponent implements OnInit {
   private productsByCategory: Array<ProductModel> = [];
@@ -16,7 +17,8 @@ export class ProductsByCategoryComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.productsByCategory = this.route.snapshot.data['productsByCategory'];
+    this.route.data.subscribe((data) => {
+      this.productsByCategory = data['productsByCategory'];
+    });
   }
-
 }

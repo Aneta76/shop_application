@@ -3,48 +3,54 @@
     <h1>Register</h1>
     <p>Please fill in this form to create an account.</p>
     <table>
-      <tr>
+      <tr class="form-field">
+        <td><b>Id : </b></td>
+        <td><input class="form-control" type="text" [(ngModel)]="regUserData.id" name="Id" [readonly]="true"
+                   placeholder="Id"
+        ></td>
+      </tr>
+      <tr class="form-field">
         <td><b>First name : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="regUserData.firstName" name="firstName"
                    placeholder="First Name"></td>
       </tr>
-      <tr>
+      <tr class="form-field">
         <td><b>Last name : </b></td>
         <td>
           <input class="form-control" type="text" [(ngModel)]="regUserData.lastName" name="lastName"
                  placeholder="Last Name">
         </td>
       </tr>
-      <tr>
+      <tr class="form-field">
         <td><b>Address line : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="regUserData.addressLine" name="addressLine"
                    placeholder="Address line"></td>
       </tr>
-      <tr>
+      <tr class="form-field">
         <td><b>City : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="regUserData.city" name="city" placeholder="City"></td>
       </tr>
-      <tr>
+      <tr class="form-field">
         <td><b>Country : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="regUserData.country" name="country"
                    placeholder="Country"></td>
       </tr>
-      <tr>
+      <tr class="form-field">
         <td><b>Zip code : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="regUserData.zipCode" name="zipCode"
                    placeholder="Zip code"></td>
       </tr>
-      <tr>
+      <tr class="form-field">
         <td><b>Phone Number : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="regUserData.phoneNumber" name="phoneNumber"
                    placeholder="Phone number"></td>
       </tr>
-      <tr>
+      <tr class="form-field">
         <td><b>Email : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="regUserData.email" name="email" placeholder="Email">
         </td>
       </tr>
-      <tr>
+      <tr class="form-field">
         <td><b>Password : </b></td>
         <td><input class="form-control" type="password" [(ngModel)]="regUserData.password" name="password"
                    placeholder="Password"
@@ -53,7 +59,7 @@
     </table>
   </div>
   <div class="container">
-    <button class="btn btn-outline-success my-4 mx-3">Register</button>
+    <button class="btn btn-outline-success my-4 mx-3" (click)="registerUser()">Register</button>
   </div>
- </form>
+</form>
 

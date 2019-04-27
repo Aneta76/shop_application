@@ -1,28 +1,35 @@
 package com.aneta.shop.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
-@Table(name="role")
+@Table(name = "role")
 public class Role extends AbstractEntity {
 
     @Column
-    private String role;
+    private String name;
 
-    public Role() {
+    @ManyToMany(mappedBy = "roles", cascade = CascadeType.PERSIST)
+    private List<User> users;
+
+    public Role(String name) {
+        this.name = name;
     }
 
-    public Role(String role) {
-        this.role = role;
+    public String getName() {
+        return name;
     }
 
-    public String getRole() {
-        return role;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public List<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(List<User> users) {
+        this.users = users;
     }
 }

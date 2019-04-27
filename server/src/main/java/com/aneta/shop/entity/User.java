@@ -34,12 +34,12 @@ public class User extends AbstractEntity {
     @Column
     private String password;
 
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToMany(cascade = CascadeType.ALL,  fetch = FetchType.EAGER)
     @JoinTable(name = "user_role",
             joinColumns = @JoinColumn(name = "id_user", referencedColumnName = "id"),
-            inverseJoinColumns = @JoinColumn(name = "id_role", referencedColumnName = "id"))
+            inverseJoinColumns = @JoinColumn(name = "id_role", referencedColumnName = "id"),
+            uniqueConstraints = {@UniqueConstraint(columnNames = {"id_user", "id_role"})})
     private List<Role> roles;
-
 
     public User() {
     }
@@ -55,7 +55,7 @@ public class User extends AbstractEntity {
         this.phoneNumber = user.getPhoneNumber();
         this.email = user.getEmail();
         this.password = user.getPassword();
-        this.roles = user.getRoles();
+        this.roles= user.getRoles();
     }
 
     public List<Role> getRoles() {

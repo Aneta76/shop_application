@@ -17,7 +17,6 @@ export class RegisterComponent implements OnInit {
   }
 
   registerUser() {
-    this.regUserData.roles = ['user'];
     this.regService.addUserToDataBase(this.regUserData).subscribe(
       data => console.log('user added')
     );

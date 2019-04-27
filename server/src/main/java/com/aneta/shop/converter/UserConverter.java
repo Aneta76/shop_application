@@ -1,6 +1,7 @@
 package com.aneta.shop.converter;
 
 import com.aneta.shop.dto.UserDTO;
+import com.aneta.shop.entity.Role;
 import com.aneta.shop.entity.User;
 import org.springframework.stereotype.Component;
 
@@ -21,7 +22,7 @@ public class UserConverter implements Converter<User, UserDTO> {
         userDTO.setFirstName(entity.getFirstName());
         userDTO.setLastName(entity.getLastName());
         userDTO.setEmail(entity.getEmail());
-        userDTO.setRoles(entity.getRoles().stream().map(role -> role.getRole()).collect(Collectors.toList()));
+        userDTO.setRoles(entity.getRoles().stream().map(role -> role.getName()).collect(Collectors.toList()));
         return userDTO;
     }
 }

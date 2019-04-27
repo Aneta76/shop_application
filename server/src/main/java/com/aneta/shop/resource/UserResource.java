@@ -2,7 +2,6 @@ package com.aneta.shop.resource;
 
 import com.aneta.shop.dto.UserDTO;
 import com.aneta.shop.entity.User;
-import com.aneta.shop.respository.UserRepository;
 import com.aneta.shop.service.UserService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,11 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserResource extends AbstractResource<User, UserDTO> {
 
     private final UserService userService;
-    private final UserRepository userRepository;
 
-    public UserResource(UserService userService, UserRepository userRepository) {
+    public UserResource(UserService userService) {
         this.userService = userService;
-        this.userRepository = userRepository;
     }
 
     @Override
@@ -28,8 +25,7 @@ public class UserResource extends AbstractResource<User, UserDTO> {
 
     @PostMapping("/reg")
     public User registerNewUser(@RequestBody User user) {
-        User registeredUser = userRepository.save(user);
-        return registeredUser;
+       return userService.registerUser(user);
     }
 
 }

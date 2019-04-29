@@ -23,7 +23,7 @@ export class NavbarComponent implements OnInit {
 
   checkOnline(): boolean {
     if (!this.authService.success) {
-      return;
+      return false;
     }
     this.loggedUser = this.appService.getUser();
     return true;

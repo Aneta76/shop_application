@@ -45,10 +45,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .defaultAuthenticationEntryPointFor(basicAuthenticationEntryPoint, new AntPathRequestMatcher("/api/**"))
                     .and()
                 .authorizeRequests()
-                .antMatchers("/api/products/**").permitAll()
-                .antMatchers("/api/category/all").permitAll()
-                .antMatchers("/api/user-panel").permitAll()
-                .antMatchers("/api/users/reg").permitAll()
+                .antMatchers("/products/**").permitAll()
+                .antMatchers("/category/all").hasRole("USER")
+                .antMatchers("/user-panel").permitAll()
+                .antMatchers("/users/reg").permitAll()
                 .anyRequest().authenticated()
                     .and()
                 .formLogin()
@@ -59,7 +59,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .logout()
                 .logoutUrl("/api/logout")
                 .logoutSuccessHandler(logoutSuccessHandler)
-                .deleteCookies("JSESSIONID");
+                .deleteCookies("JSESSIONID").invalidateHttpSession(true);
 
 
     }

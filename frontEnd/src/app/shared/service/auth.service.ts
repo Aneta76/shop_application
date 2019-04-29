@@ -43,7 +43,7 @@ export class AuthService {
       this.appService.logout();
       this.success = false;
       return data;
-    });
+    }).subscribe();
   }
 
 }

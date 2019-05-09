@@ -37,6 +37,15 @@ export class AppService {
     }));
   }
 
+  public getLoggedUserFullInfo(): Observable<RegisterUserModel> {
+    return this.http.get('/api/logged-user-full-info').pipe(map((loggedUser: RegisterUserModel) => {
+      this.loggedUser = loggedUser;
+      this.loggedUserStream.next(this.loggedUser);
+      return this.loggedUser;
+    }));
+  }
+
+
   public isLoggedIn(): boolean {
     return !!this.loggedUser;
   }

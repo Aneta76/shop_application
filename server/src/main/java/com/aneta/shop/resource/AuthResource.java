@@ -3,6 +3,7 @@ package com.aneta.shop.resource;
 
 import com.aneta.shop.converter.UserConverter;
 import com.aneta.shop.dto.UserDTO;
+import com.aneta.shop.entity.User;
 import com.aneta.shop.security.SecurityUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,5 +24,10 @@ public class AuthResource {
     @GetMapping("/logged-user-info")
     public UserDTO getLoggedUserInfo() {
         return securityUtils.getCurrentUser().map(userConverter::convertToDTO).orElse(null);
+    }
+
+    @GetMapping("/logged-user-full-info")
+    public User getFullUserInfo(){
+       return securityUtils.getCurrentUser().get();
     }
 }

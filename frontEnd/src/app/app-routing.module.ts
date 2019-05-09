@@ -12,6 +12,8 @@ import {CategoriesResolver} from './shared/resolve/category.resolve';
 import {AdminPanelComponent} from './admin-panel/admin-panel.component';
 import {ProductCategoriesComponent} from './admin-panel/product-categories/product-categories.component';
 import {ProductsByCategoryComponent} from './admin-panel/products-by-category/products-by-category.component';
+import {AccountComponent} from './user-panel/account/account.component';
+import {UserResolve} from './shared/resolve/user.resolve';
 
 const routes: Routes = [
   {
@@ -65,6 +67,15 @@ const routes: Routes = [
   {
     path: 'user-panel',
     component: UserPanelComponent,
+    children: [
+      {
+        path: 'account',
+        component: AccountComponent,
+        resolve: {
+          userData: UserResolve
+        }
+      },
+    ]
   },
   {
     path: 'admin-panel',

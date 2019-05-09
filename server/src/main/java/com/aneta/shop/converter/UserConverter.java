@@ -1,8 +1,8 @@
 package com.aneta.shop.converter;
 
 import com.aneta.shop.dto.UserDTO;
-import com.aneta.shop.entity.Role;
 import com.aneta.shop.entity.User;
+import com.aneta.shop.respository.UserRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.stream.Collectors;
@@ -10,9 +10,16 @@ import java.util.stream.Collectors;
 @Component
 public class UserConverter implements Converter<User, UserDTO> {
 
+    private final UserRepository userRepository;
+
+    public UserConverter(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
     @Override
     public User convertToEntity(UserDTO dto) {
-        throw new UnsupportedOperationException();
+        User user = userRepository.getOne(dto.getId());
+        return user;
     }
 
     @Override

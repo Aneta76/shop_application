@@ -1,15 +1,16 @@
-<form class="form-inline my-2 my-lg-0">
-  <div>
+<div *ngIf="!isLoggedIn()">
+  <form class="form-inline my-2 my-lg-0">
     <input class="form-control mr-sm-2" [(ngModel)]="userData.email" name="email" placeholder="Email" type="text">
+    <div>
+      <input class="form-control mr-sm-2" [(ngModel)]="userData.password" name="password" placeholder="Password"
+             type="password">
+    </div>
+    <button class="btn btn-outline-success my-2 my-sm-0" (click)="logIn()">Sign in</button>
+  </form>
+  <div>
+    <p class="userMessages"> Aren't you registered user yet? Sign up by pressing the button below.</p>
   </div>
   <div>
-    <input class="form-control mr-sm-2" [(ngModel)]="userData.password" name="password" placeholder="Password" type="password">
+    <button routerLink="/register" class="btn btn-outline-success my-2 my-sm-0">Sign up</button>
   </div>
-  <button class="btn btn-outline-success my-2 my-sm-0" (click)="logIn()">Sign in</button>
-</form>
-<div>
-  <p class="userMessages"> Aren't you registered user yet? Sign up by pressing the button below.</p>
-</div>
-<div>
-  <button routerLink="/register" class="btn btn-outline-success my-2 my-sm-0">Sign up</button>
 </div>

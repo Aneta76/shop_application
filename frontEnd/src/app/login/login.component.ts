@@ -21,9 +21,9 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.appService.getLoggedUserStream().subscribe(() => {
-      if (this.appService.isLoggedIn()) {
-        this.router.navigate(['/home']);
-      }
+      // if (this.appService.isLoggedIn()) {
+      // this.router.navigate(['/home']); // issue is here
+      // }
     });
   }
 
@@ -31,6 +31,10 @@ export class LoginComponent implements OnInit {
     this.authService.login(this.userData).subscribe((data) => {
       this.router.navigate(['/user-panel']);
     });
+  }
+
+  isLoggedIn(): boolean {
+    return this.appService.isLoggedIn();
   }
 
   back() {

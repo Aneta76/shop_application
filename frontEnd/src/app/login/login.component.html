@@ -1,3 +1,6 @@
+<div *ngIf="isLoggedIn()">
+  <p>You are already logged in</p>
+</div>
 <div *ngIf="!isLoggedIn()">
   <form class="form-inline my-2 my-lg-0">
     <input class="form-control mr-sm-2" [(ngModel)]="userData.email" name="email" placeholder="Email" type="text">

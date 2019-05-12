@@ -22,7 +22,7 @@ import {MenuComponent} from './menu/menu.component';
 import {ProductCategoryService} from './shared/service/productCategory.service';
 import {CategoriesResolver} from './shared/resolve/category.resolve';
 import {ProductsByCategoryComponent} from './admin-panel/products-by-category/products-by-category.component';
-import {RegisterService} from './shared/service/register.service';
+import {UserService} from './shared/service/user.service';
 import { AccountComponent } from './user-panel/account/account.component';
 import {UserResolve} from './shared/resolve/user.resolve';
 
@@ -49,7 +49,7 @@ import {UserResolve} from './shared/resolve/user.resolve';
     FormsModule
   ],
   providers: [ProductService, ProductsResolve, AuthService, AppService, ProductCategoryService,
-    CategoriesResolver, ProductsResolveByCategory, RegisterService, UserResolve],
+    CategoriesResolver, ProductsResolveByCategory, UserService, UserResolve],
   bootstrap: [AppComponent]
 })
 export class AppModule {

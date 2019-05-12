@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {RegisterUserModel} from '../shared/model/register-user.model';
-import {RegisterService} from '../shared/service/register.service';
+import {UserService} from '../shared/service/user.service';
 
 @Component({
   selector: 'app-register',
@@ -10,14 +10,14 @@ import {RegisterService} from '../shared/service/register.service';
 export class RegisterComponent implements OnInit {
   regUserData: RegisterUserModel = new RegisterUserModel();
 
-  constructor(private regService: RegisterService) {
+  constructor(private userService: UserService) {
   }
 
   ngOnInit() {
   }
 
   registerUser() {
-    this.regService.addUserToDataBase(this.regUserData).subscribe(
+    this.userService.saveUserData(this.regUserData).subscribe(
       data => console.log('user added')
     );
   }

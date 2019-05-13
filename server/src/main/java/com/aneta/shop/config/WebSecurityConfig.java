@@ -50,7 +50,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/api/logged-user-info").permitAll()
                 .antMatchers("/api/logged-user-full-info").permitAll()
                 .antMatchers("/api/user-panel").hasRole("USER")
-                .antMatchers("/api/users/reg").permitAll()
+                .antMatchers("/api/users/new").permitAll()
                 .anyRequest().authenticated()
                     .and()
                 .formLogin()

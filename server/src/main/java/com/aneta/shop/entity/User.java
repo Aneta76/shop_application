@@ -3,6 +3,7 @@ package com.aneta.shop.entity;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
+import java.util.LinkedList;
 import java.util.List;
 
 @Entity
@@ -45,6 +46,7 @@ public class User extends AbstractEntity {
     private List<Role> roles;
 
     public User() {
+        this.roles = new LinkedList<>();
     }
 
     public User(User user) {

@@ -27,6 +27,9 @@ export class UserService {
 
   public saveUserData(registerUser: RegisterUserModel): Observable<RegisterUserModel> {
     if (registerUser.id) {
+      console.log('id ' + registerUser.id)
+      registerUser.roles = null;
+      // JSON.stringify(registerUser.roles);
       return this.http.put('/api/users/update', registerUser).pipe(map((response: RegisterUserModel) => {
         return response;
       }));

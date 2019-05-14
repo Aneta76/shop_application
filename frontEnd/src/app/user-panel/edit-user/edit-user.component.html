@@ -1,0 +1,58 @@
+<form class="form-inline my-2 my-lg-0">
+  <div class="container">
+    <table>
+      <tr class="form-field">
+        <td><b>First name : </b></td>
+        <td><input class="form-control" type="text" [(ngModel)]="userData.firstName" name="firstName"
+                   placeholder="First Name"></td>
+      </tr>
+      <tr class="form-field">
+        <td><b>Last name : </b></td>
+        <td>
+          <input class="form-control" type="text" [(ngModel)]="userData.lastName" name="lastName"
+                 placeholder="Last Name">
+        </td>
+      </tr>
+      <tr class="form-field">
+        <td><b>Address line : </b></td>
+        <td><input class="form-control" type="text" [(ngModel)]="userData.addressLine" name="addressLine"
+                   placeholder="Address line">
+        </td>
+      </tr>
+      <tr class="form-field">
+        <td><b>City : </b></td>
+        <td><input class="form-control" type="text" [(ngModel)]="userData.city" name="city" placeholder="City"></td>
+      </tr>
+      <tr class="form-field">
+        <td><b>Country : </b></td>
+        <td><input class="form-control" type="text" [(ngModel)]="userData.country" name="country"
+                   placeholder="Country"></td>
+      </tr>
+      <tr class="form-field">
+        <td><b>Zip code : </b></td>
+        <td><input class="form-control" type="text" [(ngModel)]="userData.zipCode" name="zipCode"
+                   placeholder="Zip code"></td>
+      </tr>
+      <tr class="form-field">
+        <td><b>Phone Number : </b></td>
+        <td><input class="form-control" type="text" [(ngModel)]="userData.phoneNumber" name="phoneNumber"
+                   placeholder="Phone number"></td>
+      </tr>
+      <tr class="form-field">
+        <td><b>Email : </b></td>
+        <td><input class="form-control" type="text" [(ngModel)]="userData.email" name="email" placeholder="Email">
+        </td>
+      </tr>
+      <tr class="form-field">
+        <td><b>Password : </b></td>
+        <td><input class="form-control" type="password" [(ngModel)]="userData.password" name="password"
+                   placeholder="Password"
+                   required="required"></td>
+      </tr>
+    </table>
+  </div>
+</form>
+<div>
+  <button class="btn btn-outline-success my-2 my-sm-0"(click)="updateUserData()">Save changes
+  </button>
+</div>

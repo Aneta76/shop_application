@@ -14,6 +14,7 @@ import {ProductCategoriesComponent} from './admin-panel/product-categories/produ
 import {ProductsByCategoryComponent} from './admin-panel/products-by-category/products-by-category.component';
 import {AccountComponent} from './user-panel/account/account.component';
 import {UserResolve} from './shared/resolve/user.resolve';
+import {EditUserComponent} from './user-panel/edit-user/edit-user.component';
 
 const routes: Routes = [
   {
@@ -71,6 +72,13 @@ const routes: Routes = [
       {
         path: 'account',
         component: AccountComponent,
+        resolve: {
+          userData: UserResolve
+        }
+      },
+      {
+        path: 'edit',
+        component: EditUserComponent,
         resolve: {
           userData: UserResolve
         }

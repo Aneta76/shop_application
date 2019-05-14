@@ -25,6 +25,7 @@ import {ProductsByCategoryComponent} from './admin-panel/products-by-category/pr
 import {UserService} from './shared/service/user.service';
 import { AccountComponent } from './user-panel/account/account.component';
 import {UserResolve} from './shared/resolve/user.resolve';
+import { EditUserComponent } from './user-panel/edit-user/edit-user.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import {UserResolve} from './shared/resolve/user.resolve';
     MenuComponent,
     ProductsByCategoryComponent,
     AccountComponent,
+    EditUserComponent,
   ],
   imports: [
     BrowserModule,

@@ -33,6 +33,7 @@ public class UserConverter implements Converter<User, UserDTO> {
             roleList.add(new Role("USER"));
             roleRepository.save(new Role("USER"));
         }
+        user.setId(dto.getId());
         user.setFirstName(dto.getFirstName());
         user.setLastName(dto.getLastName());
         user.setZipCode(dto.getZipCode());

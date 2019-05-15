@@ -37,6 +37,18 @@ export class AppService {
     }));
   }
 
+  public getRole() {
+    const roles = this.loggedUser.roles;
+    //  console.log('roles: ', roles);
+    let rolee: string;
+    let role: string;
+    for (role of roles) {
+      // console.log('rolee: ', rolee);
+      rolee = role;
+    }
+    return rolee;
+  }
+
   public getLoggedUserFullInfo(): Observable<RegisterUserModel> {
     return this.http.get('/api/logged-user-full-info').pipe(map((loggedUser: RegisterUserModel) => {
       this.loggedUser = loggedUser;

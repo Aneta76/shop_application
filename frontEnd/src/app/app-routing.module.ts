@@ -97,8 +97,15 @@ const routes: Routes = [
         }
       },
       {
+        path: 'account',
+        component: AccountComponent,
+        resolve: {
+          userData: UserResolve
+        }
+      },
+      {
         path: '**',
-        redirectTo: 'products',
+        redirectTo: 'account',
         pathMatch: 'prefix'
       }
     ],

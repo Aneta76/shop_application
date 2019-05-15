@@ -13,11 +13,11 @@ export class AccountComponent implements OnInit {
   userData: RegisterUserModel = new RegisterUserModel();
 
   constructor(private appService: AppService,
-              private route: ActivatedRoute
-              ) {
+              private route: ActivatedRoute) {
   }
 
   ngOnInit() {
     this.userData = this.route.snapshot.data['userData'];
+    // this.appService.getLoggedUserFullInfo().subscribe(user => this.userData = user);
   }
 }

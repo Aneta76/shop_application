@@ -17,7 +17,14 @@
     </li>
   </ul>
   <div *ngIf="checkOnline()">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink="/user-panel">My account</button>
+    <span *ngIf="!checkIfAdmin(); else admin">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink="/user-panel">My account</button>
+    </span>
+      <ng-template #admin>
+        <span>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink="/admin-panel">Admin panel</button>
+    </span>
+      </ng-template>
     <div style="float: left ; margin-right: 30px; margin-top: 13px"><h5 class="ml-3">{{loggedUser.firstName}}, you are logged in !</h5>
     </div>
     <div style="float: right ; margin-right: 30px">

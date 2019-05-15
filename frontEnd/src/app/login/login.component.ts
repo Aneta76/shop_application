@@ -29,7 +29,11 @@ export class LoginComponent implements OnInit {
 
   logIn() {
     this.authService.login(this.userData).subscribe((data) => {
+      if (this.appService.getRole() === 'ADMIN') {
+        this.router.navigate(['/admin-panel']);
+      } else {
       this.router.navigate(['/user-panel']);
+    }
     });
   }
 

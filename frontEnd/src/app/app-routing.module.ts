@@ -103,11 +103,11 @@ const routes: Routes = [
           userData: UserResolve
         }
       },
-      {
-        path: '**',
-        redirectTo: 'account',
-        pathMatch: 'prefix'
-      }
+      // {
+      //   path: '**',
+      //   redirectTo: 'account',
+      //   pathMatch: 'prefix'
+      // }
     ],
   }
 ];

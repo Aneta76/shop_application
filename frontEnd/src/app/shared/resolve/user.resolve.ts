@@ -9,6 +9,6 @@ export class UserResolve implements Resolve<any> {
   }
 
   resolve() {
-    return this.appService.getLoggedUserFullInfo();
+    return this.appService.getUser();
   }
 }

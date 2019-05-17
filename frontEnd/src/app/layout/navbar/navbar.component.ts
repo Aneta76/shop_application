@@ -23,11 +23,11 @@ export class NavbarComponent implements OnInit {
 
   checkIfAdmin(): boolean {
     if (this.appService.getRole() === 'ADMIN') {
-      console.log('dla true: ', this.appService.getRole());
+      console.log('for true: ', this.appService.getRole());
      //  console.log('ADMIN TRUE');
       return true;
     } else {
-      console.log('dla false: ', this.appService.getRole());
+      console.log('for false: ', this.appService.getRole());
       // console.log('ADMIN FALSE');
       return false;
     }

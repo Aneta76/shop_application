@@ -23,9 +23,10 @@ import {ProductCategoryService} from './shared/service/productCategory.service';
 import {CategoriesResolver} from './shared/resolve/category.resolve';
 import {ProductsByCategoryComponent} from './admin-panel/products-by-category/products-by-category.component';
 import {UserService} from './shared/service/user.service';
-import { AccountComponent } from './user-panel/account/account.component';
-import {UserResolve} from './shared/resolve/user.resolve';
-import { EditUserComponent } from './user-panel/edit-user/edit-user.component';
+import {AccountComponent} from './user-panel/account/account.component';
+import {UserByIdResolve, UserResolve, UsersResolve} from './shared/resolve/user.resolve';
+import {EditUserComponent} from './user-panel/edit-user/edit-user.component';
+import {UsersComponent} from './admin-panel/users/users.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { EditUserComponent } from './user-panel/edit-user/edit-user.component';
     ProductsByCategoryComponent,
     AccountComponent,
     EditUserComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,7 @@ import { EditUserComponent } from './user-panel/edit-user/edit-user.component';
     FormsModule
   ],
   providers: [ProductService, ProductsResolve, AuthService, AppService, ProductCategoryService,
-    CategoriesResolver, ProductsResolveByCategory, UserService, UserResolve],
+    CategoriesResolver, ProductsResolveByCategory, UserService, UserResolve, UsersResolve, UserByIdResolve],
   bootstrap: [AppComponent]
 })
 export class AppModule {

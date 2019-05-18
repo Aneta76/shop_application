@@ -1,0 +1,23 @@
+<table>
+  <tr>
+    <th>User ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Actions</th>
+
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{user.id}}</td>
+    <td>{{user.firstName}}</td>
+    <td>{{user.lastName}}</td>
+    <td>{{user.email}}</td>
+    <td>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+              [routerLink]="['/', 'admin-panel','users','edit',user.id]">Edit
+      </button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink="/admin-panel">Delete</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink="/admin-panel">Send msg</button>
+    </td>
+  </tr>
+</table>

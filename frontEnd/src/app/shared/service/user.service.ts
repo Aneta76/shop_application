@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import {RegisterUserModel} from '../model/register-user.model';
-import {register} from 'ts-node';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 
@@ -10,24 +9,13 @@ import {map} from 'rxjs/operators';
 })
 
 export class UserService {
+  private users: Array<RegisterUserModel> = [];
+
   constructor(private http: HttpClient) {
   }
 
-  // public addUserToDataBase(registerUser: RegisterUserModel) {
-  //   const headers = new HttpHeaders({
-  //     ACCEPT: 'application/json',
-  //     'Content-Type': 'application/json'
-  //   });
-  //   const options = {
-  //     headers,
-  //     withCredentials: true
-  //   };
-  //   return this.http.post('/api/users/reg', registerUser, options);
-  // }
-
   public saveUserData(registerUser: RegisterUserModel): Observable<RegisterUserModel> {
     if (registerUser.id) {
-      console.log('id ' + registerUser.id)
       registerUser.roles = null;
       // JSON.stringify(registerUser.roles);
       return this.http.put('/api/users/update', registerUser).pipe(map((response: RegisterUserModel) => {
@@ -38,5 +26,18 @@ export class UserService {
         return response;
       }));
     }
+  }
+
+  public getAllUsers(): Observable<Array<RegisterUserModel>> {
+    return this.http.get('/api/users/all').pipe(map((response: Array<RegisterUserModel>) => {
+      this.users = response;
+      return this.users;
+    }));
+  }
+
+  public getUser(id: number): Observable<RegisterUserModel> {
+    return this.http.get('/api/users/all/' + id).pipe(map((response: RegisterUserModel) => {
+      return response;
+    }));
   }
 }

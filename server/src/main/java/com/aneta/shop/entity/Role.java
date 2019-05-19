@@ -2,7 +2,10 @@ package com.aneta.shop.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
 import java.util.List;
 
 @Entity
@@ -12,7 +15,7 @@ public class Role extends AbstractEntity {
     @Column
     private String name;
 
-    @ManyToMany(mappedBy = "roles", cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "roles")
     @JsonIgnoreProperties("roles")
     private List<User> users;
 

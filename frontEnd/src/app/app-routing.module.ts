@@ -118,6 +118,13 @@ const routes: Routes = [
           userData: UserByIdResolve
         }
       },
+      {
+        path: 'users/delete/:id',
+        component: UsersComponent,
+        resolve: {
+          users: UsersResolve,
+        }
+      },
       // {
       //   path: '**',
       //   redirectTo: 'account',

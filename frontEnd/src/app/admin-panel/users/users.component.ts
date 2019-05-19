@@ -9,6 +9,7 @@ import {UserService} from '../../shared/service/user.service';
 })
 export class UsersComponent implements OnInit {
   users: Array<RegisterUserModel> = [];
+  user: RegisterUserModel;
 
   constructor(private userService: UserService) {
   }
@@ -17,4 +18,9 @@ export class UsersComponent implements OnInit {
     this.userService.getAllUsers().subscribe(data => this.users = data);
   }
 
+  public removeUser(id: number, index: number) {
+    this.userService.deleteUser(id).subscribe(() => {
+      this.users.splice(index, 1);
+    });
+  }
 }

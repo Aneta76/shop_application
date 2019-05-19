@@ -51,6 +51,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/api/logged-user-full-info").permitAll()
                 .antMatchers("/api/users/all").permitAll()
                 .antMatchers("/api/user-panel").hasRole("USER")
+                .antMatchers("/api/users/delete/**").permitAll()
                 .antMatchers("/api/users/new").permitAll()
                 .anyRequest().authenticated()
                     .and()

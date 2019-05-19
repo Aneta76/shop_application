@@ -7,7 +7,7 @@
     <th>Actions</th>
 
   </tr>
-  <tr *ngFor="let user of users">
+  <tr *ngFor="let user of users; let rowIndex = index">
     <td>{{user.id}}</td>
     <td>{{user.firstName}}</td>
     <td>{{user.lastName}}</td>
@@ -16,7 +16,9 @@
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
               [routerLink]="['/', 'admin-panel','users','edit',user.id]">Edit
       </button>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink="/admin-panel">Delete</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" (click)="removeUser(user.id, rowIndex)">
+        Delete
+      </button>
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink="/admin-panel">Send msg</button>
     </td>
   </tr>

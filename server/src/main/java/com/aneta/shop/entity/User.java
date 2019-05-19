@@ -37,7 +37,7 @@ public class User extends AbstractEntity {
     @Column
     private String password;
 
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_role",
             joinColumns = @JoinColumn(name = "id_user", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "id_role", referencedColumnName = "id"),

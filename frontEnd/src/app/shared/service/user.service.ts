@@ -40,4 +40,8 @@ export class UserService {
       return response;
     }));
   }
+
+  public deleteUser(id: number) {
+    return this.http.delete('api/users/delete/' + id);
+  }
 }

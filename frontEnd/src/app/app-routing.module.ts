@@ -16,6 +16,7 @@ import {AccountComponent} from './user-panel/account/account.component';
 import {UserByIdResolve, UserResolve, UsersResolve} from './shared/resolve/user.resolve';
 import {EditUserComponent} from './user-panel/edit-user/edit-user.component';
 import {UsersComponent} from './admin-panel/users/users.component';
+import {ProductListComponent} from './admin-panel/product-list/product-list.component';
 
 const routes: Routes = [
   {
@@ -92,9 +93,23 @@ const routes: Routes = [
     children: [
       {
         path: 'products',
-        component: ProductsComponent,
+        component: ProductListComponent,
         resolve: {
           products: ProductsResolve,
+        }
+      },
+      {
+        path: 'products/edit/:id',
+        component: EditUserComponent,
+        resolve: {
+          userData: UserByIdResolve
+        }
+      },
+      {
+        path: 'products/delete/:id',
+        component: ProductListComponent,
+        resolve: {
+          users: ProductsResolve,
         }
       },
       {

@@ -13,6 +13,7 @@ export class ProductService {
   private products: Array<ProductModel> = [];
   private productsStream: Subject<Array<ProductModel>> = new Subject();
   private productsByCategory: Array<ProductModel> = [];
+
   constructor(private http: HttpClient) {
   }
 
@@ -37,13 +38,19 @@ export class ProductService {
   }
 
   public getProductsByCategoryId(id: number): Observable<Array<ProductModel>> {
-       return this.http.get('/api/products/categories/' + id).pipe(map((response: Array<ProductModel>) => {
-       this.productsByCategory = response;
-       return this.productsByCategory;
-     }));
+    return this.http.get('/api/products/categories/' + id).pipe(map((response: Array<ProductModel>) => {
+      this.productsByCategory = response;
+      return this.productsByCategory;
+    }));
   }
 
   public getProductsStream(): Observable<Array<ProductModel>> {
     return this.productsStream.pipe(startWith(this.products));
   }
+
+  public removeProduct(id: number) {
+    return this.http.delete('/api/products/delete/' + id);
+
+  }
+
 }

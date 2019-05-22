@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 import {ProductsComponent} from './admin-panel/products/products.component';
 import {HomeComponent} from './home/home.component';
 import {LoginComponent} from './login/login.component';
-import {ProductsResolve, ProductsResolveByCategory} from './shared/resolve/product.resolve';
+import {ProductResolve, ProductsResolve, ProductsResolveByCategory} from './shared/resolve/product.resolve';
 import {RegisterComponent} from './register/register.component';
 import {UserPanelComponent} from './user-panel/user-panel.component';
 import {ContactComponent} from './contact/contact.component';
@@ -17,6 +17,7 @@ import {UserByIdResolve, UserResolve, UsersResolve} from './shared/resolve/user.
 import {EditUserComponent} from './user-panel/edit-user/edit-user.component';
 import {UsersComponent} from './admin-panel/users/users.component';
 import {ProductListComponent} from './admin-panel/product-list/product-list.component';
+import {ProductComponent} from './admin-panel/product/product.component';
 
 const routes: Routes = [
   {
@@ -99,17 +100,21 @@ const routes: Routes = [
         }
       },
       {
+        path: 'product',
+        component: ProductComponent,
+      },
+      {
         path: 'products/edit/:id',
-        component: EditUserComponent,
+        component: ProductComponent,
         resolve: {
-          userData: UserByIdResolve
+          product: ProductResolve
         }
       },
       {
         path: 'products/delete/:id',
         component: ProductListComponent,
         resolve: {
-          users: ProductsResolve,
+          products: ProductsResolve,
         }
       },
       {

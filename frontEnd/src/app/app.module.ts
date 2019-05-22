@@ -28,6 +28,7 @@ import {UserByIdResolve, UserResolve, UsersResolve} from './shared/resolve/user.
 import {EditUserComponent} from './user-panel/edit-user/edit-user.component';
 import {UsersComponent} from './admin-panel/users/users.component';
 import { ProductListComponent } from './admin-panel/product-list/product-list.component';
+import { ProductComponent } from './admin-panel/product/product.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { ProductListComponent } from './admin-panel/product-list/product-list.co
     EditUserComponent,
     UsersComponent,
     ProductListComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,

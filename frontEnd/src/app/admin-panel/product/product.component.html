@@ -1,0 +1,40 @@
+<form class="form-inline my-2 my-lg-0">
+  <div class="container">
+    <h1>Add new product</h1>
+    <table>
+      <tr class="form-field">
+        <td><b>Id : </b></td>
+        <td><input class="form-control" type="text" [(ngModel)]="product.id" name="Id" [readonly]="true"
+                   placeholder="Id"
+        ></td>
+      </tr>
+      <tr class="form-field">
+        <td><b>Name : </b></td>
+        <td><input class="form-control" type="text" [(ngModel)]="product.name" name="name"
+                   placeholder="Name"></td>
+      </tr>
+      <tr class="form-field">
+        <td><b>Price : </b></td>
+        <td>
+          <input class="form-control" type="text" [(ngModel)]="product.price" name="price"
+                 placeholder="Price">
+        </td>
+      </tr>
+      <tr class="form-field">
+        <td><b>Description : </b></td>
+        <td><input class="form-control" type="text" [(ngModel)]="product.description" name="description"
+                   placeholder="Description"></td>
+      </tr>
+      <tr class="form-field">
+        <td><b>Category : </b></td>
+        <td><input class="form-control" type="text" [(ngModel)]="product.category.name" name="category" placeholder="Category">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="container">
+    <button class="btn btn-outline-success my-4 mx-3" routerLink="/admin-panel/products" (click)="addNewProduct()">Add
+      product
+    </button>
+  </div>
+</form>

@@ -1,6 +1,11 @@
 <form class="form-inline my-2 my-lg-0">
   <div class="container">
-    <h1>Add new product</h1>
+    <div *ngIf="isNew()">
+      <h1>Add new product</h1>
+    </div>
+    <div *ngIf="!isNew()">
+      <h1>Edit product</h1>
+    </div>
     <table>
       <tr class="form-field">
         <td><b>Id : </b></td>
@@ -27,14 +32,24 @@
       </tr>
       <tr class="form-field">
         <td><b>Category : </b></td>
-        <td><input class="form-control" type="text" [(ngModel)]="product.category.name" name="category" placeholder="Category">
+        <td>
+          <select [(ngModel)]="product.category.id" name="category">
+            <option *ngFor="let category of categories" [value]="category.id">{{category.name}}, {{category.id}}</option>
+          </select>
         </td>
       </tr>
     </table>
   </div>
-  <div class="container">
+  <div *ngIf="isNew(); else isOld">
     <button class="btn btn-outline-success my-4 mx-3" routerLink="/admin-panel/products" (click)="addNewProduct()">Add
       product
     </button>
+  </div>
+  <div>
+    <ng-template #isOld>
+      <button class="btn btn-outline-success my-4 mx-3" routerLink="/admin-panel/products" (click)="addNewProduct()">
+        Save changes
+      </button>
+    </ng-template>
   </div>
 </form>

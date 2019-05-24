@@ -94,10 +94,7 @@ const routes: Routes = [
     children: [
       {
         path: 'products',
-        component: ProductListComponent,
-        resolve: {
-          products: ProductsResolve,
-        }
+        component: ProductListComponent
       },
       {
         path: 'product',
@@ -127,9 +124,6 @@ const routes: Routes = [
       {
         path: 'users',
         component: UsersComponent,
-        resolve: {
-          users: UsersResolve,
-        }
       },
       {
         path: 'users/edit/:id',

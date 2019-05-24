@@ -49,8 +49,14 @@ export class ProductService {
   }
 
   public saveProduct(product: ProductModel): Observable<ProductModel> {
-    return this.http.post('/api/products/new', product).pipe(map((response: ProductModel) => {
-      return response;
-    }));
+    if (!product.id) {
+      return this.http.post('/api/products/new', product).pipe(map((response: ProductModel) => {
+        return response;
+      }));
+    } else {
+      return this.http.put('/api/products/update', product).pipe(map((response: ProductModel) => {
+        return response;
+      }));
+    }
   }
 }

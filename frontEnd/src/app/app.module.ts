@@ -7,7 +7,7 @@ import {AdminPanelComponent} from './admin-panel/admin-panel.component';
 import {AppRouting} from './app-routing.module';
 import {HttpClientModule} from '@angular/common/http';
 import {ProductService} from './shared/service/product.service';
-import {ProductsResolve, ProductsResolveByCategory} from './shared/resolve/product.resolve';
+import {ProductResolve, ProductsResolve, ProductsResolveByCategory} from './shared/resolve/product.resolve';
 import {AppComponent} from './app.component';
 import {HomeComponent} from './home/home.component';
 import {NavbarComponent} from './layout/navbar/navbar.component';
@@ -27,8 +27,8 @@ import {AccountComponent} from './user-panel/account/account.component';
 import {UserByIdResolve, UserResolve, UsersResolve} from './shared/resolve/user.resolve';
 import {EditUserComponent} from './user-panel/edit-user/edit-user.component';
 import {UsersComponent} from './admin-panel/users/users.component';
-import { ProductListComponent } from './admin-panel/product-list/product-list.component';
-import { ProductComponent } from './admin-panel/product/product.component';
+import {ProductListComponent} from './admin-panel/product-list/product-list.component';
+import {ProductComponent} from './admin-panel/product/product.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +56,7 @@ import { ProductComponent } from './admin-panel/product/product.component';
     AppRouting,
     FormsModule
   ],
-  providers: [ProductService, ProductsResolve, AuthService, AppService, ProductCategoryService,
+  providers: [ProductService, ProductsResolve, ProductResolve, AuthService, AppService, ProductCategoryService,
     CategoriesResolver, ProductsResolveByCategory, UserService, UserResolve, UsersResolve, UserByIdResolve],
   bootstrap: [AppComponent]
 })

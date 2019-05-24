@@ -4,10 +4,6 @@
     <list default="true" id="565c6643-719f-424a-afc1-50ceefaa850d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/product/product.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/product/product.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/product/product.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/product/product.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,23 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="users.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/users/users.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="edit-user.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontEnd/src/app/user-panel/edit-user/edit-user.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="23" column="33" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="33" />
+              <caret line="23" column="96" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -49,8 +33,26 @@
       <file leaf-file-name="product.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product/product.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="36" column="76" selection-start-line="36" selection-start-column="76" selection-end-line="36" selection-end-column="76" />
+            <state relative-caret-position="425">
+              <caret line="40" column="12" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="62" column="25" lean-forward="true" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -58,8 +60,8 @@
       <file leaf-file-name="product.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product/product.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+            <state relative-caret-position="493">
+              <caret line="29" column="109" lean-forward="true" selection-start-line="29" selection-start-column="109" selection-end-line="29" selection-end-column="109" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -82,11 +84,32 @@
       <file leaf-file-name="app-routing.module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
-              <caret line="96" column="39" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="39" />
+            <state relative-caret-position="177">
+              <caret line="96" column="32" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="39" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product-list.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-list/product-list.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product-list.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-list/product-list.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -98,32 +121,6 @@
               <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/user.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/AbstractResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#963#964#0" expanded="true" />
-                <element signature="e#1002#1003#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,7 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/RoleService.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/converter/RoleConverter.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/RoleServiceImpl.java" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/home/home.component.html" />
@@ -198,7 +194,6 @@
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/admin-panel.component.html" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/shared/model/product.model.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-list/product-list.component.ts" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-list/product-list.component.html" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts" />
@@ -206,6 +201,8 @@
         <option value="$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/product/product.component.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/product/product.component.html" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -271,178 +268,6 @@
             <path>
               <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="admin-panel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="admin-panel" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="admin-panel" type="462c0819:PsiDirectoryNode" />
-              <item name="product-list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="admin-panel" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="admin-panel" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="contact" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-              <item name="navbar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-              <item name="resolve" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="user-panel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="user-panel" type="462c0819:PsiDirectoryNode" />
-              <item name="account" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
-              <item name="frontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="user-panel" type="462c0819:PsiDirectoryNode" />
-              <item name="edit-user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
@@ -809,14 +634,7 @@
       <workItem from="1558268836936" duration="5645000" />
       <workItem from="1558545442253" duration="7222000" />
       <workItem from="1558632297270" duration="9009000" />
-      <workItem from="1558718389854" duration="2186000" />
-    </task>
-    <task id="LOCAL-00084" summary="added endpoints for config">
-      <created>1553543033625</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1553543033625</updated>
+      <workItem from="1558718389854" duration="5431000" />
     </task>
     <task id="LOCAL-00085" summary="added user-panel component">
       <created>1553543067599</created>
@@ -1154,11 +972,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558553289648</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="implemented save/edit product features for admin-panel">
+      <created>1558720770580</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1558720770581</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="494913000" />
+    <option name="totallyTimeSpent" value="498158000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1170,7 +995,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1193,10 +1018,10 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32897604" />
       <window_info id="npm" order="9" sideWeight="0.5036075" side_tool="true" weight="0.195629" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49626866" weight="0.3267974" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49626866" visible="true" weight="0.3267974" />
       <window_info anchor="bottom" id="Spring" order="15" weight="0.32897604" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.9248401" visible="true" weight="0.27668846" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4956427" visible="true" weight="0.17217484" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.9248401" weight="0.27668846" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4956427" visible="true" weight="0.17217484" />
       <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info id="Web" order="7" sideWeight="0.5009074" side_tool="true" weight="0.24253732" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -1313,7 +1138,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/front-end" />
     </ignored-roots>
-    <MESSAGE value="added service method for resolving products by category id" />
     <MESSAGE value="added routing to display new component" />
     <MESSAGE value="deleted unused template tags and added imports" />
     <MESSAGE value="fixed routing issue" />
@@ -1338,7 +1162,8 @@
     <MESSAGE value="added user removal feature for admin-panel" />
     <MESSAGE value="added product removal feature for admin-panel" />
     <MESSAGE value="implemented save product feature prototype for admin-panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented save product feature prototype for admin-panel" />
+    <MESSAGE value="implemented save/edit product features for admin-panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented save/edit product features for admin-panel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1346,13 +1171,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -1515,13 +1333,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/ProductResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1584,13 +1395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-list/product-list.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
@@ -1609,16 +1413,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#963#964#0" expanded="true" />
             <element signature="e#1002#1003#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-list/product-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1664,16 +1458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="96" column="39" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -1697,24 +1481,65 @@
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/user-panel/edit-user/edit-user.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="33" />
+          <caret line="23" column="96" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="96" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product/product.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        <state relative-caret-position="493">
+          <caret line="29" column="109" lean-forward="true" selection-start-line="29" selection-start-column="109" selection-end-line="29" selection-end-column="109" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="96" column="32" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-list/product-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-list/product-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="62" column="25" lean-forward="true" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product/product.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="36" column="76" selection-start-line="36" selection-start-column="76" selection-end-line="36" selection-end-column="76" />
+        <state relative-caret-position="425">
+          <caret line="40" column="12" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
         </state>
       </provider>
     </entry>

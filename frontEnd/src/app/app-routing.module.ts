@@ -1,6 +1,5 @@
 import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from '@angular/core';
-import {ProductsComponent} from './admin-panel/products/products.component';
 import {HomeComponent} from './home/home.component';
 import {LoginComponent} from './login/login.component';
 import {ProductResolve, ProductsResolve, ProductsResolveByCategory} from './shared/resolve/product.resolve';
@@ -18,6 +17,8 @@ import {EditUserComponent} from './user-panel/edit-user/edit-user.component';
 import {UsersComponent} from './admin-panel/users/users.component';
 import {ProductListComponent} from './admin-panel/product-list/product-list.component';
 import {ProductComponent} from './admin-panel/product/product.component';
+import {AdminGuard} from './shared/guard/admin.guard';
+import {LoginGuard} from './shared/guard/login.guard';
 
 const routes: Routes = [
   {
@@ -71,6 +72,7 @@ const routes: Routes = [
   {
     path: 'user-panel',
     component: UserPanelComponent,
+    canActivate: [LoginGuard],
     children: [
       {
         path: 'account',
@@ -91,6 +93,7 @@ const routes: Routes = [
   {
     path: 'admin-panel',
     component: AdminPanelComponent,
+    canActivate: [AdminGuard],
     children: [
       {
         path: 'products',

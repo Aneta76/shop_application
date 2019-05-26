@@ -29,6 +29,8 @@ import {EditUserComponent} from './user-panel/edit-user/edit-user.component';
 import {UsersComponent} from './admin-panel/users/users.component';
 import {ProductListComponent} from './admin-panel/product-list/product-list.component';
 import {ProductComponent} from './admin-panel/product/product.component';
+import {LoginGuard} from './shared/guard/login.guard';
+import {AdminGuard} from './shared/guard/admin.guard';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,8 @@ import {ProductComponent} from './admin-panel/product/product.component';
     FormsModule
   ],
   providers: [ProductService, ProductsResolve, ProductResolve, AuthService, AppService, ProductCategoryService,
-    CategoriesResolver, ProductsResolveByCategory, UserService, UserResolve, UsersResolve, UserByIdResolve],
+    CategoriesResolver, ProductsResolveByCategory, UserService, UserResolve, UsersResolve, UserByIdResolve, LoginGuard,
+    AdminGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -39,11 +39,9 @@ export class AppService {
 
   public getRole() {
     const roles = this.loggedUser.roles;
-    //  console.log('roles: ', roles);
     let rolee: string;
     let role: string;
     for (role of roles) {
-      // console.log('rolee: ', rolee);
       rolee = role;
     }
     return rolee;

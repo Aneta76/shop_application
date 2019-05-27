@@ -43,7 +43,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf().disable()
                 .exceptionHandling()
                 .defaultAuthenticationEntryPointFor(basicAuthenticationEntryPoint, new AntPathRequestMatcher("/api/**"))
-                    .and()
+                .and()
                 .authorizeRequests()
                 .antMatchers("/api/products/**").permitAll()
                 .antMatchers("/api/category/all").permitAll()
@@ -54,17 +54,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/api/users/delete/**").permitAll()
                 .antMatchers("/api/users/new").permitAll()
                 .anyRequest().authenticated()
-                    .and()
+                .and()
                 .formLogin()
                 .loginPage("/api/login").permitAll()
                 .successHandler(authenticationSuccessHandler)
                 .failureHandler(authenticationFailureHandler)
-                    .and()
+                .and()
                 .logout()
                 .logoutUrl("/api/logout")
                 .logoutSuccessHandler(logoutSuccessHandler)
                 .deleteCookies("JSESSIONID").invalidateHttpSession(true);
-
-
     }
 }

@@ -11,11 +11,22 @@ import {RegisterUserModel} from '../model/register-user.model';
 })
 export class AuthService {
 
-  success: boolean = false;
+  public success = JSON.parse(localStorage.getItem('loggedIn') || 'false');
 
   constructor(private http: HttpClient,
               private appService: AppService) {
   }
+
+
+  public setSuccess(value: boolean) {
+    this.success = value;
+    localStorage.setItem('loggedIn', 'true');
+  }
+
+  public getSuccess() {
+    return JSON.parse(localStorage.getItem('loggedIn') || this.success.toString());
+  }
+
 
   public login(userData: LoginUserModel): Observable<RegisterUserModel> {
 
@@ -33,7 +44,8 @@ export class AuthService {
 
     return this.http.post('/api/login', body, options).pipe(map((loggedUser: RegisterUserModel) => {
       this.appService.setLoggedUser(loggedUser);
-      this.success = true;
+      this.setSuccess(true);
+      localStorage.setItem('currentUser', JSON.stringify(loggedUser));
       return loggedUser;
     }));
   }
@@ -41,9 +53,10 @@ export class AuthService {
   public logout() {
     return this.http.post('/api/logout', {}).pipe((data) => {
       this.appService.logout();
-      this.success = false;
+      this.setSuccess(false);
+      localStorage.removeItem('currentUser');
+      localStorage.removeItem('loggedIn');
       return data;
     }).subscribe();
   }
-
 }

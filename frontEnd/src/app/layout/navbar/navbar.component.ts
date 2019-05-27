@@ -11,7 +11,7 @@ import {Router} from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  private loggedUser: RegisterUserModel = null;
+  private loggedUser: RegisterUserModel;
 
   constructor(private authService: AuthService,
               private appService: AppService,
@@ -22,9 +22,11 @@ export class NavbarComponent implements OnInit {
   }
 
   checkIfAdmin(): boolean {
+    this.loggedUser = JSON.parse(localStorage.getItem('currentUser'));
+    this.appService.setLoggedUser(this.loggedUser);
     if (this.appService.getRole() === 'ADMIN') {
       console.log('for true: ', this.appService.getRole());
-     //  console.log('ADMIN TRUE');
+      //  console.log('ADMIN TRUE');
       return true;
     } else {
       console.log('for false: ', this.appService.getRole());

@@ -21,9 +21,6 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.appService.getLoggedUserStream().subscribe(() => {
-      // if (this.appService.isLoggedIn()) {
-      // this.router.navigate(['/home']); // issue is here
-      // }
     });
   }
 

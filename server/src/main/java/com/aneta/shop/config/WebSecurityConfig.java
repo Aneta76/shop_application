@@ -7,7 +7,6 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
@@ -47,12 +46,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/api/products/**").permitAll()
                 .antMatchers("/api/category/all").permitAll()
-                .antMatchers("/api/logged-user-info").permitAll()
                 .antMatchers("/api/logged-user-full-info").permitAll()
-                .antMatchers("/api/users/all").permitAll()
-                .antMatchers("/api/user-panel").hasRole("USER")
-                .antMatchers("/api/users/delete/**").permitAll()
                 .antMatchers("/api/users/new").permitAll()
+                .antMatchers("/api/users/**").hasAnyAuthority("ADMIN")
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()

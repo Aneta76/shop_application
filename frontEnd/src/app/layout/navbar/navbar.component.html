@@ -6,10 +6,10 @@
     <li class="nav-item">
       <a class="nav-link" routerLink="/menu">Menu</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" *ngIf="!checkOnline()">
       <a class="nav-link" routerLink="/login">Sign in</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" *ngIf="!checkOnline()">
       <a class="nav-link" routerLink="/register">Sign up</a>
     </li>
     <li class="nav-item">
@@ -20,12 +20,14 @@
     <span *ngIf="!checkIfAdmin(); else admin">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink="/user-panel">My account</button>
     </span>
-      <ng-template #admin>
+    <ng-template #admin>
         <span>
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink="/admin-panel">Admin panel</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+                routerLink="/admin-panel">Admin panel</button>
     </span>
-      </ng-template>
-    <div style="float: left ; margin-right: 30px; margin-top: 13px"><h5 class="ml-3">{{loggedUser.firstName}}, you are logged in !</h5>
+    </ng-template>
+    <div style="float: left ; margin-right: 30px; margin-top: 13px"><h5 class="ml-3">{{loggedUser.firstName}}, you are
+      logged in !</h5>
     </div>
     <div style="float: right ; margin-right: 30px">
       <button class="btn btn-outline-success my-2 my-sm-0" (click)="logoutUser()">Logout</button>

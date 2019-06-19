@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="565c6643-719f-424a-afc1-50ceefaa850d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,47 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app-routing.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicAuthenticationEntryPoint.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/BasicAuthenticationEntryPoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="11" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="26" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="37" column="2" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="52" column="22" lean-forward="true" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+            <state relative-caret-position="200">
+              <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,45 +33,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomUserDetails.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/CustomUserDetails.java">
+      <file leaf-file-name="OrderElement.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/OrderElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="18" column="77" lean-forward="true" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+            <state relative-caret-position="102">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/user.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="58" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecurityUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/SecurityUtils.java">
+      <file leaf-file-name="AbstractResource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/AbstractResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="340">
+              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app.component.css">
+      <file leaf-file-name="ProductResource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/ProductResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="102">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/users/users.component.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="register.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/register/register.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-585" />
           </provider>
         </entry>
       </file>
@@ -186,8 +156,8 @@
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/AbstractResource.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/BasicAuthenticationEntryPoint.java" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/app.component.css" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.html" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -244,9 +214,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -437,6 +406,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_application" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -492,6 +471,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -740,14 +720,8 @@
       <workItem from="1558988934365" duration="47000" />
       <workItem from="1559907096935" duration="3700000" />
       <workItem from="1560167599450" duration="910000" />
-      <workItem from="1560878066996" duration="9473000" />
-    </task>
-    <task id="LOCAL-00089" summary="improved functionality to display username on navbar if user logged in">
-      <created>1554406062973</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1554406062973</updated>
+      <workItem from="1560878066996" duration="9765000" />
+      <workItem from="1560964677871" duration="7033000" />
     </task>
     <task id="LOCAL-00090" summary="added logout button on navbar">
       <created>1554552966612</created>
@@ -1085,11 +1059,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560887823028</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="temporary fixes for buttons visibility">
+      <created>1560888219162</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1560888219162</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="532735000" />
+    <option name="totallyTimeSpent" value="540060000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1122,11 +1103,11 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32897604" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8678038" weight="0.26143792" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8678038" visible="true" weight="0.26143792" />
       <window_info id="npm" order="9" sideWeight="0.5048544" side_tool="true" weight="0.17377399" />
       <window_info anchor="bottom" id="Spring" order="15" weight="0.32897604" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.92430705" visible="true" weight="0.2701525" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49514562" visible="true" weight="0.18336888" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.92430705" weight="0.2701525" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49514562" visible="true" weight="0.18550107" />
       <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info id="Web" order="7" sideWeight="0.5048544" side_tool="true" weight="0.17377399" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -1146,10 +1127,11 @@
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32897604" />
       <window_info id="Designer" order="3" />
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968017" weight="0.31590414" />
       <window_info anchor="bottom" id="Spring" order="15" weight="0.32897604" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="TypeScript" order="14" sideWeight="0.4989339" weight="0.20261438" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968017" weight="0.31590414" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="5" />
@@ -1157,7 +1139,6 @@
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49840087" visible="true" weight="0.32897604" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50319827" side_tool="true" weight="0.29956427" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32897604" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
@@ -1243,7 +1224,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/front-end" />
     </ignored-roots>
-    <MESSAGE value="formatted files and deleted unused imports" />
     <MESSAGE value="added user registration feature" />
     <MESSAGE value="added user's roles" />
     <MESSAGE value="changed roles approach" />
@@ -1268,7 +1248,8 @@
     <MESSAGE value="added guards" />
     <MESSAGE value="implemented localStorage" />
     <MESSAGE value="changed security config" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed security config" />
+    <MESSAGE value="temporary fixes for buttons visibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="temporary fixes for buttons visibility" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1276,22 +1257,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/guard/authGuard.ts" />
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/guard/login.guard.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/AuthenticationSuccessHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/JWTAuthenticationToken.java" />
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/ApiAuthenticationProvider.java" />
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/CookieAuthenticationFilter.java" />
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/JwtAuthenticationProvider.java" />
@@ -1322,24 +1287,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/app.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/login/login.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/auth.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1354,10 +1305,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-          <folding>
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1365,27 +1312,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/ProductResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/CustomPasswordEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1413,20 +1339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/AbstractResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/user.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/register/register.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1448,13 +1360,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/admin-panel.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1463,14 +1369,12 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/register/register.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-585" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -1495,13 +1399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/AuthenticationSuccessHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/SecurityUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1516,10 +1413,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/CustomUserDetailsService.java">
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="561">
+          <caret line="37" column="2" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/BasicAuthenticationEntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1527,6 +1431,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-34">
           <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -1540,34 +1451,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/BasicAuthenticationEntryPoint.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/AuthenticationSuccessHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+        <state relative-caret-position="85">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.ts">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/CustomUserDetailsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="37" column="2" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="2" />
+        <state relative-caret-position="85">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/CustomPasswordEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/app.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="37" column="3" lean-forward="true" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/ProductResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/AbstractResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.2.RELEASE/spring-security-config-5.1.2.RELEASE.jar!/org/springframework/security/config/annotation/web/configurers/ExpressionUrlAuthorizationConfigurer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="181" column="86" selection-start-line="181" selection-start-column="86" selection-end-line="181" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/user.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/productCategory.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="52" column="22" lean-forward="true" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        <state relative-caret-position="200">
+          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.html">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/OrderElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="11" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="26" selection-end-column="11" />
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>

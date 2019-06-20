@@ -1,3 +1,14 @@
 .userMessages {
   margin-top: 20px;
 }
+
+/*navbar buttons*/
+
+.navLoggedUser {
+  margin-top: 13px;
+  margin-right: 20px;
+}
+
+.cartBtnDiv {
+  margin-left: 10px;
+}

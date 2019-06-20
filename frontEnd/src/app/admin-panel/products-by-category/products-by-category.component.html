@@ -10,7 +10,7 @@
       <div class="product-content">
         <h1>{{product.name}}</h1>
         <p>{{product.description}}</p>
-        <div class="buttons">
+        <div class="buttons" *ngIf="checkOnlineStatus()">
           <a class="button add" routerLink="/home">Add to Cart</a>
           <span class="button" id="price">$59,99</span>
         </div>

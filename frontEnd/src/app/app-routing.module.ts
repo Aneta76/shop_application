@@ -19,6 +19,7 @@ import {ProductListComponent} from './admin-panel/product-list/product-list.comp
 import {ProductComponent} from './admin-panel/product/product.component';
 import {AdminGuard} from './shared/guard/admin.guard';
 import {LoginGuard} from './shared/guard/login.guard';
+import {CartComponent} from './cart/cart.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,13 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+  },
+  {
+    path: 'cart',
+    component: CartComponent,
+    // resolve: {
+    //   product: ProductResolve,
+    // }
   },
   {
     path: 'menu',

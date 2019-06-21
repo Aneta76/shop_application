@@ -1,4 +1,4 @@
-<div class="container" *ngFor="let product of products">
+<div class="container" *ngFor="let item of items">
   <div class="product">
     <div class="img-container">
       <img
@@ -6,10 +6,10 @@
     </div>
     <div class="product-info">
       <div class="product-content">
-        <h1>{{product.name}}</h1>
-        <p>{{product.description}}</p>
+        <h1>{{item.name}}</h1>
+        <p>{{item.description}}</p>
         <div class="buttons">
-          <a *ngIf="checkIfOnline()" class="button add" (click)="addToCart(product.id)">Add to Cart</a>
+          <a class="button add" href="#">Remove</a>
           <span class="button" id="price">$59,99</span>
         </div>
       </div>

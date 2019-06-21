@@ -3,6 +3,7 @@ import {ProductModel} from '../../shared/model/product.model';
 import {ProductService} from '../../shared/service/product.service';
 import {ActivatedRoute} from '@angular/router';
 import {AppService} from '../../shared/service/app.service';
+import {CartService} from '../../shared/service/cart.service';
 
 @Component({
   selector: 'app-products',
@@ -15,7 +16,8 @@ export class ProductsComponent implements OnInit {
 
   constructor(private productService: ProductService,
               private route: ActivatedRoute,
-              private appService: AppService) {
+              private appService: AppService,
+              private cartService: CartService) {
   }
 
   ngOnInit() {
@@ -24,6 +26,10 @@ export class ProductsComponent implements OnInit {
 
   checkIfOnline(): boolean {
     return this.appService.isLoggedIn();
+  }
+
+  addToCart(id: number) {
+      this.cartService.addProductToCart(id);
   }
 }
 

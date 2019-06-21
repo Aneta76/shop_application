@@ -1,6 +1,6 @@
-import {OrderElement} from './order-element.model';
+import {OrderElementModel} from './order-element.model';
 
 export class Cartmodel {
-  orderElement: OrderElement = new OrderElement();
+  orderElement: Array<OrderElementModel> = [];
   orderTime: Date = new Date();
 }

@@ -31,6 +31,8 @@ import {ProductListComponent} from './admin-panel/product-list/product-list.comp
 import {ProductComponent} from './admin-panel/product/product.component';
 import {LoginGuard} from './shared/guard/login.guard';
 import {AdminGuard} from './shared/guard/admin.guard';
+import {CartComponent} from './cart/cart.component';
+import {CartService} from './shared/service/cart.service';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,7 @@ import {AdminGuard} from './shared/guard/admin.guard';
     UsersComponent,
     ProductListComponent,
     ProductComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,7 +63,7 @@ import {AdminGuard} from './shared/guard/admin.guard';
   ],
   providers: [ProductService, ProductsResolve, ProductResolve, AuthService, AppService, ProductCategoryService,
     CategoriesResolver, ProductsResolveByCategory, UserService, UserResolve, UsersResolve, UserByIdResolve, LoginGuard,
-    AdminGuard],
+    AdminGuard, CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -1,6 +1,6 @@
 import {ProductModel} from './product.model';
 
-export class OrderElement {
+export class OrderElementModel {
   product: ProductModel = new ProductModel();
   quantity: number = null;
 }

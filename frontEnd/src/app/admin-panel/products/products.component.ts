@@ -13,6 +13,7 @@ import {CartService} from '../../shared/service/cart.service';
 export class ProductsComponent implements OnInit {
 
   products: Array<ProductModel> = [];
+  product: ProductModel = new ProductModel();
 
   constructor(private productService: ProductService,
               private route: ActivatedRoute,
@@ -28,8 +29,10 @@ export class ProductsComponent implements OnInit {
     return this.appService.isLoggedIn();
   }
 
-  addToCart(id: number) {
-      this.cartService.addProductToCart(id);
+  addToCart(product: ProductModel) {
+    this.product = product;
+    this.cartService.addProductToCart(this.product);
   }
+
 }
 

@@ -1,22 +1,25 @@
 import {Component, OnInit} from '@angular/core';
 import {OrderElementModel} from '../shared/model/order-element.model';
 import {Cartmodel} from '../shared/model/cart-model.model';
-import {CartService} from '../shared/service/cart.service';
 
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
+  styleUrls: ['./../admin-panel/products/products.component.css']
 })
 export class CartComponent implements OnInit {
   items: Array<OrderElementModel> = [];
-  orderElement: OrderElementModel = new OrderElementModel();
   cart: Cartmodel = new Cartmodel();
 
-  constructor(private cartService: CartService) {
+  constructor() {
   }
 
   ngOnInit() {
-    this.items = this.cartService.orderElementList;
+    JSON.parse(localStorage.getItem('orderElementList'));
   }
+
+  removeProduct(index: number) {
+    this.items.splice(index, 1);
+  }
+
 }

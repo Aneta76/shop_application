@@ -20,8 +20,14 @@ export class CartService {
       this.orderElementList = JSON.parse(localStorage.getItem('orderElementList'));
     }
     this.orderElement.product = product;
+    console.log('this.orderElement.product: ', this.orderElement.product);
     this.orderElement.quantity = 1;
     this.orderElementList.push(this.orderElement);
     localStorage.setItem('orderElementList', JSON.stringify(this.orderElementList));
+    console.log('list: ', this.orderElementList);
+  }
+
+  getCart() {
+    return this.orderElementList;
   }
 }

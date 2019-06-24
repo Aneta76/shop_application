@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="565c6643-719f-424a-afc1-50ceefaa850d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="565c6643-719f-424a-afc1-50ceefaa850d" name="Default" comment="fixed content of cart displaying issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,17 +22,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="56" selection-start-column="56" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
@@ -43,32 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="8" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="58" lean-forward="true" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="459">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -79,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/cart.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+            <state relative-caret-position="491">
+              <caret line="30" selection-start-line="30" selection-end-line="30" selection-end-column="33" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -89,28 +56,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-list/product-list.component.ts">
+        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+            <state relative-caret-position="253">
+              <caret line="40" selection-start-line="40" selection-end-line="43" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/app.service.ts">
+        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/auth.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="45" column="28" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="35" />
+            <state relative-caret-position="289">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="117" />
             </state>
           </provider>
         </entry>
@@ -169,7 +127,6 @@
         <option value="$PROJECT_DIR$/frontEnd/src/app/login/login.component.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/shared/guard/authGuard.guard.ts" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.ts" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/CustomUserDetails.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/converter/UserConverter.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/AbstractResource.java" />
@@ -178,20 +135,21 @@
         <option value="$PROJECT_DIR$/frontEnd/src/app/app.component.css" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/shared/service/auth.service.ts" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.html" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/shared/model/order-element.model.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/shared/model/cart-model.model.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.html" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/shared/service/app.service.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.html" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.ts" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/service/cart.service.ts" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.html" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.html" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/service/cart.service.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.html" />
       </list>
     </option>
   </component>
@@ -385,8 +343,30 @@
               <item name="frontEnd" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin-panel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="products" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="layout" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="frontEnd" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="layout" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="navbar" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="frontEnd" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shared" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="frontEnd" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shared" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="service" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -711,21 +691,7 @@
       <workItem from="1561200135769" duration="326000" />
       <workItem from="1561200510798" duration="112000" />
       <workItem from="1561288157457" duration="15649000" />
-      <workItem from="1561396452154" duration="905000" />
-    </task>
-    <task id="LOCAL-00096" summary="added category resolver">
-      <created>1554646072062</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1554646072062</updated>
-    </task>
-    <task id="LOCAL-00097" summary="added endpoint to spring security config file">
-      <created>1554646101245</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1554646101245</updated>
+      <workItem from="1561396452154" duration="4739000" />
     </task>
     <task id="LOCAL-00098" summary="changed routing">
       <created>1554753274035</created>
@@ -1056,11 +1022,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561303991917</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="cart based on localStorage implementation (rework v.2)">
+      <created>1561398031190</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1561398031191</updated>
+    </task>
+    <task id="LOCAL-00146" summary="fixed content of cart displaying issue">
+      <created>1561401416915</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1561401416915</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="576335000" />
+    <option name="totallyTimeSpent" value="580169000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1073,6 +1053,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Persistence" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49514562" visible="true" weight="0.21108742" />
@@ -1217,8 +1198,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/front-end" />
     </ignored-roots>
-    <MESSAGE value="changed condition for displaying login form" />
-    <MESSAGE value="minor changes e.g removed unused imports" />
     <MESSAGE value="removed html tags" />
     <MESSAGE value="added buttons for navigation" />
     <MESSAGE value="register user rework" />
@@ -1242,7 +1221,9 @@
     <MESSAGE value="fixed not supported endpoint" />
     <MESSAGE value="beta cart implementation" />
     <MESSAGE value="cart based on localStorage implementation (rework v.1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="cart based on localStorage implementation (rework v.1)" />
+    <MESSAGE value="cart based on localStorage implementation (rework v.2)" />
+    <MESSAGE value="fixed content of cart displaying issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed content of cart displaying issue" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/CustomUserDetailsService.java">
@@ -1324,13 +1305,6 @@
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/model/login-user-model.model.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/model/product-category.model.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1374,13 +1348,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="35" column="78" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="78" />
         </state>
       </provider>
     </entry>
@@ -1490,30 +1457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/cart.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-list/product-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/app.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1528,10 +1471,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="48" column="3" lean-forward="true" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-list/product-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/cart.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="30" selection-start-line="30" selection-end-line="30" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
@@ -1540,42 +1537,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="40" selection-start-line="40" selection-end-line="43" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="58" lean-forward="true" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="9" selection-start-line="15" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="117" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="56" selection-start-column="56" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="8" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="289">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
         </state>
       </provider>
     </entry>

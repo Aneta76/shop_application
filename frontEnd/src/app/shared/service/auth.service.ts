@@ -56,6 +56,7 @@ export class AuthService {
       this.setSuccess(false);
       localStorage.removeItem('currentUser');
       localStorage.removeItem('loggedIn');
+      localStorage.removeItem('orderElementList');
       return data;
     }).subscribe();
   }

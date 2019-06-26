@@ -2,6 +2,9 @@ import {Injectable} from '@angular/core';
 import {OrderElementModel} from '../model/order-element.model';
 import {Cartmodel} from '../model/cart-model.model';
 import {ProductModel} from '../model/product.model';
+import {Observable} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
+import {map} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +15,7 @@ export class CartService {
   cart: Cartmodel = new Cartmodel();
   orderElementList: Array<OrderElementModel> = [];
 
-  constructor() {
+  constructor(private http: HttpClient) {
   }
 
   addProductToCart(product: ProductModel) {
@@ -20,14 +23,23 @@ export class CartService {
       this.orderElementList = JSON.parse(localStorage.getItem('orderElementList'));
     }
     this.orderElement.product = product;
-    console.log('this.orderElement.product: ', this.orderElement.product);
     this.orderElement.quantity = 1;
     this.orderElementList.push(this.orderElement);
     localStorage.setItem('orderElementList', JSON.stringify(this.orderElementList));
-    console.log('list: ', this.orderElementList);
   }
 
   getCart() {
     return this.orderElementList;
+  }
+
+  clearCart() {
+    this.orderElementList = null;
+  }
+
+  saveOrder(orderElementList: Array<OrderElementModel>): Observable<Array<OrderElementModel>> {
+    return this.http.post('/api/orders/new', orderElementList).pipe(map((response: Array<OrderElementModel>) => {
+      this.orderElementList = response;
+      return this.orderElementList;
+    }));
   }
 }

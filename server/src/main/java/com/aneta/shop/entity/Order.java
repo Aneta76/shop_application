@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import java.util.Set;
 
 @Entity
-@Table
+@Table(name = "carts")
 public class Order extends AbstractEntity {
 
     @OneToMany(mappedBy = "order")
@@ -15,7 +15,7 @@ public class Order extends AbstractEntity {
     private LocalDateTime orderPlaceTime;
 
     @ManyToOne
-    @JoinColumn (name = "id_user")
+    @JoinColumn(name = "id_user")
     private User user;
 
 

@@ -36,10 +36,12 @@ export class CartService {
     this.orderElementList = null;
   }
 
-  saveOrder(orderElementList: Array<OrderElementModel>): Observable<Array<OrderElementModel>> {
-    return this.http.post('/api/orders/new', orderElementList).pipe(map((response: Array<OrderElementModel>) => {
-      this.orderElementList = response;
-      return this.orderElementList;
+  saveOrder(): Observable<Cartmodel> {
+    this.cart.orderElement = this.orderElementList;
+    this.cart.user = JSON.parse(localStorage.getItem('currentUser'));
+    return this.http.post('/api/orders/new', this.cart).pipe(map((response: Cartmodel) => {
+      this.cart = response;
+      return this.cart;
     }));
   }
 }

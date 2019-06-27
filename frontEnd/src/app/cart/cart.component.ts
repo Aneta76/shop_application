@@ -26,8 +26,7 @@ export class CartComponent implements OnInit {
   }
 
   placeOrder() {
-    this.items = this.cartService.getCart();
-    this.cartService.saveOrder(this.items).subscribe(data => console.log ('placed order'));
+    this.cartService.saveOrder().subscribe(data => console.log ('placed order'));
     this.cartService.clearCart();
   }
 

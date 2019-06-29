@@ -2,7 +2,6 @@ import {Injectable} from '@angular/core';
 import {OrderElementModel} from '../model/order-element.model';
 import {Cartmodel} from '../model/cart-model.model';
 import {ProductModel} from '../model/product.model';
-import {Observable} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {map} from 'rxjs/operators';
 
@@ -36,12 +35,10 @@ export class CartService {
     this.orderElementList = null;
   }
 
-  saveOrder(): Observable<Cartmodel> {
-    this.cart.orderElement = this.orderElementList;
-    this.cart.user = JSON.parse(localStorage.getItem('currentUser'));
-    return this.http.post('/api/orders/new', this.cart).pipe(map((response: Cartmodel) => {
-      this.cart = response;
-      return this.cart;
-    }));
+  saveOrder(cart: Cartmodel) {
+    return this.http.post('/api/orders/new', cart).pipe(map((response: Cartmodel) => {
+      console.log('cart: ', cart);
+      return response;
+    })).subscribe(data => console.log('order placed'));
   }
 }

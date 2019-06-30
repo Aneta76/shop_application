@@ -1,5 +1,9 @@
 package com.aneta.shop.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Set;
@@ -8,7 +12,10 @@ import java.util.Set;
 @Table(name = "carts")
 public class Order extends AbstractEntity {
 
-    @OneToMany(mappedBy = "order")
+    @Fetch(FetchMode.SELECT)
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_order")
+    @JsonIgnore
     private Set<OrderElement> orderElements;
 
     @Column

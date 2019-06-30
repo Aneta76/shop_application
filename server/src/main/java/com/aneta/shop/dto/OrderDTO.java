@@ -1,6 +1,5 @@
 package com.aneta.shop.dto;
 
-import com.aneta.shop.entity.OrderElement;
 import com.aneta.shop.entity.User;
 
 import java.time.LocalDateTime;
@@ -8,17 +7,17 @@ import java.util.Set;
 
 public class OrderDTO extends AbstractDTO {
 
-    private Set<OrderElement> orderElements;
+    private Set<OrderElementDTO> orderElements;
 
     private LocalDateTime orderPlaceTime;
 
     private User user;
 
-    public Set<OrderElement> getOrderElements() {
+    public Set<OrderElementDTO> getOrderElements() {
         return orderElements;
     }
 
-    public void setOrderElements(Set<OrderElement> orderElements) {
+    public void setOrderElements(Set<OrderElementDTO> orderElements) {
         this.orderElements = orderElements;
     }
 

@@ -9,7 +9,7 @@ import {CartService} from '../../shared/service/cart.service';
 @Component({
   selector: 'app-products-by-category',
   templateUrl: './products-by-category.component.html',
-  styleUrls: ['./../products/products.component.css'],
+  styleUrls: ['./../../app.component.css'],
 })
 export class ProductsByCategoryComponent implements OnInit {
   private productsByCategory: Array<ProductModel> = [];

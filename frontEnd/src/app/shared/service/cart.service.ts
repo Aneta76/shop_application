@@ -31,6 +31,16 @@ export class CartService {
     return this.orderElementList;
   }
 
+  increaseQuantity(product: ProductModel) {
+      product.count = product.count + 1;
+      this.orderElement.quantity = product.count + 1;
+  }
+
+  decreaseQuantity(product: ProductModel) {
+      product.count = product.count - 1;
+      this.orderElement.quantity = product.count - 1;
+  }
+
   clearCart() {
     this.orderElementList = null;
   }

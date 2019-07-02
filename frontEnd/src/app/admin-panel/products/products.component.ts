@@ -4,16 +4,18 @@ import {ProductService} from '../../shared/service/product.service';
 import {ActivatedRoute} from '@angular/router';
 import {AppService} from '../../shared/service/app.service';
 import {CartService} from '../../shared/service/cart.service';
+import {OrderElementModel} from '../../shared/model/order-element.model';
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  styleUrls: ['./../../app.component.css']
 })
 export class ProductsComponent implements OnInit {
 
   products: Array<ProductModel> = [];
   product: ProductModel = new ProductModel();
+  orderElement: OrderElementModel = new OrderElementModel();
 
   constructor(private productService: ProductService,
               private route: ActivatedRoute,
@@ -29,10 +31,22 @@ export class ProductsComponent implements OnInit {
     return this.appService.isLoggedIn();
   }
 
-  addToCart(product: ProductModel) {
-    this.product = product;
-    this.cartService.addProductToCart(this.product);
+  plusQuantity(product: ProductModel) {
+    if (product.count < 99) {
+      this.cartService.increaseQuantity(product);
+    }
   }
 
-}
+  minusQuantity(product: ProductModel) {
+    if (product.count > 1) {
+      this.cartService.decreaseQuantity(product);
+    }
+  }
 
+  addToCart(product: ProductModel) {
+    this.product = product;
+    this.orderElement.product = product;
+    // this.orderElement.quantity = ... wysylanie cart ze zmienionym quantity
+    this.cartService.addProductToCart(this.product);
+  }
+}

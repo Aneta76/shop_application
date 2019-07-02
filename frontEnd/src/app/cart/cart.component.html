@@ -8,9 +8,10 @@
       <div class="product-content">
         <h1>{{item.product.name}}</h1>
         <p>{{item.product.description}}</p>
+        <p>Price: {{item.product.price}} $</p>
+        <p>Quantity: {{item.quantity}}</p>
         <div class="buttons">
           <a class="button add" (click)="removeProduct(rowIndex)">Remove</a>
-          <span class="button" id="price">$59,99</span>
         </div>
       </div>
     </div>

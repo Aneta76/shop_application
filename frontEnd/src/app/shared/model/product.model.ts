@@ -6,4 +6,5 @@ export class ProductModel {
   name: string = null;
   description: string = null;
   category: ProductCategoryModel = new ProductCategoryModel();
+  count: number = null;
 }

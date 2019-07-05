@@ -22,7 +22,7 @@ export class CartService {
       this.orderElementList = JSON.parse(localStorage.getItem('orderElementList'));
     }
     this.orderElement.product = product;
-    this.orderElement.quantity = 1;
+    this.orderElement.quantity = product.count;
     this.orderElementList.push(this.orderElement);
     localStorage.setItem('orderElementList', JSON.stringify(this.orderElementList));
   }
@@ -32,13 +32,15 @@ export class CartService {
   }
 
   increaseQuantity(product: ProductModel) {
-      product.count = product.count + 1;
-      this.orderElement.quantity = product.count + 1;
+    product.count = product.count + 1;
+    this.orderElement.quantity = product.count + 1;
+    return product.count;
   }
 
   decreaseQuantity(product: ProductModel) {
-      product.count = product.count - 1;
-      this.orderElement.quantity = product.count - 1;
+    product.count = product.count - 1;
+    this.orderElement.quantity = product.count - 1;
+    return product.count;
   }
 
   clearCart() {

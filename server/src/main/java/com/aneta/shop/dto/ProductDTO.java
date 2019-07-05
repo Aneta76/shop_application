@@ -12,6 +12,16 @@ public class ProductDTO extends AbstractDTO {
 
     private BigDecimal price;
 
+    private Long count;
+
+    public Long getCount() {
+        return count;
+    }
+
+    public void setCount(Long count) {
+        this.count = count;
+    }
+
     public BigDecimal getPrice() {
         return price;
     }

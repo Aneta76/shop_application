@@ -33,20 +33,19 @@ export class ProductsComponent implements OnInit {
 
   plusQuantity(product: ProductModel) {
     if (product.count < 99) {
-      this.cartService.increaseQuantity(product);
+      return this.cartService.increaseQuantity(product);
     }
   }
 
   minusQuantity(product: ProductModel) {
     if (product.count > 1) {
-      this.cartService.decreaseQuantity(product);
+      return this.cartService.decreaseQuantity(product);
     }
   }
 
   addToCart(product: ProductModel) {
     this.product = product;
     this.orderElement.product = product;
-    // this.orderElement.quantity = ... wysylanie cart ze zmienionym quantity
     this.cartService.addProductToCart(this.product);
   }
 }

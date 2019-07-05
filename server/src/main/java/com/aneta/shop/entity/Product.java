@@ -18,11 +18,21 @@ public class Product extends  AbstractEntity{
     @Column
     private String description;
 
+    @Column
+    private Long count;
+
     @ManyToOne
     @JoinColumn(name="id_category")
     @JsonIgnoreProperties("products")
     private ProductCategory category;
 
+    public Long getCount() {
+        return count;
+    }
+
+    public void setCount(Long count) {
+        this.count = count;
+    }
 
     public String getName() {
         return name;

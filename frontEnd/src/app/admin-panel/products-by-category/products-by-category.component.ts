@@ -36,4 +36,15 @@ export class ProductsByCategoryComponent implements OnInit {
     this.cartService.addProductToCart(product);
   }
 
+  plusQuantity(product: ProductModel) {
+    if (product.count < 99) {
+      return this.cartService.increaseQuantity(product);
+    }
+  }
+
+  minusQuantity(product: ProductModel) {
+    if (product.count > 1) {
+      return this.cartService.decreaseQuantity(product);
+    }
+  }
 }

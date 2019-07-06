@@ -9,12 +9,15 @@
         <h1>{{product.name}}</h1>
         <p>{{product.description}}</p>
         <p>Price: {{product.price}} $</p>
-        <p>Quantity:
-          <button type="button" class="btn btn-danger" (click)="minusQuantity(product)">-</button>
-          <input type="number" class="input-quantity" [(ngModel)]="product.count"/>
-          <button type="button" class="btn btn-success" (click)="plusQuantity(product)">+</button>
-        <div class="buttons">
-          <a *ngIf="checkIfOnline()" class="button add" (click)="addToCart(product)">Add to Cart</a>
+        <div *ngIf="checkIfOnline()">
+          <p>Quantity:
+            <button type="button" class="btn btn-danger" (click)="minusQuantity(product)">-</button>
+            <input type="number" class="input-quantity" [(ngModel)]="product.count"/>
+            <button type="button" class="btn btn-success" (click)="plusQuantity(product)">+</button>
+          </p>
+          <div class="buttons">
+            <a class="button add" (click)="addToCart(product)">Add to Cart</a>
+          </div>
         </div>
       </div>
     </div>

@@ -1,5 +1,4 @@
 <app-product-categories></app-product-categories>
-
 <div class="container" *ngFor="let product of productsByCategory">
   <div class="product">
     <div class="img-container">
@@ -10,9 +9,16 @@
       <div class="product-content">
         <h1>{{product.name}}</h1>
         <p>{{product.description}}</p>
-        <div class="buttons" *ngIf="checkOnlineStatus()">
-          <a class="button add" (click)="addToCart(product)">Add to Cart</a>
-          <span class="button" id="price">$59,99</span>
+        <p>Price: {{product.price}} $</p>
+        <div *ngIf="checkOnlineStatus()">
+          <p>Quantity:
+            <button type="button" class="btn btn-danger" (click)="minusQuantity(product)">-</button>
+            <input type="number" class="input-quantity" [(ngModel)]="product.count"/>
+            <button type="button" class="btn btn-success" (click)="plusQuantity(product)">+</button>
+          </p>
+          <div class="buttons">
+            <a class="button add" (click)="addToCart(product)">Add to Cart</a>
+          </div>
         </div>
       </div>
     </div>

@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="565c6643-719f-424a-afc1-50ceefaa850d" name="Default" comment="fully working changeable product quantity implementation">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="565c6643-719f-424a-afc1-50ceefaa850d" name="Default" comment="changed quantity counter visibility only if user is logged in">
+      <change afterPath="$PROJECT_DIR$/frontEnd/src/app/cart/success/success.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/src/app/cart/success/success.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/src/app/cart/success/success.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/src/app/shared/resolve/orders.resolve.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/src/app/shared/service/orders.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/src/app/user-panel/orders/orders.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/src/app/user-panel/orders/orders.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontEnd/src/app/user-panel/orders/orders.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/shared/service/cart.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/shared/service/cart.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/shared/model/cart-model.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/shared/model/cart-model.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/user-panel/user-panel.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/user-panel/user-panel.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/app/user-panel/user-panel.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/app/user-panel/user-panel.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/OrderResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/OrderResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/OrderService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,67 +53,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/cart.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+            <state relative-caret-position="459">
+              <caret line="45" selection-start-line="45" selection-end-line="48" selection-end-column="3" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="40" column="56" lean-forward="true" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+            <state relative-caret-position="236">
+              <caret line="105" column="45" lean-forward="true" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
@@ -120,12 +78,63 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/resolve/product.resolve.ts">
+        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/orders.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            <state>
+              <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/user-panel/orders/orders.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/OrderResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/user-panel/orders/orders.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/resolve/orders.resolve.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="25" column="10" selection-start-line="24" selection-start-column="4" selection-end-line="26" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,36 +166,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontEnd/src/app/login/login.component.ts" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/guard/authGuard.guard.ts" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/CustomUserDetails.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/converter/UserConverter.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/security/BasicAuthenticationEntryPoint.java" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/model/order-element.model.ts" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/shared/service/app.service.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.html" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/layout/navbar/navbar.component.ts" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/respository/OrderRepository.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/OrderService.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/shared/service/auth.service.ts" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/dto/Order.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/OrderElementService.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/respository/OrderElementRepository.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/OrderElementServiceImpl.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/OrderElementResource.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/OrderResource.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/dto/AbstractDTO.java" />
         <option value="$PROJECT_DIR$/server/pom.xml" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/AbstractResource.java" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/model/cart-model.model.ts" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/dto/UserDTO.java" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.ts" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/converter/Converter.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/dto/OrderDTO.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/dto/OrderElementDTO.java" />
@@ -197,7 +191,6 @@
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/converter/OrderConverter.java" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.css" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/app.component.css" />
-        <option value="$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.html" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/login/login.component.html" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/shared/model/product.model.ts" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Product.java" />
@@ -208,6 +201,22 @@
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.html" />
         <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.html" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.html" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/cart/success/success.component.html" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/model/cart-model.model.ts" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/OrderResource.java" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/service/orders.service.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/admin-panel/admin-panel.component.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/user-panel/user-panel.component.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/user-panel/user-panel.component.html" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/user-panel/orders/orders.component.html" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/user-panel/orders/orders.component.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/frontEnd/src/app/shared/resolve/orders.resolve.ts" />
       </list>
     </option>
   </component>
@@ -280,6 +289,22 @@
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="admin-panel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="product" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="frontEnd" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin-panel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="product-list" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="frontEnd" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin-panel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="products" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -296,6 +321,210 @@
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="cart" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="frontEnd" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cart" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="success" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="frontEnd" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="login" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="frontEnd" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shared" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="frontEnd" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shared" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="model" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="frontEnd" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shared" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resolve" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="frontEnd" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shared" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="service" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="frontEnd" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="user-panel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="frontEnd" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="user-panel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="account" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="frontEnd" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="user-panel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="edit-user" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="frontEnd" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="user-panel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="orders" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="shop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="shop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="shop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="shop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="shop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="shop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aneta" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="shop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aneta" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="shop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aneta" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="converter" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="shop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aneta" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="dto" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="shop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aneta" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="entity" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="shop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aneta" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resource" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="shop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aneta" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="respository" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="shop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aneta" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="service" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="shop_application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="shop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aneta" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="service" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Impl" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -706,14 +935,7 @@
       <workItem from="1562092710209" duration="4968000" />
       <workItem from="1562260834246" duration="6819000" />
       <workItem from="1562347150439" duration="7698000" />
-      <workItem from="1562413300202" duration="1535000" />
-    </task>
-    <task id="LOCAL-00108" summary="added service method for resolving products by category id">
-      <created>1555010618626</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1555010618626</updated>
+      <workItem from="1562413300202" duration="10428000" />
     </task>
     <task id="LOCAL-00109" summary="added routing to display new component">
       <created>1555010655616</created>
@@ -1051,11 +1273,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562354790858</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="changed quantity counter visibility only if user is logged in">
+      <created>1562414912341</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1562414912342</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="664137000" />
+    <option name="totallyTimeSpent" value="673030000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1071,7 +1300,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Persistence" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49514562" visible="true" weight="0.15671642" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49514562" visible="true" weight="0.15671642" />
       <window_info id="Structure" order="2" sideWeight="0.5043573" side_tool="true" weight="0.19349681" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
@@ -1097,7 +1326,7 @@
       <window_info anchor="bottom" id="Spring" order="14" weight="0.32827735" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.4989339" weight="0.3163597" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="17" sideWeight="0.923774" visible="true" weight="0.26868907" />
+      <window_info anchor="bottom" id="Terminal" order="17" sideWeight="0.923774" visible="true" weight="0.26868907" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1113,7 +1342,7 @@
     </layout>
     <layout-to-restore>
       <window_info id="Persistence" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49514562" visible="true" weight="0.15191898" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49514562" visible="true" weight="0.15671642" />
       <window_info id="Structure" order="2" sideWeight="0.5043573" side_tool="true" weight="0.19349681" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
@@ -1213,7 +1442,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/front-end" />
     </ignored-roots>
-    <MESSAGE value="implemented save product feature prototype for admin-panel" />
     <MESSAGE value="implemented save/edit product features for admin-panel" />
     <MESSAGE value="fixed button position" />
     <MESSAGE value="added guards" />
@@ -1238,241 +1466,10 @@
     <MESSAGE value="fixed saving OrderElements in database" />
     <MESSAGE value="changeable product quantity first implementation" />
     <MESSAGE value="fully working changeable product quantity implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="fully working changeable product quantity implementation" />
+    <MESSAGE value="changed quantity counter visibility only if user is logged in" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed quantity counter visibility only if user is logged in" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/dto/ProductCategoryDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/ProductCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2-sources.jar!/javax/persistence/OneToMany.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="105" column="24" lean-forward="true" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/OrderElementServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/converter/ProductCategoryConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/converter/RoleConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/converter/UserConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" column="62" lean-forward="true" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/AbstractServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="35" column="72" lean-forward="true" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/converter/OrderConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/dto/OrderDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/converter/OrderElementConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/OrderElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/user-panel/user-panel.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/user-panel/user-panel.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/admin-panel.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/model/order-element.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/user-panel/edit-user/edit-user.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="42" column="130" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/model/login-user-model.model.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/model/register-user.model.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/model/cart-model.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/users/users.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/register/register.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="12" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="127" column="34" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product/product.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-list/product-list.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product/product.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-categories/product-categories.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1484,13 +1481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
           <caret line="129" column="62" lean-forward="true" selection-start-line="128" selection-start-column="67" selection-end-line="129" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="24" column="27" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="24" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1536,55 +1526,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/resolve/product.resolve.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/cart.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1595,10 +1538,74 @@
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products/products.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/AbstractResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/cart/success/success.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="72" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/product.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/user-panel/edit-user/edit-user.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/user-panel/account/account.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product/product.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/cart/cart.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1609,10 +1616,151 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product/product.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="40" column="56" lean-forward="true" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+        <state>
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/converter/OrderConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/converter/OrderElementConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/dto/OrderDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/model/cart-model.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/ProductCategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/entity/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/service/Impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/respository/ProductRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/ProductResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="12" selection-start-line="27" selection-start-column="1" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/admin-panel.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-list/product-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="27" selection-start-line="8" selection-start-column="5" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/admin-panel.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="52" lean-forward="true" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/user-panel/user-panel.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/product-list/product-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="68" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
@@ -1622,7 +1770,109 @@
     <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/user-panel/user-panel.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="76" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-206">
+          <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/node_modules/@angular/router/src/router_state.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/admin-panel/products-by-category/products-by-category.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="25" column="10" selection-start-line="24" selection-start-column="4" selection-end-line="26" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/resolve/product.resolve.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-104">
+          <caret line="1" column="14" selection-end-line="2" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/user-panel/orders/orders.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/orders.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/user-panel/orders/orders.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/aneta/shop/resource/OrderResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="105" column="45" lean-forward="true" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/resolve/orders.resolve.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontEnd/src/app/shared/service/cart.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="45" selection-start-line="45" selection-end-line="48" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

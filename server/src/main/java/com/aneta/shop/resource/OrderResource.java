@@ -3,8 +3,12 @@ package com.aneta.shop.resource;
 import com.aneta.shop.dto.OrderDTO;
 import com.aneta.shop.entity.Order;
 import com.aneta.shop.service.OrderService;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Collection;
 
 @RestController
 @RequestMapping("/api/orders")
@@ -19,5 +23,11 @@ public class OrderResource extends AbstractResource<Order, OrderDTO> {
     @Override
     public OrderService getService() {
         return orderService;
+    }
+
+    @GetMapping("/byUser/{id}")
+    public Collection<OrderDTO> getOrdersByUser(@PathVariable Long id) {
+        Collection<OrderDTO> ordersByUserId = orderService.findOrdersByUserId(id);
+        return ordersByUserId;
     }
 }

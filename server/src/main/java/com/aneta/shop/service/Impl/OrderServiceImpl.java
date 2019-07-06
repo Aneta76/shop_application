@@ -9,6 +9,11 @@ import com.aneta.shop.service.OrderService;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
+
 @Service
 public class OrderServiceImpl extends AbstractServiceImpl<Order, OrderDTO> implements OrderService {
 
@@ -28,5 +33,18 @@ public class OrderServiceImpl extends AbstractServiceImpl<Order, OrderDTO> imple
     @Override
     protected Converter<Order, OrderDTO> getConverter() {
         return orderConverter;
+    }
+
+    @Override
+    @Transactional
+    public Collection<OrderDTO> findOrdersByUserId(Long id) {
+        List<Order> allOrders = orderRepository.findAll();
+        List<Order> ordersByUser = new LinkedList<>();
+        for (Order o : allOrders) {
+            if (o.getUser().getId().equals(id)) {
+                ordersByUser.add(o);
+            }
+        }
+        return orderConverter.convertToDtos(ordersByUser);
     }
 }

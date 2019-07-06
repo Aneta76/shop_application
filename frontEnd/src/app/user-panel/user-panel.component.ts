@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {RegisterUserModel} from '../shared/model/register-user.model';
 
 @Component({
   selector: 'app-user-panel',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserPanelComponent implements OnInit {
 
-  constructor() { }
+  userData: RegisterUserModel = new RegisterUserModel();
+
+  constructor() {
+  }
 
   ngOnInit() {
+    this.userData = JSON.parse(localStorage.getItem('currentUser'));
   }
 
 }

@@ -1,0 +1,17 @@
+<table>
+  <tr>
+    <th>User</th>
+    <th>Order</th>
+    <th>Phone</th>
+    <th>Delivery Address</th>
+    <th>Estimated delivery time</th>
+  </tr>
+  <tr *ngFor="let order of orders; let rowIndex=index">
+    <td>{{order.user.email}}</td>
+    <td>{{order.orderElements}}</td>
+    <td>{{order.user.phoneNumber}}</td>
+    <td>{{order.user.addressLine}} {{order.user.zipCode}} {{order.user.city}}</td>
+    <td>{{order.orderPlaceTime}}</td>
+  </tr>
+</table>
+

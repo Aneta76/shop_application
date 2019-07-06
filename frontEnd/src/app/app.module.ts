@@ -33,6 +33,10 @@ import {LoginGuard} from './shared/guard/login.guard';
 import {AdminGuard} from './shared/guard/admin.guard';
 import {CartComponent} from './cart/cart.component';
 import {CartService} from './shared/service/cart.service';
+import { OrdersComponent } from './user-panel/orders/orders.component';
+import {OrdersService} from './shared/service/orders.service';
+import { SuccessComponent } from './cart/success/success.component';
+import {OrdersByUserIdResolve} from './shared/resolve/orders.resolve';
 
 @NgModule({
   declarations: [
@@ -54,6 +58,8 @@ import {CartService} from './shared/service/cart.service';
     ProductListComponent,
     ProductComponent,
     CartComponent,
+    OrdersComponent,
+    SuccessComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,7 +69,7 @@ import {CartService} from './shared/service/cart.service';
   ],
   providers: [ProductService, ProductsResolve, ProductResolve, AuthService, AppService, ProductCategoryService,
     CategoriesResolver, ProductsResolveByCategory, UserService, UserResolve, UsersResolve, UserByIdResolve, LoginGuard,
-    AdminGuard, CartService],
+    AdminGuard, CartService, OrdersService, OrdersByUserIdResolve],
   bootstrap: [AppComponent]
 })
 export class AppModule {

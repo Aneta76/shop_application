@@ -2,18 +2,20 @@ import {Component, OnInit} from '@angular/core';
 import {OrderElementModel} from '../shared/model/order-element.model';
 import {Cartmodel} from '../shared/model/cart-model.model';
 import {CartService} from '../shared/service/cart.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
-  styleUrls: ['./../admin-panel/products/products.component.css']
+  styleUrls: ['./../admin-panel/products/products.component.css', './../app.component.css']
 })
 
 export class CartComponent implements OnInit {
   items: Array<OrderElementModel> = [];
   cart: Cartmodel = new Cartmodel();
 
-  constructor(private cartService: CartService) {
+  constructor(private cartService: CartService,
+              private router: Router) {
   }
 
   ngOnInit() {
@@ -30,5 +32,6 @@ export class CartComponent implements OnInit {
     this.cart.user = JSON.parse(localStorage.getItem('currentUser'));
     this.cartService.saveOrder(this.cart);
     this.cartService.clearCart();
+    this.router.navigate(['/user-panel/success']);
   }
 }

@@ -20,6 +20,9 @@ import {ProductComponent} from './admin-panel/product/product.component';
 import {AdminGuard} from './shared/guard/admin.guard';
 import {LoginGuard} from './shared/guard/login.guard';
 import {CartComponent} from './cart/cart.component';
+import {OrdersComponent} from './user-panel/orders/orders.component';
+import {SuccessComponent} from './cart/success/success.component';
+import {OrdersByUserIdResolve} from './shared/resolve/orders.resolve';
 
 const routes: Routes = [
   {
@@ -95,6 +98,17 @@ const routes: Routes = [
         resolve: {
           userData: UserResolve
         }
+      },
+      {
+        path: 'orders/:id',
+        component: OrdersComponent,
+        resolve: {
+          ordersByUserId: OrdersByUserIdResolve
+        }
+      },
+      {
+        path: 'success',
+        component: SuccessComponent,
       },
     ]
   },

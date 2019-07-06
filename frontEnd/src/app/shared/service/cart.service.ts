@@ -44,7 +44,7 @@ export class CartService {
   }
 
   clearCart() {
-    this.orderElementList = null;
+    this.orderElementList = [];
     localStorage.removeItem('orderElementList');
   }
 

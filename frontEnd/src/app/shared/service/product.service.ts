@@ -13,7 +13,6 @@ export class ProductService {
   private products: Array<ProductModel> = [];
   private productsStream: Subject<Array<ProductModel>> = new Subject();
   private productsByCategory: Array<ProductModel> = [];
-  private product: ProductModel;
 
   constructor(private http: HttpClient) {
   }

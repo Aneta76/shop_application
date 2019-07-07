@@ -1,7 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
-import {ProductsComponent} from './admin-panel/products/products.component';
+import {ProductsInMenuComponent} from './menu/products-in-menu/products-in-menu.component';
 import {ProductCategoriesComponent} from './admin-panel/product-categories/product-categories.component';
 import {AdminPanelComponent} from './admin-panel/admin-panel.component';
 import {AppRouting} from './app-routing.module';
@@ -26,21 +26,21 @@ import {UserService} from './shared/service/user.service';
 import {AccountComponent} from './user-panel/account/account.component';
 import {UserByIdResolve, UserResolve, UsersResolve} from './shared/resolve/user.resolve';
 import {EditUserComponent} from './user-panel/edit-user/edit-user.component';
-import {UsersComponent} from './admin-panel/users/users.component';
-import {ProductListComponent} from './admin-panel/product-list/product-list.component';
-import {ProductComponent} from './admin-panel/product/product.component';
+import {ManageUsersComponent} from './admin-panel/manage-users/manage-users.component';
+import {ManageProductsComponent} from './admin-panel/manage-products/manage-products.component';
+import {AddNewProductComponent} from './admin-panel/add-new-product/add-new-product.component';
 import {LoginGuard} from './shared/guard/login.guard';
 import {AdminGuard} from './shared/guard/admin.guard';
 import {CartComponent} from './cart/cart.component';
 import {CartService} from './shared/service/cart.service';
 import { OrdersComponent } from './user-panel/orders/orders.component';
 import {OrdersService} from './shared/service/orders.service';
-import { SuccessComponent } from './cart/success/success.component';
+import { OrderSuccessComponent } from './cart/order-success/order-success.component';
 import {OrdersByUserIdResolve} from './shared/resolve/orders.resolve';
 
 @NgModule({
   declarations: [
-    ProductsComponent,
+    ProductsInMenuComponent,
     ProductCategoriesComponent,
     AdminPanelComponent,
     AppComponent,
@@ -54,12 +54,12 @@ import {OrdersByUserIdResolve} from './shared/resolve/orders.resolve';
     ProductsByCategoryComponent,
     AccountComponent,
     EditUserComponent,
-    UsersComponent,
-    ProductListComponent,
-    ProductComponent,
+    ManageUsersComponent,
+    ManageProductsComponent,
+    AddNewProductComponent,
     CartComponent,
     OrdersComponent,
-    SuccessComponent,
+    OrderSuccessComponent,
   ],
   imports: [
     BrowserModule,

@@ -14,14 +14,14 @@ import {ProductsByCategoryComponent} from './admin-panel/products-by-category/pr
 import {AccountComponent} from './user-panel/account/account.component';
 import {UserByIdResolve, UserResolve, UsersResolve} from './shared/resolve/user.resolve';
 import {EditUserComponent} from './user-panel/edit-user/edit-user.component';
-import {UsersComponent} from './admin-panel/users/users.component';
-import {ProductListComponent} from './admin-panel/product-list/product-list.component';
-import {ProductComponent} from './admin-panel/product/product.component';
+import {ManageUsersComponent} from './admin-panel/manage-users/manage-users.component';
+import {ManageProductsComponent} from './admin-panel/manage-products/manage-products.component';
+import {AddNewProductComponent} from './admin-panel/add-new-product/add-new-product.component';
 import {AdminGuard} from './shared/guard/admin.guard';
 import {LoginGuard} from './shared/guard/login.guard';
 import {CartComponent} from './cart/cart.component';
 import {OrdersComponent} from './user-panel/orders/orders.component';
-import {SuccessComponent} from './cart/success/success.component';
+import {OrderSuccessComponent} from './cart/order-success/order-success.component';
 import {OrdersByUserIdResolve} from './shared/resolve/orders.resolve';
 
 const routes: Routes = [
@@ -37,9 +37,6 @@ const routes: Routes = [
   {
     path: 'cart',
     component: CartComponent,
-    // resolve: {
-    //   product: ProductResolve,
-    // }
   },
   {
     path: 'menu',
@@ -108,7 +105,7 @@ const routes: Routes = [
       },
       {
         path: 'success',
-        component: SuccessComponent,
+        component: OrderSuccessComponent,
       },
     ]
   },
@@ -119,22 +116,22 @@ const routes: Routes = [
     children: [
       {
         path: 'products',
-        component: ProductListComponent
+        component: ManageProductsComponent
       },
       {
         path: 'product',
-        component: ProductComponent,
+        component: AddNewProductComponent,
       },
       {
         path: 'products/edit/:id',
-        component: ProductComponent,
+        component: AddNewProductComponent,
         resolve: {
           product: ProductResolve
         }
       },
       {
         path: 'products/delete/:id',
-        component: ProductListComponent,
+        component: ManageProductsComponent,
         resolve: {
           products: ProductsResolve,
         }
@@ -148,7 +145,7 @@ const routes: Routes = [
       },
       {
         path: 'users',
-        component: UsersComponent,
+        component: ManageUsersComponent,
       },
       {
         path: 'users/edit/:id',
@@ -159,16 +156,11 @@ const routes: Routes = [
       },
       {
         path: 'users/delete/:id',
-        component: UsersComponent,
+        component: ManageUsersComponent,
         resolve: {
           users: UsersResolve,
         }
       },
-      // {
-      //   path: '**',
-      //   redirectTo: 'account',
-      //   pathMatch: 'prefix'
-      // }
     ],
   }
 ];

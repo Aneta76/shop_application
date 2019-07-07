@@ -6,7 +6,7 @@ import {ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'app-orders',
   templateUrl: './orders.component.html',
-  styleUrls: ['./orders.component.css']
+  styleUrls: ['./../../app.component.css']
 })
 export class OrdersComponent implements OnInit {
   cart: Cartmodel = new Cartmodel();

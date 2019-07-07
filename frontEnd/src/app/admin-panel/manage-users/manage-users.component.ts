@@ -4,10 +4,10 @@ import {UserService} from '../../shared/service/user.service';
 
 @Component({
   selector: 'app-users',
-  templateUrl: './users.component.html',
-  styleUrls: ['./users.component.css']
+  templateUrl: './manage-users.component.html',
+  styleUrls: ['./../../app.component.css']
 })
-export class UsersComponent implements OnInit {
+export class ManageUsersComponent implements OnInit {
   users: Array<RegisterUserModel> = [];
   user: RegisterUserModel;
 

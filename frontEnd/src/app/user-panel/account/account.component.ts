@@ -18,6 +18,5 @@ export class AccountComponent implements OnInit {
 
   ngOnInit() {
     this.userData = this.route.snapshot.data['userData'];
-    // this.appService.getLoggedUserFullInfo().subscribe(user => this.userData = user);
   }
 }

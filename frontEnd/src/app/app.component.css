@@ -1,16 +1,22 @@
-.userMessages {
-  margin-top: 20px;
+/*general*/
+
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-/*navbar buttons*/
-
-.navLoggedUser {
-  margin-top: 13px;
-  margin-right: 20px;
+th, td {
+  text-align: left;
+  padding: 8px;
 }
 
-.cartBtnDiv {
-  margin-left: 10px;
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
 }
 
 body {
@@ -18,6 +24,12 @@ body {
   background: #fff;
   background: whitesmoke;
 }
+
+.userMessages {
+  margin-top: 20px;
+}
+
+/*containers*/
 
 .container {
   width: 100%;
@@ -114,6 +126,18 @@ body {
   border: 1px solid rgba(137, 137, 137, 0.2);
   background: rgba(137, 137, 137, 0.04);
 }
+
+/*navbar buttons*/
+
+.navLoggedUser {
+  margin-top: 13px;
+  margin-right: 20px;
+}
+
+.cartBtnDiv {
+  margin-left: 10px;
+}
+
 
 .input-quantity {
   width: 80px;

@@ -12,7 +12,8 @@ import {Subject} from 'rxjs/internal/Subject';
 export class ProductCategoryService {
 
   private productCategories: Array<ProductCategoryModel> = [];
-  private productCategoriesStream: Subject <Array<ProductCategoryModel>> = new Subject();
+  private productCategoriesStream: Subject<Array<ProductCategoryModel>> = new Subject();
+
   constructor(private http: HttpClient) {
   }
 

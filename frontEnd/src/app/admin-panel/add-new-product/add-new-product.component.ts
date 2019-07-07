@@ -7,10 +7,10 @@ import {ProductCategoryService} from '../../shared/service/productCategory.servi
 
 @Component({
   selector: 'app-product',
-  templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css']
+  templateUrl: './add-new-product.component.html',
+  styleUrls: ['./add-new-product.component.css']
 })
-export class ProductComponent implements OnInit {
+export class AddNewProductComponent implements OnInit {
   product: ProductModel = new ProductModel();
   categories: Array<ProductCategoryModel> = [];
 

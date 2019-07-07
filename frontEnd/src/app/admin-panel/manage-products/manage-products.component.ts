@@ -4,10 +4,10 @@ import {ProductService} from '../../shared/service/product.service';
 
 @Component({
   selector: 'app-product-list',
-  templateUrl: './product-list.component.html',
-  styleUrls: ['../users/users.component.css']
+  templateUrl: './manage-products.component.html',
+  styleUrls: ['./../../app.component.css']
 })
-export class ProductListComponent implements OnInit {
+export class ManageProductsComponent implements OnInit {
   products: Array<ProductModel> = [];
 
   constructor(private productService: ProductService) {

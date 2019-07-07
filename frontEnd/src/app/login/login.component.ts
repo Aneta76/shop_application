@@ -29,8 +29,8 @@ export class LoginComponent implements OnInit {
       if (this.appService.getRole() === 'ADMIN') {
         this.router.navigate(['/admin-panel']);
       } else {
-      this.router.navigate(['/user-panel']);
-    }
+        this.router.navigate(['/user-panel']);
+      }
     });
   }
 

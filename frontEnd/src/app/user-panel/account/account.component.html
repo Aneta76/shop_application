@@ -15,13 +15,15 @@
       </tr>
       <tr class="form-field">
         <td><b>Address line : </b></td>
-        <td><input class="form-control" type="text" readonly="true" [(ngModel)]="userData.addressLine" name="addressLine"
+        <td><input class="form-control" type="text" readonly="true" [(ngModel)]="userData.addressLine"
+                   name="addressLine"
                    placeholder="Address line">
         </td>
       </tr>
       <tr class="form-field">
         <td><b>City : </b></td>
-        <td><input class="form-control" type="text" readonly="true" [(ngModel)]="userData.city" name="city" placeholder="City"></td>
+        <td><input class="form-control" type="text" readonly="true" [(ngModel)]="userData.city" name="city"
+                   placeholder="City"></td>
       </tr>
       <tr class="form-field">
         <td><b>Country : </b></td>
@@ -35,17 +37,19 @@
       </tr>
       <tr class="form-field">
         <td><b>Phone Number : </b></td>
-        <td><input class="form-control" type="text" readonly="true" [(ngModel)]="userData.phoneNumber" name="phoneNumber"
+        <td><input class="form-control" type="text" readonly="true" [(ngModel)]="userData.phoneNumber"
+                   name="phoneNumber"
                    placeholder="Phone number"></td>
       </tr>
       <tr class="form-field">
         <td><b>Email : </b></td>
-        <td><input class="form-control" type="text" readonly="true" [(ngModel)]="userData.email" name="email" placeholder="Email">
+        <td><input class="form-control" type="text" readonly="true" [(ngModel)]="userData.email" name="email"
+                   placeholder="Email">
         </td>
       </tr>
       <tr class="form-field">
         <td><b>Password : </b></td>
-        <td><input class="form-control" type="password" readonly="true"[(ngModel)]="userData.password" name="password"
+        <td><input class="form-control" type="password" readonly="true" [(ngModel)]="userData.password" name="password"
                    placeholder="Password"
                    required="required"></td>
       </tr>
@@ -54,5 +58,6 @@
 </form>
 <div>
   <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink="/home">Go back to homepage</button>
-  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink="/user-panel/edit" >Edit your data</button>
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink="/user-panel/edit">Edit your data
+  </button>
 </div>

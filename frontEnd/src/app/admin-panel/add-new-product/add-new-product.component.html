@@ -41,16 +41,16 @@
     </table>
   </div>
 </form>
-  <div *ngIf="isNew(); else isOld">
-    <button class="btn btn-outline-success my-4 mx-3" routerLink="/admin-panel/products" (click)="addNewProduct()">Add
-      product
+<div *ngIf="isNew(); else isOld">
+  <button class="btn btn-outline-success my-4 mx-3" routerLink="/admin-panel/products" (click)="addNewProduct()">Add
+    product
+  </button>
+</div>
+<div>
+  <ng-template #isOld>
+    <button class="btn btn-outline-success my-4 mx-3" routerLink="/admin-panel/products" (click)="addNewProduct()">
+      Save changes
     </button>
-  </div>
-  <div>
-    <ng-template #isOld>
-      <button class="btn btn-outline-success my-4 mx-3" routerLink="/admin-panel/products" (click)="addNewProduct()">
-        Save changes
-      </button>
-    </ng-template>
-  </div>
+  </ng-template>
+</div>
 

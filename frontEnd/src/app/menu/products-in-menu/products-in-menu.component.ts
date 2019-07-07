@@ -8,10 +8,10 @@ import {OrderElementModel} from '../../shared/model/order-element.model';
 
 @Component({
   selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./../../app.component.css']
+  templateUrl: './products-in-menu.component.html',
+  styleUrls: ['../../app.component.css']
 })
-export class ProductsComponent implements OnInit {
+export class ProductsInMenuComponent implements OnInit {
 
   products: Array<ProductModel> = [];
   product: ProductModel = new ProductModel();

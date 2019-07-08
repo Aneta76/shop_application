@@ -12,54 +12,58 @@
       <tr class="form-field">
         <td><b>First name : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="regUserData.firstName" name="firstName"
-                   placeholder="First Name"></td>
+                   placeholder="First Name" required/></td>
       </tr>
       <tr class="form-field">
         <td><b>Last name : </b></td>
         <td>
           <input class="form-control" type="text" [(ngModel)]="regUserData.lastName" name="lastName"
-                 placeholder="Last Name">
+                 placeholder="Last Name" required/>
         </td>
       </tr>
       <tr class="form-field">
         <td><b>Address line : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="regUserData.addressLine" name="addressLine"
-                   placeholder="Address line"></td>
+                   placeholder="Address line" required/></td>
       </tr>
       <tr class="form-field">
         <td><b>City : </b></td>
-        <td><input class="form-control" type="text" [(ngModel)]="regUserData.city" name="city" placeholder="City"></td>
+        <td><input class="form-control" type="text" [(ngModel)]="regUserData.city" name="city" placeholder="City"
+                   required/></td>
       </tr>
       <tr class="form-field">
         <td><b>Country : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="regUserData.country" name="country"
-                   placeholder="Country"></td>
+                   placeholder="Country" required/></td>
       </tr>
       <tr class="form-field">
         <td><b>Zip code : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="regUserData.zipCode" name="zipCode"
-                   placeholder="Zip code"></td>
+                   placeholder="Zip code" required/></td>
       </tr>
       <tr class="form-field">
         <td><b>Phone Number : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="regUserData.phoneNumber" name="phoneNumber"
-                   placeholder="Phone number"></td>
+                   placeholder="Phone number" required/></td>
       </tr>
       <tr class="form-field">
         <td><b>Email : </b></td>
-        <td><input class="form-control" type="text" [(ngModel)]="regUserData.email" name="email" placeholder="Email">
+        <td><input class="form-control" type="text" [(ngModel)]="regUserData.email" name="email" placeholder="Email"
+                   required/>
         </td>
       </tr>
       <tr class="form-field">
         <td><b>Password : </b></td>
         <td><input class="form-control" type="password" [(ngModel)]="regUserData.password" name="password"
                    placeholder="Password"
-                   required="required"></td>
+                   required/></td>
       </tr>
     </table>
   </div>
   <div class="container">
-    <button class="btn btn-outline-success my-4 mx-3" routerLink="/login" (click)="registerUser()">Register</button>
+    <button type="button" class="btn btn-outline-success my-4 mx-3" routerLink="/login" (submit)="registerUser()">
+      Register
+    </button>
   </div>
 </form>
 

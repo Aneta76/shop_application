@@ -1,3 +1,6 @@
+<head>
+  <meta charset = "UTF-8" />
+</head>
 <form class="form-inline my-2 my-lg-0">
   <div class="container">
     <div *ngIf="isNew()">
@@ -10,47 +13,45 @@
       <tr class="form-field">
         <td><b>Id : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="product.id" name="Id" [readonly]="true"
-                   placeholder="Id"
-        ></td>
+                   placeholder="Id"></td>
       </tr>
       <tr class="form-field">
         <td><b>Name : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="product.name" name="name"
-                   placeholder="Name"></td>
+                   placeholder="Name" required/></td>
       </tr>
       <tr class="form-field">
         <td><b>Price : </b></td>
         <td>
           <input class="form-control" type="text" [(ngModel)]="product.price" name="price"
-                 placeholder="Price">
+                 placeholder="Price" required/>
         </td>
       </tr>
       <tr class="form-field">
         <td><b>Description : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="product.description" name="description"
-                   placeholder="Description"></td>
+                   placeholder="Description" required/></td>
       </tr>
       <tr class="form-field">
         <td><b>Category : </b></td>
         <td>
-          <select [(ngModel)]="product.category.id" name="category">
+          <select [(ngModel)]="product.category.id" name="category" required>
             <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
           </select>
         </td>
       </tr>
     </table>
   </div>
-</form>
 <div *ngIf="isNew(); else isOld">
-  <button class="btn btn-outline-success my-4 mx-3" routerLink="/admin-panel/products" (click)="addNewProduct()">Add
+  <button type ="button" class="btn btn-outline-success my-4 mx-3" routerLink="/admin-panel/products" (submit)="addNewProduct()">Add
     product
   </button>
 </div>
 <div>
   <ng-template #isOld>
-    <button class="btn btn-outline-success my-4 mx-3" routerLink="/admin-panel/products" (click)="addNewProduct()">
+    <button type ="button" class="btn btn-outline-success my-4 mx-3" routerLink="/admin-panel/products" (submit)="addNewProduct()">
       Save changes
     </button>
   </ng-template>
 </div>
-
+</form>

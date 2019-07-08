@@ -4,57 +4,55 @@
       <tr class="form-field">
         <td><b>First name : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="userData.firstName" name="firstName"
-                   placeholder="First Name" required/></td>
+                   placeholder="First Name"></td>
       </tr>
       <tr class="form-field">
         <td><b>Last name : </b></td>
         <td>
           <input class="form-control" type="text" [(ngModel)]="userData.lastName" name="lastName"
-                 placeholder="Last Name" required/>
+                 placeholder="Last Name">
         </td>
       </tr>
       <tr class="form-field">
         <td><b>Address line : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="userData.addressLine" name="addressLine"
-                   placeholder="Address line" required/>
+                   placeholder="Address line">
         </td>
       </tr>
       <tr class="form-field">
         <td><b>City : </b></td>
-        <td><input class="form-control" type="text" [(ngModel)]="userData.city" name="city" placeholder="City"
-                   required/></td>
+        <td><input class="form-control" type="text" [(ngModel)]="userData.city" name="city" placeholder="City"></td>
       </tr>
       <tr class="form-field">
         <td><b>Country : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="userData.country" name="country"
-                   placeholder="Country" required/></td>
+                   placeholder="Country"></td>
       </tr>
       <tr class="form-field">
         <td><b>Zip code : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="userData.zipCode" name="zipCode"
-                   placeholder="Zip code" required/></td>
+                   placeholder="Zip code"></td>
       </tr>
       <tr class="form-field">
         <td><b>Phone Number : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="userData.phoneNumber" name="phoneNumber"
-                   placeholder="Phone number" required/></td>
+                   placeholder="Phone number"></td>
       </tr>
       <tr class="form-field">
         <td><b>Email : </b></td>
         <td><input class="form-control" type="text" readonly="true" [(ngModel)]="userData.email" name="email"
-                   placeholder="Email" required/>
+                   placeholder="Email">
         </td>
       </tr>
       <tr class="form-field">
         <td><b>Password : </b></td>
         <td><input class="form-control" type="password" [(ngModel)]="userData.password" name="password"
-                   placeholder="Password"
-                   required/></td>
+                   placeholder="Password"></td>
       </tr>
     </table>
   </div>
   <div>
-    <button type="button" class="btn btn-outline-success my-2 my-sm-0" (submit)="updateUserData()">Save changes
+    <button type="submit" class="btn btn-outline-success my-2 my-sm-0" (click)="updateUserData()">Save changes
     </button>
   </div>
 </form>

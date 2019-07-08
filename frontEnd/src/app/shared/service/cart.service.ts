@@ -54,4 +54,11 @@ export class CartService {
       return response;
     })).subscribe(data => console.log('order placed'));
   }
+
+  checkIfempty(): boolean {
+    if (this.orderElementList.length === 0) {
+      return true;
+    }
+    return false;
+  }
 }

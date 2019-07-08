@@ -17,6 +17,9 @@
     </div>
   </div>
 </div>
-<div>
+<div *ngIf="!ifEmpty(); else empty">
   <button class="btn btn-outline-success my-2 my-sm-0" (click)="placeOrder()">Place order</button>
 </div>
+<ng-template #empty>
+<p>Your cart is currently empty.</p>
+</ng-template>

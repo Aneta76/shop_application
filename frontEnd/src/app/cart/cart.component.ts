@@ -34,4 +34,8 @@ export class CartComponent implements OnInit {
     this.cartService.clearCart();
     this.router.navigate(['/user-panel/success']);
   }
+
+  ifEmpty(): boolean {
+    return this.cartService.checkIfempty();
+  }
 }

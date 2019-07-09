@@ -12,6 +12,7 @@ import {Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   userData: LoginUserModel = new LoginUserModel();
+  showErrorMessage: boolean;
 
   constructor(private authService: AuthService,
               private location: Location,
@@ -25,20 +26,22 @@ export class LoginComponent implements OnInit {
   }
 
   logIn() {
-    this.authService.login(this.userData).subscribe((data) => {
-      if (this.appService.getRole() === 'ADMIN') {
-        this.router.navigate(['/admin-panel']);
-      } else {
-        this.router.navigate(['/user-panel']);
-      }
-    });
+    this.showErrorMessage = false;
+    if ((this.userData.email !== null) && (this.userData.password !== null)) {
+      this.authService.login(this.userData).subscribe((data) => {
+          if (this.appService.getRole() === 'ADMIN') {
+            this.router.navigate(['/admin-panel']);
+          } else {
+            this.router.navigate(['/user-panel']);
+          }
+        }, (error) => {
+          this.showErrorMessage = true;
+        }
+      );
+    }
   }
 
   isLoggedIn(): boolean {
     return this.appService.isLoggedIn();
-  }
-
-  back() {
-    this.location.back();
   }
 }

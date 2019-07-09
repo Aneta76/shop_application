@@ -29,6 +29,11 @@ body {
   margin-top: 20px;
 }
 
+.failureWarning {
+  margin-top: 20px;
+  color: red;
+}
+
 /*containers*/
 
 .container {

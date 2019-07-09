@@ -13,7 +13,7 @@ public class AuthenticationFailureHandler extends SimpleUrlAuthenticationFailure
 
     @Override
     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException exception) throws IOException {
-        response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+        response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
         response.setContentType("text/plain");
         response.getWriter().write(exception.getMessage());
     }

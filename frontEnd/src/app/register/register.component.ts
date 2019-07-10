@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {RegisterUserModel} from '../shared/model/register-user.model';
 import {UserService} from '../shared/service/user.service';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -8,6 +9,7 @@ import {UserService} from '../shared/service/user.service';
   styleUrls: ['./../app.component.css']
 })
 export class RegisterComponent implements OnInit {
+  @ViewChild('f') f: NgForm | undefined;
   regUserData: RegisterUserModel = new RegisterUserModel();
 
   constructor(private userService: UserService) {
@@ -17,8 +19,12 @@ export class RegisterComponent implements OnInit {
   }
 
   registerUser() {
-    this.userService.saveUserData(this.regUserData).subscribe(
-      data => console.log('user added')
-    );
+    if (this.f.valid) {
+      this.userService.saveUserData(this.regUserData).subscribe(
+        data => {
+          console.log('user added');
+        }
+      );
+    }
   }
 }

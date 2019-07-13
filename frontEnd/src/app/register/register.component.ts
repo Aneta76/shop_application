@@ -23,7 +23,9 @@ export class RegisterComponent implements OnInit {
       this.userService.saveUserData(this.regUserData).subscribe(
         data => {
           console.log('user added');
-        }
+        },
+        error1 => {
+          alert('ERROR: Email address is already taken!');        }
       );
     }
   }

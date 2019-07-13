@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {RegisterUserModel} from '../../shared/model/register-user.model';
 import {Cartmodel} from '../../shared/model/cart-model.model';
 import {ActivatedRoute} from '@angular/router';
+import {OrderElementModel} from '../../shared/model/order-element.model';
 
 @Component({
   selector: 'app-orders',
@@ -9,9 +9,8 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./../../app.component.css']
 })
 export class OrdersComponent implements OnInit {
-  cart: Cartmodel = new Cartmodel();
   orders: Array<Cartmodel> = [];
-  user: RegisterUserModel = new RegisterUserModel();
+  orderElements: Array<OrderElementModel> = [];
 
   constructor(private route: ActivatedRoute) {
   }

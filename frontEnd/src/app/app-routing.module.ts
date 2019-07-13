@@ -100,7 +100,7 @@ const routes: Routes = [
         path: 'orders/:id',
         component: OrdersComponent,
         resolve: {
-          ordersByUserId: OrdersByUserIdResolve
+          ordersByUserId: OrdersByUserIdResolve,
         }
       },
       {

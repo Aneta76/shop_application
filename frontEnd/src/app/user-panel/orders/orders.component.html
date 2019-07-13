@@ -6,9 +6,20 @@
     <th>Delivery Address</th>
     <th>Estimated delivery time</th>
   </tr>
-  <tr *ngFor="let order of orders; let rowIndex=index">
+  <tr *ngFor="let order of orders">
     <td>{{order.user.email}}</td>
-    <td>{{order.orderElements}}</td>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+      <tr *ngFor="let orderElement of order.orderElements">
+        <td>{{orderElement.product.name}}</td>
+        <td>{{orderElement.product.price}}</td>
+        <td>{{orderElement.quantity}}</td>
+      </tr>
+    </table>
     <td>{{order.user.phoneNumber}}</td>
     <td>{{order.user.addressLine}} {{order.user.zipCode}} {{order.user.city}}</td>
     <td>{{order.orderPlaceTime}}</td>

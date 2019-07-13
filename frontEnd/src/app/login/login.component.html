@@ -2,7 +2,7 @@
   <p>You are already logged in</p>
 </div>
 <div class="col-md-3 offset-md-2" *ngIf="!isLoggedIn()">
-  <form name="form" (ngSubmit)="f.form.valid" #f="ngForm" novalidate>
+  <form name="form" (ngSubmit)="f.form.valid && logIn()" #f="ngForm" novalidate>
     <div class="form-group">
       <label>Email</label>
       <input class="form-control mr-sm-2" type="text" [(ngModel)]="userData.email" name="email" placeholder="Email"
@@ -20,7 +20,7 @@
         <div *ngIf="password.errors.required">Password is required</div>
       </div>
     </div>
-    <button class="btn btn-outline-success my-2 my-sm-0" (click)="logIn()">Sign in</button>
+    <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Sign in</button>
   </form>
   <div *ngIf="showErrorMessage">
     <p class="failureWarning">Invalid email or password. Please try again</p>

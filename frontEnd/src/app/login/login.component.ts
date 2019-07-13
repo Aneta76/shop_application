@@ -1,9 +1,10 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {LoginUserModel} from '../shared/model/login-user-model.model';
 import {AuthService} from '../shared/service/auth.service';
 import {AppService} from '../shared/service/app.service';
 import {Location} from '@angular/common';
 import {Router} from '@angular/router';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -11,6 +12,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./../app.component.css']
 })
 export class LoginComponent implements OnInit {
+  @ViewChild('f') f: NgForm | undefined;
   userData: LoginUserModel = new LoginUserModel();
   showErrorMessage: boolean;
 
@@ -26,18 +28,20 @@ export class LoginComponent implements OnInit {
   }
 
   logIn() {
-    this.showErrorMessage = false;
-    if ((this.userData.email !== null) && (this.userData.password !== null)) {
-      this.authService.login(this.userData).subscribe((data) => {
-          if (this.appService.getRole() === 'ADMIN') {
-            this.router.navigate(['/admin-panel']);
-          } else {
-            this.router.navigate(['/user-panel']);
+    if (this.f.valid) {
+      this.showErrorMessage = false;
+      if ((this.userData.email !== null) && (this.userData.password !== null)) {
+        this.authService.login(this.userData).subscribe((data) => {
+            if (this.appService.getRole() === 'ADMIN') {
+              this.router.navigate(['/admin-panel']);
+            } else {
+              this.router.navigate(['/user-panel']);
+            }
+          }, (error) => {
+            this.showErrorMessage = true;
           }
-        }, (error) => {
-          this.showErrorMessage = true;
-        }
-      );
+        );
+      }
     }
   }
 

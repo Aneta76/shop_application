@@ -4,6 +4,9 @@ import com.aneta.shop.dto.UserDTO;
 import com.aneta.shop.entity.Role;
 import com.aneta.shop.entity.User;
 import com.aneta.shop.respository.RoleRepository;
+import com.aneta.shop.respository.UserRepository;
+import org.springframework.dao.DuplicateKeyException;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
 import java.util.LinkedList;
@@ -13,7 +16,6 @@ import java.util.stream.Collectors;
 
 @Component
 public class UserConverter implements Converter<User, UserDTO> {
-
 
     private final RoleRepository roleRepository;
 

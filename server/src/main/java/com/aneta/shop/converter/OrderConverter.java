@@ -26,11 +26,11 @@ public class OrderConverter implements Converter<Order, OrderDTO> {
         order.setId(dto.getId());
         order.setUser(dto.getUser());
         order.setOrderPlaceTime(now());
-        Set<OrderElement> set = new HashSet<>();
+        Set<OrderElement> entitySet = new HashSet<>();
         for (OrderElementDTO o : dto.getOrderElements()) {
-            set.add(orderElementConverter.convertToEntity(o));
+            entitySet.add(orderElementConverter.convertToEntity(o));
         }
-        order.setOrderElements(set);
+        order.setOrderElements(entitySet);
         return order;
     }
 
@@ -40,12 +40,11 @@ public class OrderConverter implements Converter<Order, OrderDTO> {
         orderDTO.setUser(entity.getUser());
         orderDTO.setId(entity.getId());
         orderDTO.setOrderPlaceTime(entity.getOrderPlaceTime());
-//        List<OrderElementDTO> OrderElementDTOList = new LinkedList<>();
-//        for(OrderElement o : entity.getOrderElements())
-//        {
-//            OrderElementDTOList.add(orderElementConverter.convertToDTO(o));
-//        }
-//        //orderDTO.setOrderElements(entity.
+        Set<OrderElementDTO> dtoSet = new HashSet<>();
+        for (OrderElement o : entity.getOrderElements()) {
+            dtoSet.add(orderElementConverter.convertToDTO(o));
+        }
+        orderDTO.setOrderElements(dtoSet);
         return orderDTO;
     }
 }

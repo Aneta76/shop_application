@@ -31,7 +31,7 @@ public class User extends AbstractEntity {
     @Column
     private String phoneNumber;
 
-    @Column
+    @Column(unique = true)
     private String email;
 
     @Column

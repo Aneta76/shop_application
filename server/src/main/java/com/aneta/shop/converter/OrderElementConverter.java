@@ -32,7 +32,8 @@ public class OrderElementConverter implements Converter<OrderElement, OrderEleme
         orderElementDTO.setId(entity.getId());
         orderElementDTO.setQuantity(entity.getQuantity());
         orderElementDTO.setProduct(productConverter.convertToDTO(entity.getProduct()));
-        //  orderElementDTO.setOrder(orderConverter.convertToDTO(entity.getOrder()));
+        //orderElementDTO.setOrder(entity.getOrder());
+        // orderElementDTO.setOrder(orderConverter.convertToDTO(entity.getOrder()));
         return orderElementDTO;
     }
 }

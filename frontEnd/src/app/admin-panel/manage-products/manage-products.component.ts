@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ProductModel} from '../../shared/model/product.model';
 import {ProductService} from '../../shared/service/product.service';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-product-list',
@@ -10,7 +11,8 @@ import {ProductService} from '../../shared/service/product.service';
 export class ManageProductsComponent implements OnInit {
   products: Array<ProductModel> = [];
 
-  constructor(private productService: ProductService) {
+  constructor(private productService: ProductService,
+              private location: Location) {
   }
 
   ngOnInit() {
@@ -23,4 +25,7 @@ export class ManageProductsComponent implements OnInit {
     });
   }
 
+  back() {
+    this.location.back();
+  }
 }

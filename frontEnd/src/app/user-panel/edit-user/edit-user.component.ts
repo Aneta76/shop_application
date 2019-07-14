@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {UserService} from '../../shared/service/user.service';
 import {RegisterUserModel} from '../../shared/model/register-user.model';
 import {ActivatedRoute} from '@angular/router';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-edit-user',
@@ -13,7 +14,8 @@ export class EditUserComponent implements OnInit {
   userData: RegisterUserModel = new RegisterUserModel();
 
   constructor(private userService: UserService,
-              private route: ActivatedRoute) {
+              private route: ActivatedRoute,
+              private location: Location) {
   }
 
   ngOnInit() {
@@ -22,5 +24,9 @@ export class EditUserComponent implements OnInit {
 
   public updateUserData() {
     this.userService.saveUserData(this.userData).subscribe(data => console.log('user updated'));
+  }
+
+  back() {
+    this.location.back();
   }
 }

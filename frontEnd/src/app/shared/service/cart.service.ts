@@ -27,10 +27,6 @@ export class CartService {
     localStorage.setItem('orderElementList', JSON.stringify(this.orderElementList));
   }
 
-  getCart() {
-    return this.orderElementList;
-  }
-
   increaseQuantity(product: ProductModel) {
     product.count = product.count + 1;
     this.orderElement.quantity = product.count + 1;
@@ -50,7 +46,6 @@ export class CartService {
 
   saveOrder(cart: Cartmodel) {
     return this.http.post('/api/orders/new', cart).pipe(map((response: Cartmodel) => {
-      console.log('cart: ', cart);
       return response;
     })).subscribe(data => console.log('order placed'));
   }

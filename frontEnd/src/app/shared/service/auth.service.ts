@@ -5,6 +5,7 @@ import {map} from 'rxjs/operators';
 import {AppService} from './app.service';
 import {Observable} from 'rxjs/internal/Observable';
 import {RegisterUserModel} from '../model/register-user.model';
+import {CartService} from './cart.service';
 
 @Injectable({
   providedIn: 'root'
@@ -14,9 +15,9 @@ export class AuthService {
   public success = JSON.parse(localStorage.getItem('loggedIn') || 'false');
 
   constructor(private http: HttpClient,
-              private appService: AppService) {
+              private appService: AppService,
+              private cartService: CartService) {
   }
-
 
   public setSuccess(value: boolean) {
     this.success = value;
@@ -54,6 +55,7 @@ export class AuthService {
     return this.http.post('/api/logout', {}).pipe((data) => {
       this.appService.logout();
       this.setSuccess(false);
+      this.cartService.clearCart();
       localStorage.removeItem('currentUser');
       localStorage.removeItem('loggedIn');
       localStorage.removeItem('orderElementList');

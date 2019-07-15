@@ -13,7 +13,7 @@
         <div *ngIf="checkOnlineStatus()">
           <p>Quantity:
             <button type="button" class="btn btn-danger" (click)="minusQuantity(product)">-</button>
-            <input type="number" class="input-quantity" [(ngModel)]="product.count"/>
+            <input type="number" class="input-quantity" [readOnly]="true" [(ngModel)]="product.count"/>
             <button type="button" class="btn btn-success" (click)="plusQuantity(product)">+</button>
           </p>
           <div class="buttons">

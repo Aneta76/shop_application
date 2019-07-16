@@ -2,61 +2,97 @@
   <button type="button" class="btn btn-outline-success my-2 my-sm-0" (click)="back()">Go back
   </button>
 </div>
-<form class="form-inline my-2 my-lg-0">
+<form class="form-inline my-2 my-lg-0" name="form" (ngSubmit)="f.form.valid && updateUserData()" #f="ngForm" novalidate>
   <div class="container">
     <table>
       <tr class="form-field">
         <td><b>First name : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="userData.firstName" name="firstName"
-                   placeholder="First Name"></td>
+                   placeholder="First Name" #firstName="ngModel"
+                   [ngClass]="{ 'is-invalid': f.submitted && firstName.invalid }" required/>
+          <div *ngIf="f.submitted && firstName.invalid" class="invalid-feedback">
+            <div *ngIf="firstName.errors.required">First name is required</div>
+          </div>
+        </td>
       </tr>
       <tr class="form-field">
         <td><b>Last name : </b></td>
         <td>
           <input class="form-control" type="text" [(ngModel)]="userData.lastName" name="lastName"
-                 placeholder="Last Name">
+                 placeholder="Last Name" #lastName="ngModel"
+                 [ngClass]="{ 'is-invalid': f.submitted && lastName.invalid }" required/>
+          <div *ngIf="f.submitted &&lastName.invalid" class="invalid-feedback">
+            <div *ngIf="lastName.errors.required">Last name is required</div>
+          </div>
         </td>
       </tr>
       <tr class="form-field">
         <td><b>Address line : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="userData.addressLine" name="addressLine"
-                   placeholder="Address line">
+                   placeholder="Address line" #addressLine="ngModel"
+                   [ngClass]="{ 'is-invalid': f.submitted && addressLine.invalid }" required/>
+          <div *ngIf="f.submitted && addressLine.invalid" class="invalid-feedback">
+            <div *ngIf="addressLine.errors.required">Address is required</div>
+          </div>
         </td>
       </tr>
       <tr class="form-field">
         <td><b>City : </b></td>
-        <td><input class="form-control" type="text" [(ngModel)]="userData.city" name="city" placeholder="City"></td>
+        <td><input class="form-control" type="text" [(ngModel)]="userData.city" name="city" placeholder="City"
+                   #city="ngModel" [ngClass]="{ 'is-invalid': f.submitted && city.invalid }" required/>
+          <div *ngIf="f.submitted && city.invalid" class="invalid-feedback">
+            <div *ngIf="city.errors.required">City is required</div>
+          </div>
+        </td>
       </tr>
       <tr class="form-field">
         <td><b>Country : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="userData.country" name="country"
-                   placeholder="Country"></td>
+                   placeholder="Country" #country="ngModel" [ngClass]="{ 'is-invalid': f.submitted && country.invalid }"
+                   required/>
+          <div *ngIf="f.submitted && country.invalid" class="invalid-feedback">
+            <div *ngIf="country.errors.required">Country is required</div>
+          </div>
+        </td>
       </tr>
       <tr class="form-field">
         <td><b>Zip code : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="userData.zipCode" name="zipCode"
-                   placeholder="Zip code"></td>
+                   placeholder="Zip code" #zipCode="ngModel"
+                   [ngClass]="{ 'is-invalid': f.submitted && zipCode.invalid }" required/>
+          <div *ngIf="f.submitted && zipCode.invalid" class="invalid-feedback">
+            <div *ngIf="zipCode.errors.required">Zip-code is required</div>
+          </div>
+        </td>
       </tr>
       <tr class="form-field">
         <td><b>Phone Number : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="userData.phoneNumber" name="phoneNumber"
-                   placeholder="Phone number"></td>
+                   placeholder="Phone number" #phoneNumber="ngModel"
+                   [ngClass]="{ 'is-invalid': f.submitted && phoneNumber.invalid }" required/>
+          <div *ngIf="f.submitted && phoneNumber.invalid" class="invalid-feedback">
+            <div *ngIf="phoneNumber.errors.required">Phone number is required</div>
+          </div>
+        </td>
       </tr>
       <tr class="form-field">
         <td><b>Email : </b></td>
-        <td><input class="form-control" type="text" readonly="true" [(ngModel)]="userData.email" name="email"
-                   placeholder="Email">
+        <td><input class="form-control" type="text" [(ngModel)]="userData.email" name="email" placeholder="Email"
+                   [readOnly]="true"/>
         </td>
       </tr>
       <tr class="form-field">
         <td><b>Password : </b></td>
         <td><input class="form-control" type="password" [(ngModel)]="userData.password" name="password"
-                   placeholder="Password"></td>
+                   placeholder="Password" #password="ngModel"
+                   [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required/>
+          <div *ngIf="f.submitted && password.invalid" class="invalid-feedback">
+            <div *ngIf="password.errors.required">Password is required</div>
+          </div>
+        </td>
       </tr>
     </table>
   </div>
-</form>
-<div>
-  <button type="submit" class="btn btn-outline-success my-2 my-sm-0" (click)="updateUserData()">Save changes
+  <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Save changes
   </button>
-</div>
+</form>

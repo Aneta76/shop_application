@@ -1,8 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {UserService} from '../../shared/service/user.service';
 import {RegisterUserModel} from '../../shared/model/register-user.model';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {Location} from '@angular/common';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-edit-user',
@@ -10,12 +11,13 @@ import {Location} from '@angular/common';
   styleUrls: ['./edit-user.component.css']
 })
 export class EditUserComponent implements OnInit {
-
+  @ViewChild('f') f: NgForm | undefined;
   userData: RegisterUserModel = new RegisterUserModel();
 
   constructor(private userService: UserService,
               private route: ActivatedRoute,
-              private location: Location) {
+              private location: Location,
+              private router: Router) {
   }
 
   ngOnInit() {
@@ -23,7 +25,10 @@ export class EditUserComponent implements OnInit {
   }
 
   public updateUserData() {
-    this.userService.saveUserData(this.userData).subscribe(data => console.log('user updated'));
+    if (this.f.valid) {
+      this.userService.saveUserData(this.userData).subscribe(data => console.log('user updated'));
+    }
+    this.router.navigate(['/admin-panel/users']);
   }
 
   back() {

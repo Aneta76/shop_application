@@ -146,6 +146,9 @@ const routes: Routes = [
       {
         path: 'users',
         component: ManageUsersComponent,
+        resolve: {
+          users: UsersResolve
+        }
       },
       {
         path: 'users/edit/:id',

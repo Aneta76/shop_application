@@ -1,8 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {RegisterUserModel} from '../../shared/model/register-user.model';
 import {UserService} from '../../shared/service/user.service';
-import {Location} from '@angular/common';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-users',
@@ -14,7 +13,7 @@ export class ManageUsersComponent implements OnInit {
   user: RegisterUserModel;
 
   constructor(private userService: UserService,
-              private location: Location,
+              private router: Router,
               private route: ActivatedRoute) {
   }
 
@@ -31,6 +30,6 @@ export class ManageUsersComponent implements OnInit {
   }
 
   back() {
-    this.location.back();
+    this.router.navigate(['/admin-panel']);
   }
 }

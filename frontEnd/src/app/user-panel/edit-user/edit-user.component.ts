@@ -2,7 +2,6 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import {UserService} from '../../shared/service/user.service';
 import {RegisterUserModel} from '../../shared/model/register-user.model';
 import {ActivatedRoute, Router} from '@angular/router';
-import {Location} from '@angular/common';
 import {NgForm} from '@angular/forms';
 
 @Component({
@@ -16,7 +15,6 @@ export class EditUserComponent implements OnInit {
 
   constructor(private userService: UserService,
               private route: ActivatedRoute,
-              private location: Location,
               private router: Router) {
   }
 
@@ -32,6 +30,6 @@ export class EditUserComponent implements OnInit {
   }
 
   back() {
-    this.location.back();
+    this.router.navigate(['/admin-panel/users']);
   }
 }

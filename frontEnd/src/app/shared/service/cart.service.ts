@@ -13,17 +13,27 @@ export class CartService {
   orderElement: OrderElementModel = new OrderElementModel();
   cart: Cartmodel = new Cartmodel();
   orderElementList: Array<OrderElementModel> = [];
+  isNotFound: boolean;
 
   constructor(private http: HttpClient) {
   }
 
   addProductToCart(product: ProductModel) {
+    this.isNotFound = true;
     if (localStorage.getItem('orderElementList')) {
       this.orderElementList = JSON.parse(localStorage.getItem('orderElementList'));
     }
-    this.orderElement.product = product;
-    this.orderElement.quantity = product.count;
-    this.orderElementList.push(this.orderElement);
+    for (let i = 0; i < this.orderElementList.length; i++) {
+      if (this.orderElementList[i].product.id === product.id) {
+        this.orderElementList[i].quantity = this.orderElementList[i].quantity + product.count;
+        this.isNotFound = false;
+      }
+    }
+    if (this.isNotFound) {
+      this.orderElement.product = product;
+      this.orderElement.quantity = product.count;
+      this.orderElementList.push(this.orderElement);
+    }
     localStorage.setItem('orderElementList', JSON.stringify(this.orderElementList));
   }
 

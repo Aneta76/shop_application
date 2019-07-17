@@ -1,9 +1,10 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {ProductModel} from '../../shared/model/product.model';
 import {ProductService} from '../../shared/service/product.service';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {ProductCategoryModel} from '../../shared/model/product-category.model';
 import {ProductCategoryService} from '../../shared/service/productCategory.service';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-product',
@@ -11,12 +12,14 @@ import {ProductCategoryService} from '../../shared/service/productCategory.servi
   styleUrls: ['./add-new-product.component.css']
 })
 export class AddNewProductComponent implements OnInit {
+  @ViewChild('f') f: NgForm | undefined;
   product: ProductModel = new ProductModel();
   categories: Array<ProductCategoryModel> = [];
 
   constructor(private productService: ProductService,
               private route: ActivatedRoute,
-              private categoryService: ProductCategoryService) {
+              private categoryService: ProductCategoryService,
+              private router: Router) {
   }
 
   ngOnInit() {
@@ -27,7 +30,11 @@ export class AddNewProductComponent implements OnInit {
   }
 
   public addNewProduct() {
-    this.productService.saveProduct(this.product).subscribe(data => console.log('product added or updated'));
+    if (this.f.valid) {
+      this.product.count = 1;
+      this.productService.saveProduct(this.product).subscribe(data => console.log('product added or updated'));
+    }
+    this.router.navigate(['admin-panel/products']);
   }
 
   public isNew(): boolean {

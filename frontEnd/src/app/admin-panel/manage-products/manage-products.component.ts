@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ProductModel} from '../../shared/model/product.model';
 import {ProductService} from '../../shared/service/product.service';
 import {Location} from '@angular/common';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-product-list',
@@ -12,7 +13,8 @@ export class ManageProductsComponent implements OnInit {
   products: Array<ProductModel> = [];
 
   constructor(private productService: ProductService,
-              private location: Location) {
+              private location: Location,
+              private router: Router) {
   }
 
   ngOnInit() {
@@ -26,6 +28,6 @@ export class ManageProductsComponent implements OnInit {
   }
 
   back() {
-    this.location.back();
+    this.router.navigate(['/admin-panel']);
   }
 }

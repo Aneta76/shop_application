@@ -116,7 +116,7 @@ const routes: Routes = [
     children: [
       {
         path: 'products',
-        component: ManageProductsComponent
+        component: ManageProductsComponent,
       },
       {
         path: 'product',

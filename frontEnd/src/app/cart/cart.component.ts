@@ -13,6 +13,7 @@ import {Router} from '@angular/router';
 export class CartComponent implements OnInit {
   items: Array<OrderElementModel> = [];
   cart: Cartmodel = new Cartmodel();
+  cartIsEmpty: boolean;
 
   constructor(private cartService: CartService,
               private router: Router) {
@@ -25,6 +26,11 @@ export class CartComponent implements OnInit {
   removeProduct(index: number) {
     this.items.splice(index, 1);
     localStorage.setItem('orderElementList', JSON.stringify(this.items));
+    if (this.items.length === 0) {
+      this.cartIsEmpty = true;
+    } else {
+      this.cartIsEmpty = false;
+    }
   }
 
   placeOrder() {

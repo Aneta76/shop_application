@@ -32,7 +32,7 @@ export class AddNewProductComponent implements OnInit {
   public addNewProduct() {
     if (this.f.valid) {
       this.product.count = 1;
-      this.productService.saveProduct(this.product).subscribe(data => console.log('product added or updated'));
+      this.productService.saveProduct(this.product).subscribe((data) => console.log('product added or updated'));
     }
     this.router.navigate(['admin-panel/products']);
   }

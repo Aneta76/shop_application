@@ -18,7 +18,7 @@ export class ManageProductsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.productService.getProducts().subscribe(data => this.products = data);
+    this.productService.getProducts().subscribe((data) => this.products = data);
   }
 
   removeProduct(id: number, index: number) {

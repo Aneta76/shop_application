@@ -19,10 +19,13 @@ th {
   color: white;
 }
 
-body {
-  padding: 1.5em;
-  background: #fff;
-  background: whitesmoke;
+.bodyBackground {
+  position: absolute;
+  background: url('../../src/assets/images/page_background.png') no-repeat;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+  opacity: .4;
 }
 
 .userMessages {
@@ -32,6 +35,23 @@ body {
 .failureWarning {
   margin-top: 20px;
   color: red;
+}
+
+.welcomeText {
+  position: relative;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Monotype Corsiva";
+  color: black;
+}
+
+.addressCard {
+  position: relative;
+  font-size: 25px;
+  font-style: italic;
+  font-family: "Monotype Corsiva";
+  color: black;
 }
 
 /*containers*/

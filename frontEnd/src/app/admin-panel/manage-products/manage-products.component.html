@@ -1,5 +1,6 @@
+<body class="bodyBackground">
 <div>
-  <button type="button" class="btn btn-outline-success my-2 my-sm-0" (click)="back()">Go back
+  <button type="button" class="myButton" (click)="back()">Go back
   </button>
 </div>
 <table>
@@ -18,13 +19,14 @@
     <td>{{product.description}}</td>
     <td>{{product.category.name}}</td>
     <td>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+      <button class="myButton" type="submit"
               [routerLink]="['/', 'admin-panel','products','edit',product.id]">Edit
       </button>
-      <button class="btn btn-outline-success my-2 my-sm-0" (click)="removeProduct(product.id, rowIndex)">
+      <button class="myButton" (click)="removeProduct(product.id, rowIndex)">
         Delete
       </button>
     </td>
   </tr>
-  <button class="btn btn-outline-success my-2 my-sm-0" routerLink="/admin-panel/product">Add product</button>
+  <button class="myButton" routerLink="/admin-panel/product">Add product</button>
 </table>
+</body>

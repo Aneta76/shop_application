@@ -1,3 +1,4 @@
+<body class="bodyBackground">
 <div *ngIf="isLoggedIn()">
   <p>You are already logged in</p>
 </div>
@@ -20,7 +21,7 @@
         <div *ngIf="password.errors.required">Password is required</div>
       </div>
     </div>
-    <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Sign in</button>
+    <button type="submit" class="myButton">Sign in</button>
   </form>
   <div *ngIf="showErrorMessage">
     <p class="failureWarning">Invalid email or password. Please try again</p>
@@ -29,8 +30,8 @@
     <p class="userMessages"> Aren't you registered user yet? Sign up by pressing the button below.</p>
   </div>
   <div>
-    <button routerLink="/register" class="btn btn-outline-success my-2 my-sm-0">Sign up</button>
+    <button routerLink="/register" class="myButton">Sign up</button>
   </div>
 </div>
-
+</body>
 

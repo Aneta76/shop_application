@@ -1,4 +1,9 @@
 /*general*/
+*{
+  font-family: "Monotype Corsiva";
+  font-size: 25px;
+  font-weight: bold;
+}
 
 table {
   border-collapse: collapse;
@@ -21,11 +26,11 @@ th {
 
 .bodyBackground {
   position: absolute;
-  background: url('../../src/assets/images/page_background.png') no-repeat;
+  background: url('../../src/assets/images/page_background.png') no-repeat fixed center;
   min-height: 100%;
   min-width: 100%;
   background-size: cover;
-  opacity: .4;
+  z-index: -1;
 }
 
 .userMessages {
@@ -42,16 +47,23 @@ th {
   font-size: 40px;
   font-style: italic;
   font-weight: bold;
-  font-family: "Monotype Corsiva";
   color: black;
 }
 
 .addressCard {
   position: relative;
   font-size: 25px;
-  font-style: italic;
-  font-family: "Monotype Corsiva";
   color: black;
+}
+
+.registerFormStyle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  border-style: double;
+  border-color: #0f030f;
+  width: 470px;
 }
 
 /*containers*/
@@ -163,7 +175,6 @@ th {
   margin-left: 10px;
 }
 
-
 .input-quantity {
   width: 80px;
   margin-left: 10px;
@@ -175,4 +186,48 @@ th {
   padding: .3em .65em;
   border-radius: 2.3px;
   transition: all .1s ease-in-out;
+}
+
+/*buttons*/
+
+
+.myButton {
+  -moz-box-shadow: 3px 4px 0px 0px #7a6563;
+  -webkit-box-shadow: 3px 4px 0px 0px #7a6563;
+  box-shadow: 3px 4px 0px 0px #7a6563;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f0dcc8), color-stop(1, #bd8b5d));
+  background:-moz-linear-gradient(top, #f0dcc8 5%, #bd8b5d 100%);
+  background:-webkit-linear-gradient(top, #f0dcc8 5%, #bd8b5d 100%);
+  background:-o-linear-gradient(top, #f0dcc8 5%, #bd8b5d 100%);
+  background:-ms-linear-gradient(top, #f0dcc8 5%, #bd8b5d 100%);
+  background:linear-gradient(to bottom, #f0dcc8 5%, #bd8b5d 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0dcc8', endColorstr='#bd8b5d',GradientType=0);
+  background-color:#f0dcc8;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+  border:1px solid #b89a7f;
+  display:inline-block;
+  cursor:pointer;
+  color:#0f030f;
+  font-size:25px;
+  padding:7px 25px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #4d3534;
+  margin: 5px 5px 5px 5px;
+  position: center;
+}
+.myButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bd8b5d), color-stop(1, #f0dcc8));
+  background:-moz-linear-gradient(top, #bd8b5d 5%, #f0dcc8 100%);
+  background:-webkit-linear-gradient(top, #bd8b5d 5%, #f0dcc8 100%);
+  background:-o-linear-gradient(top, #bd8b5d 5%, #f0dcc8 100%);
+  background:-ms-linear-gradient(top, #bd8b5d 5%, #f0dcc8 100%);
+  background:linear-gradient(to bottom, #bd8b5d 5%, #f0dcc8 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bd8b5d', endColorstr='#f0dcc8',GradientType=0);
+  background-color:#bd8b5d;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
 }

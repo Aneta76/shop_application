@@ -4,7 +4,7 @@ import {RegisterUserModel} from '../shared/model/register-user.model';
 @Component({
   selector: 'app-user-panel',
   templateUrl: './user-panel.component.html',
-  styleUrls: ['./user-panel.component.css']
+  styleUrls: ['./../app.component.css']
 })
 export class UserPanelComponent implements OnInit {
 

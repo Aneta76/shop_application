@@ -21,20 +21,20 @@
       <h5 class="navLoggedUser">{{loggedUser.firstName}}, you are logged in !</h5>
       <span *ngIf="!checkIfAdmin(); else admin">
         <div>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink="/user-panel">My account</button>
+      <button class="myButton" type="submit" routerLink="/user-panel">My account</button>
           </div>
     </span>
       <ng-template #admin>
         <span>
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+        <button class="myButton" type="submit"
                 routerLink="/admin-panel">Admin panel</button>
       </span>
       </ng-template>
       <div>
-        <button class="btn btn-outline-success my-2 my-sm-0" (click)="logoutUser()">Logout</button>
+        <button class="myButton" (click)="logoutUser()">Logout</button>
       </div>
       <div class="cartBtnDiv">
-        <button class="btn btn-outline-success my-2 my-sm-0" routerLink="/cart">Cart</button>
+        <button class="myButton" routerLink="/cart">Cart</button>
       </div>
     </div>
   </div>

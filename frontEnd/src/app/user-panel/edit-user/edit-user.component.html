@@ -1,5 +1,6 @@
+<body class="bodyBackground">
 <div>
-  <button type="button" class="btn btn-outline-success my-2 my-sm-0" (click)="back()">Go back
+  <button type="button" class="myButton" (click)="back()">Go back
   </button>
 </div>
 <form class="form-inline my-2 my-lg-0" name="form" (ngSubmit)="f.form.valid && updateUserData()" #f="ngForm" novalidate>
@@ -93,6 +94,7 @@
       </tr>
     </table>
   </div>
-  <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Save changes
+  <button type="submit" class="myButton">Save changes
   </button>
 </form>
+</body>

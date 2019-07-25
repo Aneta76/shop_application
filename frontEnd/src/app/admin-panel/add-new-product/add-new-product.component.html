@@ -1,3 +1,4 @@
+<body class="bodyBackground">
 <form class="form-inline my-2 my-lg-0" name="form" (ngSubmit)="f.form.valid && addNewProduct()" #f="ngForm" novalidate>
   <div class="container">
     <div *ngIf="isNew()">
@@ -46,8 +47,10 @@
       <tr class="form-field">
         <td><b>Category : </b></td>
         <td>
-          <select class="form-control" [(ngModel)]="product.category.id" name="productCategory" #productCategory="ngModel"
-                  [ngClass]="{ 'is-invalid': f.submitted && productCategory.invalid, 'valid-data': productCategory.valid && f.submitted}" required>
+          <select class="form-control" [(ngModel)]="product.category.id" name="productCategory"
+                  #productCategory="ngModel"
+                  [ngClass]="{ 'is-invalid': f.submitted && productCategory.invalid, 'valid-data': productCategory.valid && f.submitted}"
+                  required>
             <option [ngValue]="null"></option>
             <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
           </select>
@@ -59,14 +62,15 @@
     </table>
   </div>
   <div *ngIf="isNew(); else isOld">
-    <button type="submit" class="btn btn-outline-success my-4 mx-3">Add product
+    <button type="submit" class="myButton">Add product
     </button>
   </div>
   <div>
     <ng-template #isOld>
-      <button type="submit" class="btn btn-outline-success my-4 mx-3">
+      <button type="submit" class="myButton">
         Save changes
       </button>
     </ng-template>
   </div>
 </form>
+</body>

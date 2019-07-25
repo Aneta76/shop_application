@@ -1,5 +1,6 @@
+<body class="bodyBackground">
 <div>
-  <button type="button" class="btn btn-outline-success my-2 my-sm-0" (click)="back()">Go back
+  <button type="button" class="myButton" (click)="back()">Go back
   </button>
 </div>
 <table>
@@ -17,13 +18,14 @@
     <td>{{user.lastName}}</td>
     <td>{{user.email}}</td>
     <td>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+      <button class="myButton" type="submit"
               [routerLink]="['/', 'admin-panel','users','edit',user.id]">Edit
       </button>
-      <button class="btn btn-outline-success my-2 my-sm-0" (click)="removeUser(user.id, rowIndex)">
+      <button class="myButton" (click)="removeUser(user.id, rowIndex)">
         Delete
       </button>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink="/admin-panel">Send msg</button>
+      <button class="myButton" type="submit" routerLink="/admin-panel">Send msg</button>
     </td>
   </tr>
 </table>
+</body>

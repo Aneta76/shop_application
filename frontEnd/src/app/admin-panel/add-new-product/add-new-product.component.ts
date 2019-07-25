@@ -9,7 +9,7 @@ import {NgForm} from '@angular/forms';
 @Component({
   selector: 'app-product',
   templateUrl: './add-new-product.component.html',
-  styleUrls: ['./add-new-product.component.css']
+  styleUrls: ['./../../app.component.css']
 })
 export class AddNewProductComponent implements OnInit {
   @ViewChild('f') f: NgForm | undefined;

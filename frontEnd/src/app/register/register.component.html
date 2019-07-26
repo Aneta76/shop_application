@@ -1,14 +1,8 @@
 <body class="bodyBackground">
 <form class="registerFormStyle" name="form" (ngSubmit)="f.form.valid && registerUser()" #f="ngForm" novalidate>
-  <div class="container">
-    <h1>Register</h1>
+  <div class="registerContainer">
     <p>Please fill in this form to create an account.</p>
     <table>
-      <tr class="form-field">
-        <td><b>Id : </b></td>
-        <td><input class="form-control" type="text" [(ngModel)]="regUserData.id" name="Id" [readonly]="true"
-                   placeholder="Id"></td>
-      </tr>
       <tr class="form-field">
         <td><b>First name : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="regUserData.firstName" name="firstName"

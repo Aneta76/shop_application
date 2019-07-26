@@ -1,6 +1,6 @@
 <body class="bodyBackground">
 <div role="navigation">
-  <div style="float:left; margin-right:80px; margin-left:40px">
+  <div class="menuMargins">
     <div *ngFor="let category of productCategories">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -9,7 +9,7 @@
       </ul>
     </div>
   </div>
-  <div style="float:left">
+  <div>
     <app-products></app-products>
   </div>
 </div>

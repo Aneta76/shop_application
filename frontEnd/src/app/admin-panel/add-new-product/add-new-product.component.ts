@@ -45,4 +45,8 @@ export class AddNewProductComponent implements OnInit {
       return false;
     }
   }
+
+  back() {
+    this.router.navigate(['/admin-panel/products']);
+  }
 }

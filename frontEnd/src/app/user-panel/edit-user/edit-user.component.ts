@@ -31,7 +31,7 @@ export class EditUserComponent implements OnInit {
 
   back() {
     if (this.router.url.endsWith('/edit')) {
-      this.router.navigate(['/user-panel/account']);
+      this.router.navigate(['/admin-panel/account']);
     } else {
       this.router.navigate(['/admin-panel/users']);
     }

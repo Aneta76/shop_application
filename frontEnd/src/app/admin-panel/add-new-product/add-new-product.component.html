@@ -1,18 +1,11 @@
 <body class="bodyBackground">
-<form class="form-inline my-2 my-lg-0" name="form" (ngSubmit)="f.form.valid && addNewProduct()" #f="ngForm" novalidate>
-  <div class="container">
-    <div *ngIf="isNew()">
-      <h1>Add new product</h1>
-    </div>
-    <div *ngIf="!isNew()">
-      <h1>Edit product</h1>
-    </div>
+<div>
+  <button class="myButton" (click)="back()">Go back
+  </button>
+</div>
+<form class="addProductForm" name="form" (ngSubmit)="f.form.valid && addNewProduct()" #f="ngForm" novalidate>
+  <div>
     <table>
-      <tr class="form-field">
-        <td><b>Id : </b></td>
-        <td><input class="form-control" type="text" [(ngModel)]="product.id" name="Id" [readonly]="true"
-                   placeholder="Id"></td>
-      </tr>
       <tr class="form-field">
         <td><b>Name : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="product.name" name="name"
@@ -60,7 +53,7 @@
         </td>
       </tr>
     </table>
-  </div>
+
   <div *ngIf="isNew(); else isOld">
     <button type="submit" class="myButton">Add product
     </button>
@@ -71,6 +64,7 @@
         Save changes
       </button>
     </ng-template>
+  </div>
   </div>
 </form>
 </body>

@@ -24,9 +24,13 @@ th {
   color: white;
 }
 
+a {
+  color: #0f030f;
+}
+
 .bodyBackground {
   position: absolute;
-  background: url('../../src/assets/images/page_background.png') no-repeat fixed center rgba(255,255,255,1);
+  background: url('../../src/assets/images/page_background.png') no-repeat fixed center rgba(255, 255, 255, 1);
   min-height: 100%;
   min-width: 100%;
   background-size: cover;
@@ -76,11 +80,20 @@ th {
 
 /*containers*/
 
+.buttonContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   width: 650px;
   height: 100%;
   position: center;
 }
+
 
 .registerContainer {
   width: 100%;

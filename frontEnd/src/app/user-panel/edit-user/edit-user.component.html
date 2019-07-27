@@ -1,10 +1,6 @@
 <body class="bodyBackground">
-<div>
-  <button type="button" class="myButton" (click)="back()">Go back
-  </button>
-</div>
-<form class="form-inline my-2 my-lg-0" name="form" (ngSubmit)="f.form.valid && updateUserData()" #f="ngForm" novalidate>
-  <div class="container">
+<form class="registerFormStyle" name="form" (ngSubmit)="f.form.valid && updateUserData()" #f="ngForm" novalidate>
+  <div class="registerContainer">
     <table>
       <tr class="form-field">
         <td><b>First name : </b></td>
@@ -67,7 +63,7 @@
         </td>
       </tr>
       <tr class="form-field">
-        <td><b>Phone Number : </b></td>
+        <td><b>Phone : </b></td>
         <td><input class="form-control" type="text" [(ngModel)]="userData.phoneNumber" name="phoneNumber"
                    placeholder="Phone number" #phoneNumber="ngModel"
                    [ngClass]="{ 'is-invalid': f.submitted && phoneNumber.invalid }" required/>
@@ -95,6 +91,8 @@
     </table>
   </div>
   <button type="submit" class="myButton">Save changes
+  </button>
+  <button type="button" class="myButton" (click)="back()">Go back
   </button>
 </form>
 </body>

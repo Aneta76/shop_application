@@ -59,7 +59,9 @@
 </form>
 <div class="buttonContainer">
   <button class="myButton" type="submit" routerLink="/home">Go back to homepage</button>
-  <button class="myButton" type="submit" routerLink="/user-panel/edit">Edit your data
+</div>
+<div class="buttonContainer" *ngIf="!checkIfAdmin()">
+  <button class="myButton" type="submit" [routerLink]="['/', 'user-panel','edit',userData.id]">Edit your data
   </button>
 </div>
 </body>

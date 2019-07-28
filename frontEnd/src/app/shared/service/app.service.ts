@@ -65,5 +65,14 @@ export class AppService {
     this.loggedUserStream.next(this.loggedUser);
     return this.loggedUser;
   }
+  public ifAdmin(): boolean {
+    this.loggedUser = JSON.parse(localStorage.getItem('currentUser'));
+    this.setLoggedUser(this.loggedUser);
+    if (this.getRole() === 'ADMIN') {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
 }

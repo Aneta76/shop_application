@@ -90,10 +90,10 @@ const routes: Routes = [
         }
       },
       {
-        path: 'edit',
+        path: 'edit/:id',
         component: EditUserComponent,
         resolve: {
-          userData: UserResolve
+          userData: UserByIdResolve
         }
       },
       {

@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {AppService} from '../../shared/service/app.service';
 import {RegisterUserModel} from '../../shared/model/register-user.model';
-import {ActivatedRoute} from '@angular/router';
+import {UserService} from '../../shared/service/user.service';
 
 @Component({
   selector: 'app-account',
@@ -11,12 +11,18 @@ import {ActivatedRoute} from '@angular/router';
 export class AccountComponent implements OnInit {
 
   userData: RegisterUserModel = new RegisterUserModel();
+  id: number;
 
   constructor(private appService: AppService,
-              private route: ActivatedRoute) {
+              private userService: UserService) {
   }
 
   ngOnInit() {
-    this.userData = this.route.snapshot.data['userData'];
+    this.id = this.appService.getUser().id;
+    this.userService.getUser(this.id).subscribe(data => this.userData = data);
+  }
+
+  checkIfAdmin(): boolean {
+    return this.appService.ifAdmin();
   }
 }

@@ -24,15 +24,7 @@ export class NavbarComponent implements OnInit {
   checkIfAdmin(): boolean {
     this.loggedUser = JSON.parse(localStorage.getItem('currentUser'));
     this.appService.setLoggedUser(this.loggedUser);
-    if (this.appService.getRole() === 'ADMIN') {
-      console.log('for true: ', this.appService.getRole());
-      //  console.log('ADMIN TRUE');
-      return true;
-    } else {
-      console.log('for false: ', this.appService.getRole());
-      // console.log('ADMIN FALSE');
-      return false;
-    }
+    return this.appService.ifAdmin();
   }
 
   checkOnline(): boolean {

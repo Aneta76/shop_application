@@ -45,7 +45,6 @@ import {OrdersByUserIdResolve} from './shared/resolve/orders.resolve';
     AdminPanelComponent,
     AppComponent,
     HomeComponent,
-    NavbarComponent,
     LoginComponent,
     RegisterComponent,
     UserPanelComponent,
@@ -60,6 +59,7 @@ import {OrdersByUserIdResolve} from './shared/resolve/orders.resolve';
     CartComponent,
     OrdersComponent,
     OrderSuccessComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

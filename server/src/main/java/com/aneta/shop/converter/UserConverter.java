@@ -4,9 +4,6 @@ import com.aneta.shop.dto.UserDTO;
 import com.aneta.shop.entity.Role;
 import com.aneta.shop.entity.User;
 import com.aneta.shop.respository.RoleRepository;
-import com.aneta.shop.respository.UserRepository;
-import org.springframework.dao.DuplicateKeyException;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
 import java.util.LinkedList;
@@ -27,13 +24,25 @@ public class UserConverter implements Converter<User, UserDTO> {
     public User convertToEntity(UserDTO dto) {
         User user = new User();
         List<Role> roleList = new LinkedList<>();
-        Optional<Role> roleUSER = roleRepository.findById(1L);
-        Role role = roleUSER.get();
-        if (role.getName().equals("USER")) {
-            user.getRoles().add(role);
-        } else {
-            roleList.add(new Role("USER"));
-            roleRepository.save(new Role("USER"));
+        if (dto.getEmail().equals("admin@admin.pl")) {
+            Optional<Role> roleUSER = roleRepository.findById(2L);
+            Role role = roleUSER.get();
+            if (role.getName().equals("ADMIN")) {
+                user.getRoles().add(role);
+            } else {
+                roleList.add(new Role("ADMIN"));
+                roleRepository.save(new Role("ADMIN"));
+            }
+        }
+        else {
+            Optional<Role> roleUSER = roleRepository.findById(1L);
+            Role role = roleUSER.get();
+            if (role.getName().equals("USER")) {
+                user.getRoles().add(role);
+            } else {
+                roleList.add(new Role("USER"));
+                roleRepository.save(new Role("USER"));
+            }
         }
         user.setId(dto.getId());
         user.setFirstName(dto.getFirstName());

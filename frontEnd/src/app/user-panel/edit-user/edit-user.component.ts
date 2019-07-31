@@ -44,7 +44,7 @@ export class EditUserComponent implements OnInit {
         this.router.navigate(['/admin-panel/users']);
       }
     } else {
-      this.router.navigate(['/user-panel']);
+      this.router.navigate(['/user-panel/account']);
     }
   }
 }

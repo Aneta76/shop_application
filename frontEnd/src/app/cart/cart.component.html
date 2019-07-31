@@ -1,27 +1,75 @@
 <body class="bodyBackground">
-<div class="container" *ngFor="let item of items;  let rowIndex = index">
-  <div class="product">
-    <div class="img-container">
-      <img
-        src="./../../../../assets/images/dish.png">
-    </div>
-    <div class="product-info">
-      <div class="product-content">
-        <h1>{{item.product.name}}</h1>
-        <p>{{item.product.description}}</p>
-        <p>Price: {{item.product.price}} $</p>
-        <p>Quantity: {{item.quantity}}</p>
-        <div class="buttons">
-          <a class="button add" (click)="removeProduct(rowIndex)">Remove</a>
+<table>
+  <td>
+    <form name="form" (ngSubmit)="f.form.valid && placeOrder()" #f="ngForm" novalidate>
+      <div>
+        <div>
+          <h1> Please, tell us where to deliver your order!</h1>
+        </div>
+        <table>
+          <tr class="form-field">
+            <td><b>Street : </b></td>
+            <td><input class="form-control" type="text" [(ngModel)]="delivery.street" name="street"
+                       placeholder="Street" #street="ngModel"
+                       [ngClass]="{ 'is-invalid': f.submitted && street.invalid }"
+                       required/>
+              <div *ngIf="f.submitted && street.invalid" class="invalid-feedback">
+                <div *ngIf="street.errors.required">Street is required</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="form-field">
+            <td><b>Zip-code : </b></td>
+            <td>
+              <input class="form-control" type="text" [(ngModel)]="delivery.zipCode" name="zipCode"
+                     placeholder="Zip-code" #zipCode="ngModel"
+                     [ngClass]="{ 'is-invalid': f.submitted && zipCode.invalid }"
+                     required/>
+              <div *ngIf="f.submitted && zipCode.invalid" class="invalid-feedback">
+                <div *ngIf="zipCode.errors.required">Zip-code is required</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="form-field">
+            <td><b>City : </b></td>
+            <td><input class="form-control" type="text" [(ngModel)]="delivery.city" name="city"
+                       placeholder="City" #city="ngModel"
+                       [ngClass]="{ 'is-invalid': f.submitted && city.invalid }" required/>
+              <div *ngIf="f.submitted && city.invalid" class="invalid-feedback">
+                <div *ngIf="city.errors.required">City is required</div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div *ngIf="!ifEmpty() && !this.cartIsEmpty; else empty">
+        <button class="myButton" type="submit">Place order</button>
+      </div>
+      <ng-template #empty>
+        <p>Your cart is currently empty.</p>
+      </ng-template>
+    </form>
+  </td>
+  <td>
+    <div class="container" *ngFor="let item of items;  let rowIndex = index">
+      <div class="product">
+        <div class="img-container">
+          <img
+            src="./../../../../assets/images/dish.png">
+        </div>
+        <div class="product-info">
+          <div class="product-content">
+            <h1>{{item.product.name}}</h1>
+            <p>{{item.product.description}}</p>
+            <p>Price: {{item.product.price}} $</p>
+            <p>Quantity: {{item.quantity}}</p>
+            <div class="buttons">
+              <a class="button add" (click)="removeProduct(rowIndex)">Remove</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<div *ngIf="!ifEmpty() && !this.cartIsEmpty; else empty">
-  <button class="myButton" (click)="placeOrder()">Place order</button>
-</div>
-<ng-template #empty>
-<p>Your cart is currently empty.</p>
-</ng-template>
+  </td>
+</table>
 </body>

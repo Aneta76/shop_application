@@ -57,7 +57,8 @@ export class CartService {
   saveOrder(cart: Cartmodel) {
     return this.http.post('/api/orders/new', cart).pipe(map((response: Cartmodel) => {
       return response;
-    })).subscribe(data => console.log('order placed'));
+    })).subscribe(data => console.log(cart));
+    // })).subscribe(data => console.log('order placed'));
   }
 
   checkIfempty(): boolean {

@@ -4,7 +4,6 @@ import com.aneta.shop.converter.Converter;
 import com.aneta.shop.converter.ProductConverter;
 import com.aneta.shop.dto.ProductDTO;
 import com.aneta.shop.entity.Product;
-import com.aneta.shop.respository.ProductCategoryRepository;
 import com.aneta.shop.respository.ProductRepository;
 import com.aneta.shop.service.ProductService;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -20,7 +19,7 @@ public class ProductServiceImpl extends AbstractServiceImpl<Product, ProductDTO>
     private final ProductRepository productRepository;
     private final ProductConverter productConverter;
 
-    public ProductServiceImpl(ProductRepository productRepository, ProductConverter productConverter, ProductCategoryRepository productCategoryRepository) {
+    public ProductServiceImpl(ProductRepository productRepository, ProductConverter productConverter) {
         this.productRepository = productRepository;
         this.productConverter = productConverter;
     }

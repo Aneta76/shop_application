@@ -25,6 +25,17 @@ public class Order extends AbstractEntity {
     @JoinColumn(name = "id_user")
     private User user;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_delivery")
+    private DeliveryAddress deliveryAddress;
+
+    public DeliveryAddress getDeliveryAddress() {
+        return deliveryAddress;
+    }
+
+    public void setDeliveryAddress(DeliveryAddress deliveryAddress) {
+        this.deliveryAddress = deliveryAddress;
+    }
 
     public Set<OrderElement> getOrderElements() {
         return orderElements;
@@ -49,4 +60,5 @@ public class Order extends AbstractEntity {
     public void setUser(User user) {
         this.user = user;
     }
+
 }

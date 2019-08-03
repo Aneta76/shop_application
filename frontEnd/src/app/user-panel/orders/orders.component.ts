@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Cartmodel} from '../../shared/model/cart-model.model';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {OrderElementModel} from '../../shared/model/order-element.model';
-import {Location} from '@angular/common';
+import {DatePipe} from '@angular/common';
 
 @Component({
   selector: 'app-orders',
@@ -12,9 +12,10 @@ import {Location} from '@angular/common';
 export class OrdersComponent implements OnInit {
   orders: Array<Cartmodel> = [];
   orderElements: Array<OrderElementModel> = [];
-
+  sum: number = 0;
   constructor(private route: ActivatedRoute,
-              private location: Location) {
+              private router: Router,
+              private datepipe: DatePipe) {
   }
 
   ngOnInit() {
@@ -23,7 +24,19 @@ export class OrdersComponent implements OnInit {
     });
   }
 
+  sumUp(price: number, quantity: number) {
+      this.sum = this.sum + (price * quantity);
+  }
+
+  clearSum() {
+    this.sum = 0;
+  }
+
+  convertDate(date: Date): string {
+    return this.datepipe.transform(date, 'medium');
+  }
+
   back() {
-    this.location.back();
+    this.router.navigate(['/user-panel/']);
   }
 }

@@ -1,31 +1,15 @@
-<div>
-  <button type="button" class="myButton" (click)="back()">Go back
-  </button>
+<div class="menuMargins">
+  <button class="myButton" (click)="back()">Go back</button>
+  <div class="orderContainer" *ngFor="let order of orders">
+      <div>Ordered on: {{this.convertDate(order.orderPlaceTime)}}</div>
+      <div>Delivered to: {{order.deliveryAddress.street}}, {{order.deliveryAddress.zipCode}}, {{order.deliveryAddress.city}}</div>
+      <div class="centerDiv"><img src="./../../../assets/images/line.png"></div>
+      <div>Ordered items:</div>
+      <div *ngFor="let orderElement of order.orderElements, let index=index">
+          <div class="orderElement">{{index+1}}. {{orderElement.quantity}} x {{orderElement.product.name}}</div>
+        <div>{{this.sumUp(orderElement.quantity, orderElement.product.price)}}</div>
+      </div>
+    <div class="sumBorder">Total price: {{this.sum}}$</div>
+    <div>{{this.clearSum()}}</div>
+      </div>
 </div>
-<table>
-  <tr>
-    <th>User</th>
-    <th>Order</th>
-    <th>Phone</th>
-    <th>Delivery address</th>
-    <th>Estimated delivery time</th>
-  </tr>
-  <tr *ngFor="let order of orders">
-    <td>{{order.user.email}}</td>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Price</th>
-        <th>Quantity</th>
-      </tr>
-      <tr *ngFor="let orderElement of order.orderElements">
-        <td>{{orderElement.product.name}}</td>
-        <td>{{orderElement.product.price}}</td>
-        <td>{{orderElement.quantity}}</td>
-      </tr>
-    </table>
-    <td>{{order.user.phoneNumber}}</td>
-    <td>{{order.user.addressLine}} {{order.user.zipCode}} {{order.user.city}}</td>
-    <td>{{order.orderPlaceTime}}</td>
-  </tr>
-</table>

@@ -37,6 +37,7 @@ import { OrdersComponent } from './user-panel/orders/orders.component';
 import {OrdersService} from './shared/service/orders.service';
 import { OrderSuccessComponent } from './cart/order-success/order-success.component';
 import {OrdersByUserIdResolve} from './shared/resolve/orders.resolve';
+import {DatePipe} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,7 @@ import {OrdersByUserIdResolve} from './shared/resolve/orders.resolve';
   ],
   providers: [ProductService, ProductsResolve, ProductResolve, AuthService, AppService, ProductCategoryService,
     CategoriesResolver, ProductsResolveByCategory, UserService, UserResolve, UsersResolve, UserByIdResolve, LoginGuard,
-    AdminGuard, CartService, OrdersService, OrdersByUserIdResolve],
+    AdminGuard, CartService, OrdersService, OrdersByUserIdResolve, DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -34,6 +34,31 @@ a {
   color: #0f030f;
 }
 
+.userMessages {
+  margin-top: 20px;
+}
+
+.failureWarning {
+  margin-top: 20px;
+  color: red;
+}
+
+.welcomeText {
+  position: relative;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+}
+
+.addressCard {
+  position: relative;
+  font-size: 25px;
+  color: black;
+}
+
+/*containers*/
+
 .addProductForm {
   position:fixed;
 }
@@ -74,29 +99,6 @@ a {
   float: left;
 }
 
-.userMessages {
-  margin-top: 20px;
-}
-
-.failureWarning {
-  margin-top: 20px;
-  color: red;
-}
-
-.welcomeText {
-  position: relative;
-  font-size: 40px;
-  font-style: italic;
-  font-weight: bold;
-  color: black;
-}
-
-.addressCard {
-  position: relative;
-  font-size: 25px;
-  color: black;
-}
-
 .mainFormStyle {
   display: block;
   margin-left: auto;
@@ -107,8 +109,6 @@ a {
   border-color: #0f030f;
   width: 480px;
 }
-
-/*containers*/
 
 .buttonContainer {
   width: 100%;
@@ -135,6 +135,19 @@ a {
   background-color: white;
   transition: all .1s ease-in-out;
   padding: 10px;
+}
+
+.input-quantity {
+  width: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #5e5e5e;
+  font-weight: bold;
+  padding: .3em .65em;
+  border-radius: 2.3px;
+  transition: all .1s ease-in-out;
 }
 
 .mainContainer {
@@ -242,19 +255,6 @@ a {
 
 .cartBtnDiv {
   margin-left: 10px;
-}
-
-.input-quantity {
-  width: 80px;
-  margin-left: 10px;
-  margin-right: 10px;
-  text-align: center;
-  text-decoration: none;
-  color: #5e5e5e;
-  font-weight: bold;
-  padding: .3em .65em;
-  border-radius: 2.3px;
-  transition: all .1s ease-in-out;
 }
 
 /*buttons*/
